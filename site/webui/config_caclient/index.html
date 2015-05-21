@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CAs - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webui/config_caclient"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../configure_tvheadend/">Configure Tvheadend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../epg/">Electronic Program Guide Tab</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_misc/">General</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_access/">Access Entries</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_networks/">Networks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_esfilter/">Video Stream Filters</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">CAs</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#configuration-cas">Configuration - CAs</a></li>
+                
+                    <li><a class="toctree-l4" href="#menu-barbuttons">Menu Bar/Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#columns">Columns</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Configuration Tab &raquo;</li>
+        
+      
+    
+    <li>CAs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configuration-cas">Configuration - CAs</h2>
+<p>Tvheadend support connecting to card clients via the cwc (newcamd) or
+capmt (dvbapi) protocol for so called softcam descrambling.</p>
+<p><img alt="'CAs' Tab" src="../docresources/configcwc.png" /></p>
+<p>The servers are listed / edited in a grid.</p>
+<ul>
+<li>
+<p>To edit a cell, double click on it. After a cell is changed it will
+  flags one of its corner to red to indicated that it has been
+  changed. To commit these changes back to Tvheadend press the ‘Save
+  changes’ button. In order to change a Checkbox cell you only have to
+  click once in it.</p>
+</li>
+<li>
+<p>To add a new entry, press the ‘Add entry’ button. The new (empty)
+  entry will be created on the server but will not be in its enabled
+  state. You can now change all the cells to the desired values, check
+  the ‘enable’ box and then press ‘Save changes’ to activate the new
+  entry.</p>
+</li>
+<li>
+<p>To delete one or more entries, select the lines (by clicking once on
+  them), and press the ‘Delete selected’ button. A pop up will ask you
+  to confirm your request.</p>
+</li>
+</ul>
+<hr />
+<h4 id="menu-barbuttons">Menu Bar/Buttons</h4>
+<p>The following functions are available:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Button</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="columns">Columns</h4>
+<p>The columns have the following functions:</p>
+<p><strong>Enabled</strong>
+: If selected, connection will be tried to be established and retained up.
+  If unselected, Tvheadend will disconnect (if connected) and not try to
+  reconnect.</p>
+<p><strong>Hostname</strong>
+: Server hostname. DNS lookup is performed upon every connection attempt.</p>
+<p><strong>Port</strong>
+: Server TCP port</p>
+<p><strong>Username</strong>
+: Username to use.</p>
+<p><strong>Password</strong>
+: Password to use.</p>
+<p><strong>DES Key</strong>
+: Initial DES key.</p>
+<p><strong>Update Card</strong>
+: Forward Entitlement Management Messages (EMMs) to the server.</p>
+<p><strong>Update One</strong>
+: Forward EMMs only from one channel at a time.</p>
+<p><strong>Comment</strong>
+: Allows the administrator to set a comment only visible in this editor.
+  It does not serve any active purpose.</p>
+<p><img alt="'CAs Tab 2'" src="../docresources/configcapmt.png" /></p>
+<p>The servers are listed / edited in a grid.</p>
+<ul>
+<li>
+<p>To edit a cell, double click on it. After a cell is changed it will
+  flags one of its corner to red to indicated that it has been
+  changed. To commit these changes back to Tvheadend press the ‘Save
+  changes’ button. In order to change a Checkbox cell you only have to
+  click once in it.</p>
+</li>
+<li>
+<p>To add a new entry, press the ‘Add entry’ button. The new (empty)
+  entry will be created on the server but will not be in its enabled
+  state. You can now change all the cells to the desired values, check
+  the ‘enable’ box and then press ‘Save changes’ to activate the new
+  entry.</p>
+</li>
+<li>
+<p>To delete one or more entries, select the lines (by clicking once on
+  them), and press the ‘Delete selected’ button. A pop up will ask you
+  to confirm your request.</p>
+</li>
+</ul>
+<p>The columns have the following functions:</p>
+<p><strong>Enabled</strong>
+: If selected, connection will be tried to be established and retained up.
+  If unselected, Tvheadend will disconnect (if connected) and not try to
+  reconnect.</p>
+<p><strong>Camd.socket Filename / IP Address</strong>
+: Socket filename which is usually opened by cam client. Tvheadend tries
+  to connect to this socket file.</p>
+<p>In mode 3 (TCP), enter the IP address of the oscam server. Tvheadend
+tries to create a TCP connecting to this IP adress and <em>Connect port</em>.</p>
+<p><strong>Listen / Connect port</strong>
+: If running on a so called full-featured DVB-Card this can be left empty.
+  Running on Budget-Cards one has to use a dummy ca-device. This is
+  emulated via capmt_ca.so. This module has to be pre-loaded prior to the
+  cam client.</p>
+<p><em>LD_PRELOAD=/path/to/capmt_ca.so cam_client &amp;</em></p>
+<p>This module will communicate the received control-words back to
+Tvheadend via Port 9000</p>
+<p>In mode 3 (TCP), this port is used for the oscam connection. It must be
+equal to the listen port in the oscam/dvbapi settings.</p>
+<p><strong>OSCam mode</strong></p>
+<ul>
+<li>
+<p><strong>mode 0 (LD_PRELOAD)</strong>
+: LD_PRELOAD hack is active</p>
+</li>
+<li>
+<p><strong>mode 1 (old OSCam)</strong>
+: If selected, connection will be made directly to oscam without using
+  LD_PRELOAD hack. Port 9000 will be used automatically.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Usage Note for Mode 1</p>
+<p>The following lines are required in <strong>[dvbapi]</strong> section of oscam.conf
+file:</p>
+<code>boxtype = pc
+ pmt_mode = 4</code>
+</div>
+
+<ul>
+<li>
+<p><strong>mode 2 (new OSCam since revision 9095)</strong>
+: In this mode, no UDP connections are required. All communication is
+  processed though the Camd.socket. The configuration for OSCam should be
+  same as for mode 1.</p>
+</li>
+<li>
+<p><strong>mode 3 (new OSCam since revision 9574)</strong>
+: A TCP connection to server is created. All emm/ecm data are send to
+  oscam using this connection without a requirement for the real linuxdvb
+  devices in the system with OSCam. This mode is suitable for all DVB
+  devices including SAT>IP and IPTV.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Usage Note for Mode 3</p>
+<p>The following lines are required in <strong>[dvbapi]</strong> section of oscam.conf
+file:</p>
+<code>boxtype = pc
+ pmt_mode = 4
+ listen_port = 9000 # or your preferred port</code>
+</div>
+
+<ul>
+<li><strong>mode 4 (new OSCam since revision 9754)</strong>
+: Similar to mode 3, but a Camd.socket connection is used instead of the
+  TCP connection.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Usage Note for Mode 4</p>
+<p>The following lines are required in <strong>[dvbapi]</strong> section of oscam.conf
+file:</p>
+<code>boxtype = pc-nodmx
+ pmt_mode = 4</code>
+</div>
+
+<ul>
+<li><strong>mode 5 (new OSCam since revision 10087)</strong>
+: Similar to mode 3 (TCP), but uses a new network protocol which also
+  added client/server greeting messages and protocol version information
+  (to be able to smoothly detect enhancements in the future).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<p>Mode 5 is currently the preferred mode - others may be removed in the future</p>
+</div>
+
+<div class="admonition note">
+<p class="admonition-title">Usage Note for Mode 5</p>
+<p>The following lines are required in <strong>[dvbapi]</strong> section of oscam.conf
+file:</p>
+<code>boxtype = pc
+ pmt_mode = 4
+ listen_port = 9000 # or your preferred port</code>
+</div>
+
+<p><strong>Comment</strong>
+Allows the administrator to set a comment only visible in this editor.
+It does not serve any active purpose.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../config_tvhlog/" class="btn btn-neutral float-right" title="Debugging"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../config_timeshift/" class="btn btn-neutral" title="Timeshift"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../config_timeshift/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../config_tvhlog/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

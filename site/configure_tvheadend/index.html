@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configure Tvheadend - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "configure_tvheadend"
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Configure Tvheadend</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#configure-tvheadend">Configure Tvheadend</a></li>
+                
+                    <li><a class="toctree-l4" href="#1-ensure-tuners-are-available-for-use">1. Ensure tuners are available for use</a></li>
+                
+                    <li><a class="toctree-l4" href="#2-set-up-relevant-networks">2. Set up relevant network(s)</a></li>
+                
+                    <li><a class="toctree-l4" href="#3-associate-the-network-with-the-respective-tuners">3. Associate the network with the respective tuner(s)</a></li>
+                
+                    <li><a class="toctree-l4" href="#4-if-necessary-manually-add-muxes-to-the-network">4. If necessary, manually add muxes to the network</a></li>
+                
+                    <li><a class="toctree-l4" href="#5-scan-for-services">5. Scan for services</a></li>
+                
+                    <li><a class="toctree-l4" href="#6-map-services-to-channels">6. Map services to channels</a></li>
+                
+                    <li><a class="toctree-l4" href="#7-watch-tv">7. Watch TV</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/epg/">Electronic Program Guide Tab</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_misc/">General</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_access/">Access Entries</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_networks/">Networks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_esfilter/">Video Stream Filters</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_caclient/">CAs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webui/about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+    
+    <li>Configure Tvheadend</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configure-tvheadend">Configure Tvheadend</h2>
+<p>This section gives a high-level overview of the steps needed to get Tvheadend up and running. For more detailed
+information, please consult the rest of this guide - much of it is arranged in the same order as the tabs on the
+Tvheadend interface so you know where to look.</p>
+<p>You can also consult the in-application help text, which mirrors this guide to a very great extent.</p>
+<h4 id="1-ensure-tuners-are-available-for-use">1. Ensure tuners are available for use</h4>
+<p><em>tvheadend web interface: <em>Configuration -&gt; DVB Inputs -&gt; TV Adapters</em></em></p>
+<p>On this tab, you&rsquo;ll see a tree structure, with the Linux device list at the top level (e.g. <code>/dev/dvb/adapter0</code>)</p>
+<p>Individual tuners are then the next level down (e.g. <code>DiBcom 7000PC : DVB-T #0</code>)</p>
+<p>Click on each tuner that you want tvheadend to use, and ensure &ldquo;Enabled&rdquo; is checked in the &lsquo;Parameters&rsquo; list</p>
+<p>If anything is obviously wrong at this point, you probably have a driver/firmware error which you&rsquo;ll need to resolve before going any further.</p>
+<h4 id="2-set-up-relevant-networks">2. Set up relevant network(s)</h4>
+<p><em>tvheadend web interface: <em>Configuration -&gt; DVB Inputs -&gt; Networks</em></em></p>
+<p>Create a network of the appropriate type here. You can have multiple networks of the same type as necessary, e.g. to have two DVB-T networks defined, one with HD muxes, one without.</p>
+<p>The creation process allows you to select from a series of pre-defined mux lists for common DVB sources. These are maintained outside of tvheadend, and are downloaded from linuxtv - but they do go out of date as broadcasters move services around and national authorities change entire pieces of spectrum. As such, you should try the pre-defined values, but you may need to add muxes manually.</p>
+<div class="admonition warning">
+<p class="admonition-title">Critical Configuration Items</p>
+<p>Critical configuration items at this stage: <........></p>
+</div>
+
+<h4 id="3-associate-the-network-with-the-respective-tuners">3. Associate the network with the respective tuner(s)</h4>
+<p><em>tvheadend web interface: <em>Configuration -&gt; DVB Inputs -&gt; TV Adapters</em></em></p>
+<p>Associate each of your tuners with the correct network through <em>Parameters -&gt; Basic Settings</em>. </p>
+<p>This can be as simple or as complex as necessary. You may simply have, for example, a single DVB-S2 network defined and then associate this with all DVB-S2 tuners. Or, you might have multiple networks defined - different satellites, different encoding. So, as further examples, you might define and then associate an HD DVB-T2 (e.g. H.264) network with HD tuners, while having a separate SD network associated with an independent SD (e.g. MPEG-2) tuner. </p>
+<div class="admonition warning">
+<p class="admonition-title">Critical Configuration Items</p>
+<p>Critical configuration items at this stage: <........></p>
+</div>
+
+<p>At this point, your tuners now know what networks to use: one network can appear on multiple tuners (many-to-one), and one tuner can have multiple networks.</p>
+<h4 id="4-if-necessary-manually-add-muxes-to-the-network">4. If necessary, manually add muxes to the network</h4>
+<p><em>tvheadend web interface: <em>Configuration -&gt; DVB Inputs -&gt; Muxes</em></em></p>
+<p>Ideally, this is where you&rsquo;ll see a list of the pre-populated muxes as created when you set up your initial network. However, should there be any issues, this is where you can manually add missing muxes. You only really need to worry about this if the pre-defined list didn&rsquo;t work (e.g. because of out-of-date data - damn those broadcasters, re-arranging their services without telling anyone&hellip;) or because automatic detection hasn&rsquo;t successfully found all the muxes over time. </p>
+<p>If you do need to add something manually, you&rsquo;ll need to search the Internet for details of the appropriate transmitter and settings: satellites tend not to change much and are universal over a large area, but terrestrial muxes tend to be very localised and you&rsquo;ll need to know which specific transmitter you&rsquo;re listening to. </p>
+<p>Good sources of transmitter/mux information include:</p>
+<ul>
+<li>
+<p><a href="http://en.kingofsat.net">KingofSat</a> for all European satellite information</p>
+</li>
+<li>
+<p><a href="http://www.ukfree.tv/maps/freeview">ukfree.tv</a> for UK DVB-T transmitters</p>
+</li>
+<li>
+<p><a href="http://www.dvbtmap.eu/mapmux.html">Interactive EU DVB-T map</a> for primarily central and northern Europe</p>
+</li>
+</ul>
+<blockquote>
+<p>other major sources....?</p>
+</blockquote>
+<p>You can also use <a href="http://www.linuxtv.org/wiki/index.php/Dvbscan">dvbscan</a> to force a scan and effectively ask your tuner what it can see.</p>
+<div class="admonition warning">
+<p class="admonition-title">Critical Configuration Items</p>
+<p>Critical configuration items at this stage: <........></p>
+</div>
+
+<h4 id="5-scan-for-services">5. Scan for services</h4>
+<p><em>tvheadend web interface: <em>Configuration -&gt; DVB Inputs -&gt; Services</em></em></p>
+<p>This is where the services will appear as your tuners tune to the muxes based on the network you told them to look on. Again, remember what&rsquo;s happening: the tvheadend software is telling your tuner hardware (via the drivers) to sequentially tune to each mux it knows about, and then see what &lsquo;programmes&rsquo; it can see on that mux, each of which is identified by a series of unique identifiers that describe the audio stream(s), the video stream(s), the subtitle stream(s) and language(s), and so on.</p>
+<blockquote>
+<p>To force a scan &hellip;</p>
+</blockquote>
+<h4 id="6-map-services-to-channels">6. Map services to channels</h4>
+<p>Once scanning for services is complete, you need to map the services to channels so your client can actually request them (i.e. so you can watch or record). You can do this in two places:</p>
+<p><em>tvheadend web interface: <em>Configuration -&gt; DVB Inputs -&gt; Services</em></em></p>
+<p>Press the &ldquo;Map All&rdquo; button</p>
+<p><em>tvheadend web interface: <em>Configuration -&gt; Channel/EPG -&gt; Channels</em></em></p>
+<p>Press the &ldquo;Map Services&rdquo; button</p>
+<blockquote>
+<p>Any explanation on how a channel can map to multiple services &lt;......&gt;</p>
+<p>Anything about using bouquets</p>
+</blockquote>
+<h4 id="7-watch-tv">7. Watch TV</h4>
+<p>That&rsquo;s it - you&rsquo;re done. You should now have a working basic tvheadend installation with channels mapped and ready for use!</p>
+<p>As required, you may now wish to look into:</p>
+<ul>
+<li>Setting up different EPGs (inc. localised character sets and timing offsets)</li>
+<li>Setting up channel icons</li>
+<li>Setting up recording profiles</li>
+<li>Setting up streaming profiles (including transcoding)</li>
+<li>Arranging your channels into groups (channel tags)</li>
+<li>Setting up softcams for descrambling</li>
+<li>Setting up access control rules for different client types/permission levels</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../webui/epg/" class="btn btn-neutral float-right" title="Electronic Program Guide Tab"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../install_tvheadend/" class="btn btn-neutral" title="Install Tvheadend"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../install_tvheadend/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../webui/epg/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

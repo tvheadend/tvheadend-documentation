@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Networks - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webui/config_networks"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../configure_tvheadend/">Configure Tvheadend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../epg/">Electronic Program Guide Tab</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_misc/">General</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_access/">Access Entries</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Networks</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#configuration-dvb-inputs-networks">Configuration - DVB Inputs - Networks</a></li>
+                
+                    <li><a class="toctree-l4" href="#menu-barbuttons">Menu Bar/Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#columns">Columns</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_esfilter/">Video Stream Filters</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_caclient/">CAs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>DVB Inputs &raquo;</li>
+        
+      
+    
+    <li>Networks</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configuration-dvb-inputs-networks">Configuration - DVB Inputs - Networks</h2>
+<p>A network is the type of carrier for your television signals. Tvheadend
+supports several different types of network, notably:</p>
+<ul>
+<li>
+<p><strong>DVB-C</strong> : Cable TV, delivered via a cable to your house</p>
+</li>
+<li>
+<p><strong>DVB-S</strong> : Satellite (includes S2), so any signal coming in via a dish</p>
+</li>
+<li>
+<p><strong>DVB-T</strong> : Terrestrial, so over-the-air broadcasts received through a
+traditional television aerial</p>
+</li>
+<li>
+<p><strong>ATSC</strong> : Over-the-air terrestrial, common in north and central America
+and parts of south Asia</p>
+</li>
+<li>
+<p><strong>IPTV</strong> : IP, so over the Internet</p>
+</li>
+</ul>
+<p><img alt="'Networks' Tab Screenshot" src="../docresources/configdvbnetwork.png" /></p>
+<hr />
+<h4 id="menu-barbuttons">Menu Bar/Buttons</h4>
+<p>The following functions are available:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Add</strong></td>
+<td>Add a new network. You can choose from any of the types described above.</td>
+</tr>
+<tr>
+<td><strong>Delete</strong></td>
+<td>Delete an existing network. This will also remove any association with an adapter.</td>
+</tr>
+<tr>
+<td><strong>Edit</strong></td>
+<td>Edit an existing network. This allows you to change any of the parameters you’d otherwise set when adding a new network, e.g. network discovery, idle scan, etc. - similar to using the check boxes to enable/disable functions.</td>
+</tr>
+<tr>
+<td><strong>Save</strong></td>
+<td>Saves any changes.</td>
+</tr>
+<tr>
+<td><strong>Undo</strong></td>
+<td>Undoes any changes.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="columns">Columns</h4>
+<p>The columns have the following functions:</p>
+<p><strong>Network Name</strong>:
+The name of the network. This can be set automatically or you can give
+it a name that means something to you (e.g. if you have multiple OTA
+networks).</p>
+<p><strong>Network Discovery</strong>:
+Whether automatic discovery is enabled for this network, i.e. whether
+Tvheadend looks for muxes or simply stays with the list of muxes as
+defined initially.</p>
+<p><strong>Skip initial Scan</strong>:
+Don’t scan all muxes in this network at Tvheadend start. The initial
+scan procedure is not a blind scan. Only known muxes registered to this
+network are scanned. If Network Discovery is enabled and new muxes are
+discovered using DVB descriptors, these muxes will be scanned too.</p>
+<p><strong>Idle Scan Muxes</strong>:
+When nothing else happens Tvheadend will continuously rotate among all
+muxes and tune to them to verify that they are still working when the
+inputs are not used for streaming. If your adapter have problems with
+lots of (endless) tuning, try to disable this. Note that this option
+should be OFF for the normal operation. This type of mux probing is not
+required and it may cause issues for SAT>IP (limited number of PID
+filters).</p>
+<p><strong>Ignore Provider’s Channel Numbers</strong>:
+Some providers will try to set a channel number so that every receiver
+is consistent - “tune to Channel x on 150”. This option allows you to
+ignore this and let tvhheadend allocate a channel number itself.</p>
+<p><strong>Max Input Streams</strong>:
+IPTV : maximum simultaneous streams that can be played.</p>
+<p><strong>Max Bandwidth</strong>:
+IPTV : maximum bandwidth allowed for streams.</p>
+<p><strong>Max timeout</strong>:
+IPTV : maximum timeout trying to play stream.</p>
+<p><strong>Network ID</strong>:
+If you experience problems caused by overlaps between multiple network
+providers this option can be used to filter which network ID is received
+by a given adapter.</p>
+<p><strong>Ignore Provider’s Channel Numbers</strong>:
+Do not use the local channel numbers defined by provider.</p>
+<p><strong>SAT>IP Source Number</strong>:
+This field is matched through the “src” parameter asked from the SAT>IP
+client. Usually (and by default) this value is 1. For satellite tuners,
+this value determines the satellite source (dish). By specification
+position 1 = DiseqC AA, 2 = DiseqC AB, 3 = DiseqC BA, 4 = DiseqC BB, but
+any numbers may be used - depends on the SAT>IP client. Note that if
+you use same number for multiple networks, the first matched network
+containing the mux with requested parameters will win (also for unknown
+mux). If this field is set to zero, the network cannot be used by the
+SAT>IP server.</p>
+<p><strong>EIT Local Time</strong>:
+EPG (EIT) events uses local time instead UTC.</p>
+<p><strong>Character Set</strong>:
+The character encoding for this network (e.g. UTF-8).</p>
+<p><strong>Priority</strong>:
+IPTV : The network priority value (higher value = higher priority to use
+muxes/services from this network).</p>
+<p><strong>Streaming Priority</strong>:
+IPTV : The network priority value for streamed channels through HTTP or
+HTSP (higher value = higher priority to use muxes/services from this
+network). If not set, the standard network priority value is used.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../config_muxes/" class="btn btn-neutral float-right" title="Muxes"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../config_tvadapters/" class="btn btn-neutral" title="TV Adapters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../config_tvadapters/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../config_muxes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

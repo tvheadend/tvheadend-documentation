@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Electronic Program Guide Tab - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webui/epg"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../configure_tvheadend/">Configure Tvheadend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Electronic Program Guide Tab</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#electronic-program-guide">Electronic Program Guide</a></li>
+                
+                    <li><a class="toctree-l4" href="#filtering-or-searching">Filtering (or searching)</a></li>
+                
+                    <li><a class="toctree-l4" href="#event-details-and-recording">Event details and recording</a></li>
+                
+                    <li><a class="toctree-l4" href="#autorecordings">Autorecordings</a></li>
+                
+                    <li><a class="toctree-l4" href="#watch-tv">Watch TV</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_misc/">General</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_access/">Access Entries</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_networks/">Networks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_esfilter/">Video Stream Filters</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_caclient/">CAs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Web Interface Guide &raquo;</li>
+        
+      
+    
+    <li>Electronic Program Guide Tab</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="electronic-program-guide">Electronic Program Guide</h2>
+<p>Tvheadend has a built-in Electronic Program Guide. The EPG is an
+in-memory database populated with all the information about events
+received from the DVB networks over-the-air or from external grabbers
+such as XMLTV.</p>
+<p>The EPG tab displays a filterable grid containing all events, sorted
+based on start time.</p>
+<p><img alt="'Electronic Program Guide' Tab" src="../docresources/epg.png" /></p>
+<hr />
+<h4 id="filtering-or-searching">Filtering (or searching)</h4>
+<p>In the EPG top tool bar you can access five input fields. These are used
+to filter/search for events. The form uses implicit AND between the
+input fields. This means that all filters must match for an event to be
+displayed.</p>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Search title&hellip;</strong></td>
+<td>Only display events that match the given title. The filter uses case-insensitive regular expressions. If you don’t know what a regular expression is, this simply means that you can type just parts of the title and filter on that - there’s no need for full, exact matching. If the fulltext checkbox is checked, the title text is matched against title, subtitle, summary and description.</td>
+</tr>
+<tr>
+<td><strong>Filter channel&hellip;</strong></td>
+<td>Only display events from the selected channel. Channels in the drop down are ordered by channel number and can be filtered (by name) by typing in the box.</td>
+</tr>
+<tr>
+<td><strong>Filter tag&hellip;</strong></td>
+<td>Only display events from channels which are included in the selected tag. Tags are used for grouping channels together - such as ‘Radio’ or ‘HDTV’ - and are configured by the administrator. You can start typing a tag name to filter the list.</td>
+</tr>
+<tr>
+<td><strong>Filter content type&hellip;</strong></td>
+<td>Only display events that match the given content type tag. Most DVB networks classify their events into content groups. This field allows you to filter based on content type (e.g. “Sports” or “Game Show”). Supported tags are determined by your broadcaster. Again, simply start typing to filter the entries if you have a long list to choose from.</td>
+</tr>
+<tr>
+<td><strong>Filter duration&hellip;</strong></td>
+<td>Only display events that fall between the given minimum and maximum durations. This allows you to filter for or against, say, a daily broadcast and a weekly omnibus edition of a programme, or only look for short news bulletins and not the 24-hour rolling broadcasts.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Title</em>, <em>Channel</em>, <em>Tag</em> and <em>Content Type</em> are dependent on your configuration and on what your 
+broadcaster sends. Options for the <em>Duration</em> are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Filter Range</th>
+<th>Example Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00:00:01 to 00:15:00</td>
+<td>Very short news bulletins, children&rsquo;s programmes, etc.</td>
+</tr>
+<tr>
+<td>00:15:01 to 00:30:00</td>
+<td>Short programmes, e.g. daily soap operas</td>
+</tr>
+<tr>
+<td>00:30:01 to 01:30:00</td>
+<td>Medium-length programmes, e.g. documentaries</td>
+</tr>
+<tr>
+<td>01:30:01 to 03:00:00</td>
+<td>Longer programmes, e.g. films</td>
+</tr>
+<tr>
+<td>03:00:00 to no maximum</td>
+<td>Very long programmes, e.g. major sporting events</td>
+</tr>
+</tbody>
+</table>
+<p>So, if you only want to see Movies from your available HD channels, you
+would select ‘HDTV’ in the <em>[Filter tag…]</em> field, and select ‘Movie /
+Drama’ in the <em>[Filter content type…]</em> field. If you wish, you could
+then further limit the search to programmes of between 90 minutes and 3
+hours by selecting ‘01:30:01 to 03:00:00’ in the <em>[Filter duration…]</em>
+field.</p>
+<p>Note that you don’t have to press a ‘Search’ button: the grid
+immediately updates itself as you change the filters.</p>
+<p>You can clear an individual filter by simply deleting its contents, or
+by selecting <em>‘(Clear filter)’</em> as appropriate on all except the title
+filter. If you want to clear all filters, just press the <em>[Reset All]</em>
+button.</p>
+<hr />
+<h4 id="event-details-and-recording">Event details and recording</h4>
+<p>If you click on a single event, a popup will display detailed
+information about the event. It also allows you to schedule the event
+for recording by clicking on the <em>[Record program]</em> button.</p>
+<p>For EPG providers that supply series link information there will also be
+a <em>[Record series]</em> button that will record all entries in the series.</p>
+<p>For events without any series link information, an <em>[Autorec]</em> button
+will be provided to create a pseudo-series link using the autorec
+feature.</p>
+<p><img alt="EPG Detail 1" src="../docresources/epg2.png" />
+<img alt="EPG Detail 2" src="../docresources/epg3.png" /></p>
+<p>If you schedule any kind of recording from this point, you can choose a
+specific DVR profile that will apply to the recording or autorec rule.
+This will normally show as <em>(default)</em>, but you can define different
+profiles in the <strong>Configuration -> Recording -> Digital Video
+Recorder</strong> tab. This allows you to set, for example, more post-
+broadcast padding for a channel that always runs late, or perhaps define
+a different post-processing command to strip adverts out on a commercial
+channel.</p>
+<p>You will also see a <em>Search IMDB</em> link to look for the programme by name
+on imdb.com, and a <em>Play</em> link to watch a programme that’s already in
+progress. This second link downloads a playlist file (XSPF or M3U
+depending on your startup options); if your system is configured for it,
+this will automatically launch an appropriate player, otherwise you will
+need to manually open the playlist to start watching (normally a
+double-click on the downloaded file).</p>
+<p>To close the popup, just click on the [X] window button. The popup isn’t
+modal, so you don’t have to close it before doing something else, and
+you can open as many detailed information popups as you want.</p>
+<hr />
+<h4 id="autorecordings">Autorecordings</h4>
+<p>Should you wish to record all events matching a specific query (to
+record your favourite show every week, for example) you can press the
+<em>[Create AutoRec]</em> button in the top toolbar.</p>
+<p>A popup with details about the to-be-created autorecording rule needs to
+be confirmed before the rule takes effect.</p>
+<p><img alt="Autorec Dialogue Box" src="../docresources/autorecpopup.png" /></p>
+<p>You can change or delete the autorec rules in the <strong>Digital Video
+Recorder</strong> tab. Use that editor if you temporarily want to disable an
+autorecording or make adjustments to the channel, tag, or similar.</p>
+<hr />
+<h4 id="watch-tv">Watch TV</h4>
+<p>If you want to watch live TV in the web UI, the <em>[Watch TV]</em> button will
+pop up a VLC plugin window (if you don’t have the plugin installed a
+direct URL should be provided to load into your preferred media player).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dvr_upcoming/" class="btn btn-neutral float-right" title="Upcoming/Current Recordings"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../configure_tvheadend/" class="btn btn-neutral" title="Configure Tvheadend"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../configure_tvheadend/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dvr_upcoming/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

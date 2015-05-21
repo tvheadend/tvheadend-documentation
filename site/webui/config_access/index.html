@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Access Entries - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webui/config_access"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../configure_tvheadend/">Configure Tvheadend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../epg/">Electronic Program Guide Tab</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_misc/">General</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Access Entries</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#configuration-access-entries">Configuration - Access Entries</a></li>
+                
+                    <li><a class="toctree-l4" href="#menu-barbuttons">Menu Bar/Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#columns">Columns</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_networks/">Networks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_esfilter/">Video Stream Filters</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_caclient/">CAs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Configuration Tab &raquo;</li>
+        
+      
+    
+    <li>Access Entries</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configuration-access-entries">Configuration - Access Entries</h2>
+<p>Setting up access control is an important initial step as <strong>the system
+initially is wide open</strong>. </p>
+<p>When Tvheadend verifies access is scan through all the enabled access
+control entries. The permission flags, streaming profiles, DVR config
+profiles, channel tags are combined for all matching access entries. An
+access entry is said to match if the username / password matches and the
+IP source address of the requesting peer is within the prefix.</p>
+<p>The access rules are listed / edited in a grid.</p>
+<ul>
+<li>
+<p>To edit a cell, double click on it. After a cell is changed it will
+  flags one of its corner to red to indicated that it has been
+  changed. To commit these changes back to Tvheadend press the ‘Save
+  changes’ button. In order to change a Checkbox cell you only have to
+  click once in it.</p>
+</li>
+<li>
+<p>To add a new entry, press the ‘Add entry’ button. The new (empty)
+  entry will be created on the server but will not be in its enabled
+  state. You can now change all the cells to the desired values, check
+  the ‘enable’ box and then press ‘Save changes’ to activate the new
+  entry.</p>
+</li>
+<li>
+<p>To delete one or more entries, select the lines (by clicking once on
+  them), and press the ‘Delete selected’ button. A popup will ask you
+  to confirm your request.</p>
+</li>
+</ul>
+<p><img alt="'Access Entries' Tab" src="../docresources/accessconfig.png" /></p>
+<hr />
+<h4 id="menu-barbuttons">Menu Bar/Buttons</h4>
+<p>The following functions are available:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Save</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Undo</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Add</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Delete</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Move up</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Move down</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Edit</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="columns">Columns</h4>
+<p>The columns have the following functions:</p>
+<p><strong>Enabled</strong>
+: Enable this access control rule. Uncheck the box to disable.</p>
+<p><strong>Username</strong>
+: Login name to be used. If no username is required, this entry should
+contain a single asterisk (*).</p>
+<p><strong>Password</strong>
+: Login password to be used. If username is ‘*’ (unused), the password
+should be the same (i.e. match any username/password combination, or no
+username/password required).</p>
+<p><strong>Network prefix</strong>
+: IPv4 prefix for matching based on source IP address. If set to 0.0.0.0/0
+it will match everything. The multiple networks can be delimited using
+comma or semicolon.</p>
+<p><strong>Web interface</strong>
+: Required for web user interface access. Also gives access to the EPG.</p>
+<p><strong>Admin</strong>
+: Enables access to the Configuration tab.</p>
+<p><strong>Streaming</strong>
+: Enables access to streaming functionality for HTTP (web).</p>
+<p><strong>Advanced Streaming</strong>
+: Enables access to advanced streaming function for HTTP (web) - like
+direct service or whole MPEG-TS stream (mux)..</p>
+<p><strong>HTSP Streaming</strong>
+: Enables access to streaming for the HTSP protocol (Movian, Kodi etc.).</p>
+<p><strong>Streaming Profile</strong>
+: Specify a streaming profile to be used when this user logs in; use the
+(default) stream if not specified.</p>
+<p><strong>Limit Connections</strong>
+: If set, this will limit the number of concurrent streaming connections
+and DVR sessions a user is permitted to have. 0=disabled</p>
+<p><strong>Video Recorder</strong>
+: Enables access to all video recording functions. This also include
+administration of the auto recordings.</p>
+<p><strong>HTSP DVR</strong>
+: Enables access to video recording functions for the HTSP protocol
+(Movian, Kodi etc.).</p>
+<p><strong>All DVR</strong>
+: Enable to access to DVR entries created by other users (read-only).</p>
+<p><strong>All DVR (rw)</strong>
+: Enable to access to DVR entries created by other users with the ability
+to remove the DVR entries.</p>
+<p><strong>Failed DVR</strong>
+: Enable to access to DVR entries which were not succesfuly recorded.</p>
+<p><strong>DVR Config Profile</strong>
+: If set, the user will only be able to use the DVR config profile equal
+to this value. Note that this field is unset when the DVR Config Profile
+is removed.</p>
+<p><strong>Min Channel Num</strong>
+: If non-zero, this sets the lower limit of the channels accessible by a
+user, i.e. the user will only be able to access channels where the
+channel number is equal to or greater than this value.</p>
+<p><strong>Max Channel Num</strong>
+: If non-zero, this sets the upper limit of the channels accessible by a
+user, i.e. the user will only be able to access channels where the
+channel number is equal to or less than this value.</p>
+<p><strong>Channel Tag</strong>
+: If set, the user will only be able to access channels containing this
+channel tag. Note that this field is unset when the channel tag is
+removed.</p>
+<p><strong>Comment</strong>
+: Allows the administrator to set a comment only visible in this editor.
+It does not serve any active purpose.</p>
+<hr />
+<p>Let’s also take a look at an example:</p>
+<p><img alt="Access Entries Example" src="../docresources/accessconfigexample.png" /></p>
+<p>First line gives clients originating from 192.168.0.0 - 192.168.0.255
+network access to streaming functions. Typically you would use this for
+your local media players at home (All though Movian can prompt for
+username &amp; password in its HTSP client)</p>
+<p>The second line adds a user with world wide access who might want to
+modify recordings, etc, perhaps from the job, or mobile phone.</p>
+<p>The third line provide admin access to the ‘admin’ user. As an extra
+precaution this user is only allowed to log in from the home network.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../config_tvadapters/" class="btn btn-neutral float-right" title="TV Adapters"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../config_misc/" class="btn btn-neutral" title="General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../config_misc/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../config_tvadapters/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

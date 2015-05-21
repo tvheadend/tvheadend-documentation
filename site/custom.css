@@ -1,0 +1,22 @@
+/* Centre images - mkdocs theme */
+
+div.col-md-9 img {
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+/* Centre images - readthedocs theme */
+
+img {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 0px auto;
+}
+
+/* Suppress first heading in the ToC */
+
+li.toctree-l3:first-child {
+    display: none;
+}

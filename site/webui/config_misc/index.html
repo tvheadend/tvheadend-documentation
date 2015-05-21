@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>General - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webui/config_misc"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../configure_tvheadend/">Configure Tvheadend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../epg/">Electronic Program Guide Tab</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">General</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#configuration-general">Configuration - General</a></li>
+                
+                    <li><a class="toctree-l4" href="#editors-note-this-source-should-be-renamed-config_generalmd-with-corresponding-change-in-tvh-webui-js">EDITOR'S NOTE: THIS SOURCE SHOULD BE RENAMED CONFIG_GENERAL.MD WITH CORRESPONDING CHANGE IN TVH WEBUI JS.</a></li>
+                
+                    <li><a class="toctree-l4" href="#editors-note-the-two-images-below-should-be-replaced-with-a-single-one">EDITOR'S NOTE: THE TWO IMAGES BELOW SHOULD BE REPLACED WITH A SINGLE ONE.</a></li>
+                
+                    <li><a class="toctree-l4" href="#menu-barbuttons">Menu Bar/Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#language-settings">Language Settings</a></li>
+                
+                    <li><a class="toctree-l4" href="#dvb-scan-files-path">DVB Scan Files Path</a></li>
+                
+                    <li><a class="toctree-l4" href="#time-update">Time Update</a></li>
+                
+                    <li><a class="toctree-l4" href="#picons">Picons</a></li>
+                
+                    <li><a class="toctree-l4" href="#satip-server">SATIP Server</a></li>
+                
+                    <li><a class="toctree-l4" href="#image-caching">Image Caching</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_access/">Access Entries</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_networks/">Networks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_esfilter/">Video Stream Filters</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_caclient/">CAs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Configuration Tab &raquo;</li>
+        
+      
+    
+    <li>General</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configuration-general">Configuration - General</h2>
+<h4 id="editors-note-this-source-should-be-renamed-config_generalmd-with-corresponding-change-in-tvh-webui-js">EDITOR&rsquo;S NOTE: THIS SOURCE SHOULD BE RENAMED CONFIG_GENERAL.MD WITH CORRESPONDING CHANGE IN TVH WEBUI JS.</h4>
+<p>This tabs allow configuration of several general parameters that affect
+the core Tvheadend functionality.</p>
+<h4 id="editors-note-the-two-images-below-should-be-replaced-with-a-single-one">EDITOR&rsquo;S NOTE: THE TWO IMAGES BELOW SHOULD BE REPLACED WITH A SINGLE ONE.</h4>
+<p><img alt="'General' Tab Screenshot 1" src="../docresources/configgeneraltab1.png" /></p>
+<p><img alt="'General' Tab Screenshot 2" src="../docresources/configgeneraltab2.png" /></p>
+<hr />
+<h4 id="menu-barbuttons">Menu Bar/Buttons</h4>
+<p>The following functions are available:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Save configuration</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Clean image (icon) cache</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="language-settings">Language Settings</h4>
+<p><strong>Default Language(s)</strong>
+: Select the list of languages (in order of priority) to be used for
+  supplying EPG information to clients that don’t provide their own
+  configuration.</p>
+<p>The EPG information is NOT translated, this only applies to EPG
+providers that give information (titles, descriptions, etc..) in
+multiple languages.</p>
+<hr />
+<h4 id="dvb-scan-files-path">DVB Scan Files Path</h4>
+<p><strong>DVB scan files path</strong>
+: Select the path to use for DVB scan configuration files. Typically
+  dvb-apps stores these in <code>/usr/share/dvb/</code>. Leave blank to use Tvheadend&rsquo;s
+  internal file set.</p>
+<hr />
+<h4 id="time-update">Time Update</h4>
+<p>Tvheadend has a built-in capability to update the system time.
+However, you should bear in mind that DVB time is not highly
+accurate and is prone to both jitter and variation between different
+transponders.</p>
+<p>Where possible, it’s probably still better to use an internet based
+NTP source to synchronise the system clock (i.e. through the
+underlying operating system).</p>
+<p><strong>Update time</strong>
+: Enable system time updates. This will only work if the user running
+  Tvheadend has rights to update the system clock (normally only root).</p>
+<p><strong>Enable NTP driver</strong>
+: This will create an NTP driver (using shmem interface) that you can
+  feed into ntpd. This can be run without root privileges, but
+  generally the performance is not that great.</p>
+<p><strong>Update tolerance (milliseconds)</strong>
+: Only update the system clock (doesn’t affect NTP driver) if the
+  delta between the system clock and DVB time is greater than this.
+  This can help stop excessive oscillations on the system clock.</p>
+<hr />
+<h4 id="picons">Picons</h4>
+<p>Picons (from <em>p</em>ersonal <em>icons</em>) are collections of similar icons that
+can be automatically matched against your channels based on a number
+of technical parameters that will uniquely define a channel. The use
+of these parameters (e.g. mux, frequency, orbital position) removes
+the ambiguity of using names - it’s not case sensitive, it doesn’t
+care if there are spaces or not, and so on. You can generate picons
+yourself from existing images, or you can usually find sets pre-made
+on the Internet if you search for them. They’re a good way to get
+large numbers of icons matched quickly, and usually in a similar
+style (such as square, x * y pixels, with a consistent
+highlight/reflection effect).</p>
+<p><strong>Prefer picons over channel name</strong>
+: If both a picon and a channel-specific (e.g. channelname.jpg) icon
+  are defined, use the picon.</p>
+<p><strong>Channel icon path</strong>
+: Path to an icon for this channel. This can be named however you
+  wish, as either a local (<code>file://</code>) or remote (<code>http://</code>) image. The following
+  placeholders are available:</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%C</td>
+<td>the transliterated channel name in ASCII (safe characters, no spaces etc.)</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>the channel name (URL encoded ASCII)</td>
+</tr>
+</tbody>
+</table>
+<p>Example: <code>file:///tmp/icons/%C.png</code> or <code>http://example.com/%c.png</code></p>
+<p><strong>Picon path</strong>
+: Path to a directory (folder) containing your picon collection. This
+  can be named however you wish, as either a local (<code>file://</code>) or remote
+  (<code>http://</code>) location - however, remember that it’s pointing to a
+  directory as the picon names are automatically generated from the
+  service parameters frequency, orbital position, etc.).</p>
+<p>Example: <code>file:///home/hts/picons</code></p>
+<hr />
+<h4 id="satip-server">SAT&gt;IP Server</h4>
+<p>SAT&gt;IP Server is something like DVB network tuner. Tvheadend can
+forward mpegts input streams including on-the-fly descramling to SAT>IP
+clients.</p>
+<p>Only networks with the “SAT&gt;IP Source” field set are exported through
+the SAT&gt;IP protocol. This field is matched through the “src” parameter
+asked from the SAT&gt;IP client. Usually (and by default) this value is 1.
+For satellite tuners, this value determines the satellite source (dish).
+By specification position 1 = DiseqC AA, 2 = DiseqC AB, 3 = DiseqC BA, 4
+= DiseqC BB, but any numbers may be used - depends on the SAT>IP
+client. Note that if you use a similar number for multiple networks, the
+first matched network containing the mux with requested parameters will
+win (also for unknown mux).</p>
+<p><strong>RTSP Port</strong>
+: Select RTSP port (TCP) for realtime commands from SAT>IP clients.
+  Usually (as defined in the specification) this port is 554. But as
+  extension, Tvheadend can use any TCP port value (which is default 9983
+  for non-root users). But the SAT&gt;IP client must allow to set this value
+  (Tvheadend client will obtain the RTSP port number automatically using
+  the XML description). If the RTSP port value is zero, the SAT>IP server
+  functionality is not enabled.</p>
+<p><strong>Subscription Weight</strong>
+: Subscription weight value. Default value is 100 (standard streaming).
+  Note that the default value for DVR is 300 (normal priority).</p>
+<p><strong>Descramble Services</strong>
+: The maximum limit of services descrambled per a mux. If zero, the
+  descrambling functionality is disabled.</p>
+<p><strong>Muxes Handling</strong>
+: When SAT>IP client requests new mux configuration, Tvheadend can handle
+  it in three ways. The auto (0) configuration means that if the mux does
+  not exists, a temporary mux is created and removed when the client
+  closes the connection. The keep (1) configuration will remember all
+  successfuly scanned muxes. The reject (2) configuration will reject
+  unknown muxes.</p>
+<p><strong>Exported .... Tuners</strong>
+: Each option lists the tuners, by type, you wish to present over IP to other clients.</p>
+<hr />
+<h4 id="image-caching">Image Caching</h4>
+<p>This will cache any channel icons or other images (such as EPG metadata)
+to be served from the local webserver. This can be useful for
+multi-client systems and, generally, to reduce hits on upstream
+providers.</p>
+<p><strong>Enabled</strong>
+: Select whether or not to enable caching. Note: even with this disabled
+  you can still specify local (file://) icons and these will be served by
+  the built-in webserver.</p>
+<p><strong>Re-fetch period (hours)</strong>
+: How frequently the upstream provider is checked for changes.</p>
+<p><strong>Re-try period (hours)</strong>
+: How frequently it will re-try fetching an image that has failed to be
+  fetched.</p>
+<p><strong>Ignore invalid SSL certificates</strong>
+: Ignore invalid/unverifiable (expired, self-certified, etc.) certificates</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../config_access/" class="btn btn-neutral float-right" title="Access Entries"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../dvr_timerec/" class="btn btn-neutral" title="Time Schedules"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../dvr_timerec/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../config_access/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

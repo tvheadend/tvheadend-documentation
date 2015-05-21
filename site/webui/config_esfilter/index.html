@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Video Stream Filters - Tvheadend 4.0</title>
+  
+
+  <link rel="shortcut icon" href="../../images/favicon.png">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../custom.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webui/config_esfilter"
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tvheadend 4.0</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../scratch/">Scratchpad</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting Started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Before_you_begin/">Before you begin - some basic concepts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tuner_hardware/">Install your tuner hardware</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../install_tvheadend/">Install Tvheadend</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../configure_tvheadend/">Configure Tvheadend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Web Interface Guide</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../epg/">Electronic Program Guide Tab</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Digital Video Recorder Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_upcoming/">Upcoming/Current Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_finished/">Finished Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_failed/">Failed Recordings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_autorec/">DVR AutoRec Entries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dvr_timerec/">Time Schedules</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Configuration Tab</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_misc/">General</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_access/">Access Entries</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>DVB Inputs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvadapters/">TV Adapters</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_networks/">Networks</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxes/">Muxes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_services/">Services</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_muxsched/">Mux Schedulers</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Channel/EPG</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_channels/">Channel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tags/">Channel Tags</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_bouquet/">Bouquets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_epggrab/">EPG Grabber</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Stream</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_streamprofile/">Stream Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Video Stream Filters</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#configuration-stream-elementary-streams">Configuration - Stream - Elementary Streams</a></li>
+                
+                    <li><a class="toctree-l4" href="#screenshot-here">SCREENSHOT HERE</a></li>
+                
+                    <li><a class="toctree-l4" href="#menu-barbuttons">Menu Bar/Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#columns">Columns</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Recording</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_dvr/">Digital Video Recorder Profiles</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_timeshift/">Timeshift</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_caclient/">CAs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../config_tvhlog/">Debugging</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About Tab</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Appendices</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/faqs/">Appendix 1 - Frequently-asked Questions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/command_line_options/">Appendix 2 - Command-line Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/debugging/">Appendix 3 - Debugging Options</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../Appendices/doc_update/">Appendix 4 - Updating this documentation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about_project/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tvheadend 4.0</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Stream &raquo;</li>
+        
+      
+    
+    <li>Video Stream Filters</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ProfYaffle/tvheadend-documentation" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configuration-stream-elementary-streams">Configuration - Stream - Elementary Streams</h2>
+<p>This table defines rules to filter and order the elementary streams
+(PIDs) like video or audio from the input feed.
+The execution order of commands is granted. It means that first rule is
+executed for all available streams then second and so on.</p>
+<h4 id="screenshot-here">SCREENSHOT HERE</h4>
+<p>If any elementary stream is not marked as ignored or exclusive, it is
+used. If you like to ignore unknown elementary streams, add a rule to
+the end of grid with the any (not defined) comparisons and with the
+action ignore.</p>
+<p>The rules for different elementary stream groups (video, audio,
+teletext, subtitle, CA, other) are executed separately (as visually
+edited).</p>
+<p>For the visual verification of the filtering, there is a service info
+dialog in the Configuration / DVB Inputs / Services window . This dialog
+shows the received PIDs and filtered PIDs in one window.</p>
+<p>The rules are listed / edited in a grid.</p>
+<ul>
+<li>
+<p>To edit a cell, double click on it. After a cell is changed it will
+  flags one of its corner to red to indicated that it has been
+  changed. To commit these changes back to Tvheadend press the ‘Save
+  changes’ button. In order to change a Checkbox cell you only have to
+  click once in it.</p>
+</li>
+<li>
+<p>To add a new entry, press the ‘Add entry’ button. The new (empty)
+  entry will be created on the server but will not be in its enabled
+  state. You can now change all the cells to the desired values, check
+  the ‘enable’ box and then press ‘Save changes’ to activate the new
+  entry.</p>
+</li>
+<li>
+<p>To delete one or more entries, select the lines (by clicking once on
+  them), and press the ‘Delete selected’ button. A pop up will ask you
+  to confirm your request.</p>
+</li>
+<li>
+<p>To move up or down one or more entries, select the lines (by
+  clicking once on them), and press the ‘Move up’ or ‘Move down’
+  button.</p>
+</li>
+</ul>
+<hr />
+<h4 id="menu-barbuttons">Menu Bar/Buttons</h4>
+<p>The following functions are available:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Button</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="columns">Columns</h4>
+<p>The columns have the following functions:</p>
+<p><strong>Enabled</strong>
+: If selected, the rule will be enabled.</p>
+<p><strong>Stream Type</strong>
+:Select the elementary stream type to compare. Empty field means any.</p>
+<p><strong>Language</strong>
+: Select the language to compare. Empty field means any.</p>
+<p><strong>Service</strong>
+: The service to compare. Empty field means any.</p>
+<p><strong>CA Identification</strong>
+: The CAID to compare. Empty field means any.</p>
+<p><strong>CA Provider</strong>
+: The CA provider to compare. Empty field means any.</p>
+<p><strong>Stream Index</strong>
+: The logical stream index to compare. Note that this index is computed
+  using all filters. Example: If filter is set to AC3 audio type and the
+  language to ‘eng’ and there are two AC3 ‘eng’ streams in the service,
+  the first stream could be identified using number 1 and the second using
+  number 2.</p>
+<p><strong>PID</strong>
+: Program identification (PID) number to compare. Zero means any. This
+  comparison is processed only when service comparison is active and for
+  the Conditional Access filter.</p>
+<p><strong>Action</strong>
+: The rule action defines the operation when all comparisons succeeds.</p>
+<ul>
+<li>
+<p><strong>NONE</strong>
+: No action, may be used for the logging and a comparison verification.</p>
+</li>
+<li>
+<p><strong>USE</strong>
+: Use this elementary stream.</p>
+</li>
+<li>
+<p><strong>ONE_TIME</strong>
+: Use this elementary stream only one time per service type (like video,
+  audio, subtitles) and language. The first sucessfully compared rule
+  wins. For example, when one AC3 elementary stream is marked to be used
+  with ‘eng’ language and another rule with the ONE_TIME action was
+  matched, the new AC3 elementary stream will not be added if the language
+  for new AC3 elementary stream is ‘eng’. Note that the second rule might
+  not have the language filter (column) set.
+  For the CA filter, this rule means that the new CA elementary stream is
+  added only if another CA is not already used.</p>
+</li>
+<li>
+<p><strong>EXCLUSIVE</strong>
+: Use only this elementary stream. No other elementary streams will be
+  used.</p>
+</li>
+<li>
+<p><strong>EMPTY</strong>
+: Add this elementary stream only when no elementary streams are used from
+  previous rules.</p>
+</li>
+<li>
+<p><strong>IGNORE</strong>
+: Ignore this elementary stream. This stream is not used. Another
+  successfully compared rule with different action may override it.</p>
+</li>
+<li>
+<p><strong>Log</strong>
+: Write a short message to log identifying the matched parameters. It is
+useful for debugging your setup or structure of incoming streams.</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../config_dvr/" class="btn btn-neutral float-right" title="Digital Video Recorder Profiles"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../config_streamprofile/" class="btn btn-neutral" title="Stream Profiles"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../config_streamprofile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../config_dvr/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

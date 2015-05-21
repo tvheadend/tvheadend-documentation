@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://tvheadend.org/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://tvheadend.org/scratch/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://tvheadend.org/overview/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/Before_you_begin/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/install_tuner_hardware/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/install_tvheadend/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/configure_tvheadend/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://tvheadend.org/webui/epg/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/webui/about/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://tvheadend.org/Appendices/faqs/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/Appendices/command_line_options/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/Appendices/debugging/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://tvheadend.org/Appendices/doc_update/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>https://tvheadend.org/about_project/</loc>
+     <lastmod>2015-06-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>

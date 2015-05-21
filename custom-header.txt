@@ -1,0 +1,14 @@
+  <style type="text/css">
+    strong {font-weight: bold;}
+    em {font-style: italic;}
+    ol li {
+      list-style:decimal;}
+    ul li {
+      list-style:disc;}
+    ul ul li {
+      list-style:circle;}
+    ul, ol {
+      padding-left: 2em;}
+    p {
+      line-height: 200%;}
+  </style>

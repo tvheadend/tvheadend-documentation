@@ -1,0 +1,74 @@
+site_name: Tvheadend 4.0
+
+site_url: https://tvheadend.org
+
+repo_url: https://github.com/ProfYaffle/tvheadend-documentation
+
+copyright: (c) 2006 - 2015 Tvheadend Foundation CIC
+
+theme: readthedocs
+
+extra_css: 
+    - custom.css
+
+site_favicon: images/favicon.png
+
+markdown_extensions:
+    - smarty
+
+pages:
+    - Home: index.md
+    - Scratchpad: scratch.md
+    - Getting Started:
+        - Overview: overview.md
+        - Before you begin - some basic concepts: Before_you_begin.md
+        - Install your tuner hardware: install_tuner_hardware.md
+        - Install Tvheadend: install_tvheadend.md
+        - Configure Tvheadend: configure_tvheadend.md
+    - Web Interface Guide:
+        - Electronic Program Guide Tab: webui/epg.md
+        - Digital Video Recorder Tab:
+            - Upcoming/Current Recordings: webui/dvr_upcoming.md
+            - Finished Recordings: webui/dvr_finished.md
+            - Failed Recordings: webui/dvr_failed.md
+            - DVR AutoRec Entries: webui/dvr_autorec.md
+            - Time Schedules: webui/dvr_timerec.md
+        - Configuration Tab:
+            - General: webui/config_misc.md
+            - Access Entries: webui/config_access.md 
+            - DVB Inputs:
+                - TV Adapters: webui/config_tvadapters.md
+                - Networks: webui/config_networks.md
+                - Muxes: webui/config_muxes.md
+                - Services: webui/config_services.md
+                - Mux Schedulers: webui/config_muxsched.md
+            - Channel/EPG:
+                - Channel: webui/config_channels.md
+                - Channel Tags: webui/config_tags.md
+                - Bouquets: webui/config_bouquet.md
+                - EPG Grabber: webui/config_epggrab.md
+            - Stream:
+                - Stream Profiles: webui/config_streamprofile.md
+                - Video Stream Filters: webui/config_esfilter.md
+#                - Audio Stream Filters: webui/blank.md
+#                - Teletext Stream Filters: webui/blank.md
+#                - Subtitle Stream Filters: webui/blank.md
+#                - CA Stream Filters: webui/blank.md
+#                - Other Stream Filters: webui/blank.md
+            - Recording:
+                - Digital Video Recorder Profiles: webui/config_dvr.md
+                - Timeshift: webui/config_timeshift.md
+            - CAs: webui/config_caclient.md
+            - Debugging: webui/config_tvhlog.md
+#        - Status Tab:
+#            - Stream: webui/blank.md
+#            - Subscriptions: webui/blank.md
+#            - Connections: webui/blank.md
+#            - Service Mapper: webui/blank.md
+        - About Tab: webui/about.md
+    - Appendices:
+        - Appendix 1 - Frequently-asked Questions: Appendices/faqs.md
+        - Appendix 2 - Command-line Options: Appendices/command_line_options.md
+        - Appendix 3 - Debugging Options: Appendices/debugging.md
+        - Appendix 4 - Updating this documentation: Appendices/doc_update.md
+    - About: about_project.md
