@@ -8,14 +8,19 @@ Version: DRAFT-2015-06-02
 
 This document is intended to give you a high-level overview of how to set 
 up Tvheadend for the first time. It does not aim to provide a complete description
-of every step; instead, consult the on-line (web interface) help as you 
-set things up, as there is much more information in those pages that will
-help you with specific configuration issues.
+of every step or answer every question: more details are available on the
+tvheadend [wiki](https://tvheadend.org/projects/tvheadend/wiki).
 
-Think of this as the map on how to get there, not the instruction manual about how to drive.
+As you set things up, consult the on-line (web interface) help as well.
+Tvheadend includes copies of many of these pages in the application, which
+is easier to find when you're wondering what to do next.
+
+If you get really stuck, there's the [forum](https://tvheadend.org/projects/tvheadend/boards)
+and IRC (*#hts* on *freenode* - [Kiwi IRC](https://kiwiirc.com/) is a good web
+client if you don't already have an IRC client installed).
 
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If we can include the web help in this document as well, then the above
-obviously falls into the category of 'not really true any more'.</p>
+<p class="admonition-title">A Moving Target!</p>
+<p>This document has many holes, and is very much a work-in-progress. Please
+forgive any holes, and please help us to fill them in if you can.</p>
 </div>
