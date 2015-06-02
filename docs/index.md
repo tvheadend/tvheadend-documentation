@@ -2,7 +2,7 @@
 
 ![Tvheadend Logo](images/tvhlogo.png)
 
-Version: DRAFT-2015-06-01
+Version: DRAFT-2015-06-02
 
 #Purpose
 

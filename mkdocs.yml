@@ -71,4 +71,5 @@ pages:
         - Appendix 2 - Command-line Options: Appendices/command_line_options.md
         - Appendix 3 - Debugging Options: Appendices/debugging.md
         - Appendix 4 - Updating this documentation: Appendices/doc_update.md
+        - Appendix 5 - Markdown Cribsheet: Appendices/markdown_cribsheet.md
     - About: about_project.md
