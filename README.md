@@ -18,6 +18,6 @@ Version: DRAFT
 
 Produced in [markdown](https://daringfireball.net/projects/markdown)(see [Wikipedia](https://en.wikipedia.org/wiki/Markdown) for further information) and converted with [mkdocs](http://www.mkdocs.org/).
 
-Documentation hosted on [github](https://github.com/ProfYaffle/tvheadend-documentation)
+Documentation hosted on [github](https://github.com/tvheadend/tvheadend-documentation)
 
 Live user guide hosted on [docs.tvheadend.org](http://docs.tvheadend.org) - live site, breakage likely.
