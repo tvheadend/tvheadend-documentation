@@ -17,9 +17,11 @@ markdown_extensions:
     - smarty
 
 pages:
-    - Home: index.md
-    - Getting Started:
+    - Introduction:
+        - index.md
         - Overview: overview.md
+        - Features: features.md
+    - Getting Started:
         - Before you begin - some basic concepts: Before_you_begin.md
         - Install your tuner hardware: install_tuner_hardware.md
         - Install Tvheadend: install_tvheadend.md

@@ -20,9 +20,15 @@ Please use github's features if you want to provide patches. Contributions and i
 
 ###Basic Requirements
 
-Tvheadend runs on **Linux** - pre-built binaries are available for most 
-Debian-based distributions (Debian itself, Ubuntu, Mint...) and RPMs for
-Fedora.
+It's perfectly possible to install and run Tvheadend as a single-seat installation,
+with the software running on the same system as any client software (e.g. Kodi),
+with all files stored locally. Alternatively, you can run Tvheadend on a server,
+perhaps on an always-on system that houses your media, perhaps on a dedicated
+low-power system - it's your choice.
+
+Wherever you install it, Tvheadend runs on **Linux** - pre-built binaries
+are available for most Debian-based distributions (Debian itself, Ubuntu,
+Mint...) and RPMs for Fedora. It runs on both x86 and ARM processors.
 
 You will only need **c. 30MB disk space** for the application and associated
 files, and maybe anything up to **1GB** for your configuration - depending on 
@@ -42,6 +48,7 @@ for, though, as a GUI will drain your system as will any serious file serving.
 And, of course, you'll need one or more **TV tuners** if you want to receive
 regular broadcast television - otherwise, you're limited to IP sources.
 
-It's perfectly possible to install and run Tvheadend as a single-seat installation,
-with the software running on the same system as any client software (e.g. Kodi),
-with all files stored locally.
+###How Lightweight?
+
+How about on a router? Take a look at this recent (as of the time of writing)
+[example](https://tvheadend.org/boards/4/topics/16579) from one of our users...
