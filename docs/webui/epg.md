@@ -70,6 +70,69 @@ Button              | Function
 
 ---
 
+####Columns
+
+The columns have the following functions:
+
+**Details**
+: Displays the current status of a recording event for this programme if 
+  one applies: 
+  
+  > **Clock icon**: the programme is scheduled for recording
+  
+  > **Red circle/recording icon**: the programme is currently recording
+  
+  > You can also click on the information icon to call up more detailed
+  information about an event.
+
+**Progress**
+: A bar graph display of how far through a programme we currently are.
+
+**Title**
+: The title of the programme. *You can automatically set a filter to the
+  value of this field by clicking on it (e.g. click on 'Daily News' will
+  automatically filter the whole grid to only show programmes with the same
+  name).*
+
+**SubTitle**
+: The subtitle of the programme, if gien by your EPG provider. Note that some
+  (notably, UK) providers use this for a programme synopsis instead of a true
+  subtitle.
+
+**Episode**
+: Episode number, if given by your EPG provider.
+
+**Start Time**
+: The scheduled start time of the programme.
+
+**End Time**
+: The scheduled end time of the programme.
+
+**Duration**
+: The scheduled duration (i.e. start time to end time) of the programme. 
+
+**Number**
+: The channel number of the broadcasting channel, if defined.
+
+**Channel**
+: The name of the broadcasting channel. *You can automatically set a filter to the
+  value of this field by clicking on it (e.g. click on 'Channel 4 HD' will
+  automatically filter the whole grid to only show programmes from that channel).*
+
+**Stars**
+: text
+
+**Age**
+: text
+
+**Content Type**
+: Any content/genre information as provided by the EPG provider. *You can
+  automatically set a filter to the value of this field by clicking on it
+  (e.g. click on 'Movie/Drama' will automatically filter the whole grid
+  to only show programmes of the same type).*
+
+---
+
 ####Event details and recording
 
 If you click on a single event, a popup will display detailed

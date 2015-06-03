@@ -3,7 +3,7 @@
 Mux Schedulers enable Tvheadend to automatically play channels. This is
 useful to get EPG, services or access rights updates.
 
-!['Mux Schedulers' Tab](docresources/configdvbmuxsched.png)
+##EDITOR'S NOTE: Need screenshot for main tab here
 
 ---
 
@@ -20,6 +20,8 @@ Button            | Function
 **Edit**          | Edit an existing mux scheduler.
 **Hide <option>** | ??????. Options are Parent Disabled, All, None
 **Help**          | Displays this help page. 
+
+!['Mux Schedulers \'Add\' Dialog' Tab](docresources/configdvbmuxsched.png)
 
 ---
 
