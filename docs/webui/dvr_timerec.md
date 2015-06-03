@@ -17,11 +17,12 @@ The following functions are available:
 
 Button     | Action
 ---------- | -------
+**Save**   | Save any changes made to the recording rule list.
+**Undo**   | Undo any changes made to the recording rules list since the last save (changes are marked with a small red triangle).
 **Add**    | Add and configure a recording rule - define the channel, schedule, DVR configuration, priority, etc.
-**Delete** |  Delete an existing recording rule.
-**Edit**   |Manually edit an existing recording rule. This uses the same fields as Add, but they’re pre-populated with their current values.
-**Save**   |Saves any changes made to the recording rule list.
-**Undo**   |Undoes any changes made to the recording rules list (any changed fields will be marked with a small red triangle).
+**Delete** | Delete an existing recording rule.
+**Edit**   | Manually edit an existing recording rule. This uses the same fields as Add, but they’re pre-populated with their current values.
+**Help**   | Display this help page.
 
 ---
 
@@ -66,7 +67,7 @@ to record.
 
 **Week Days**
 : On which specific days of the week you wish this rule to be active (e.g.
-only record channel XXX at xx:yy on Saturdays and Sundays).
+*only record channel XXX at xx:yy on Saturdays and Sundays*).
 
 **Start**
 : Start recording at this time.
@@ -75,8 +76,9 @@ only record channel XXX at xx:yy on Saturdays and Sundays).
 : Stop recording at this time.
 
 **Priority**
-The priority of any recordings set because of this rule: important,
-high, normal, low, unimportant.
+: The priority of any recordings set because of this rule: in descending 
+priority, values are *important*, *high*, *normal*, *low*, and *unimportant*.
+Higher-priority events will take precedence and cancel lower-priority events.
 
 **DVR Configuration**
 : The DVR configuration (e.g. extra start/stop time, post-processing

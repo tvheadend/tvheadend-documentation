@@ -12,6 +12,10 @@ based on start time.
 
 ---
 
+####Menu Bar/Buttons
+
+The following functions are available:
+
 ####Filtering (or searching)
 
 In the EPG top tool bar you can access five input fields. These are used
@@ -30,12 +34,12 @@ Filter                     | Function
 *Title*, *Channel*, *Tag* and *Content Type* are dependent on your configuration and on what your 
 broadcaster sends. Options for the *Duration* are as follows:
 
-Filter Range | Example Purpose
--------------|----------------
-00:00:01 to 00:15:00 | Very short news bulletins, children's programmes, etc.
-00:15:01 to 00:30:00 | Short programmes, e.g. daily soap operas
-00:30:01 to 01:30:00 | Medium-length programmes, e.g. documentaries
-01:30:01 to 03:00:00 | Longer programmes, e.g. films
+Filter Range           | Example Purpose
+-----------------------|----------------
+00:00:01 to 00:15:00   | Very short news bulletins, children's programmes, etc.
+00:15:01 to 00:30:00   | Short programmes, e.g. daily soap operas
+00:30:01 to 01:30:00   | Medium-length programmes, e.g. documentaries
+01:30:01 to 03:00:00   | Longer programmes, e.g. films
 03:00:00 to no maximum | Very long programmes, e.g. major sporting events
 
 So, if you only want to see Movies from your available HD channels, you
@@ -52,6 +56,17 @@ You can clear an individual filter by simply deleting its contents, or
 by selecting *‘(Clear filter)’* as appropriate on all except the title
 filter. If you want to clear all filters, just press the *[Reset All]*
 button.
+
+####Buttons
+
+The following buttons are also available:
+
+Button              | Function
+--------------------|----------
+**Reset All**       | Clears all search filters.
+**Watch TV**        | Launches Live TV via the VLC plugin (see below).
+**Create Autorec**  | Creates an auto-recording rule based on the current filter criteria (see below).
+**Help**            | Display this help page.
 
 ---
 

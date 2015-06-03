@@ -11,13 +11,15 @@ Channels.
 
 The following functions are available:
 
-Button       | Function
--------------|---------
-**Save**     |
-**Undo**     |
-**Edit**     |
-**Hide**     |
-**Map all**  |
+Button            | Function
+------------------|---------
+**Save**          | Save any changes made to the services.
+**Undo**          | Undo any changes made to the services since the last save (changes are marked by a small red triangle).
+**Delete**        | Delete an existing service. 
+**Edit**          | Edit an existing service.
+**Hide <option>** | ??????. Options are Parent Disabled, All, None
+**Map all**       | Map all services to channels. You will be prompted to include/exclude e.g. encrypted channels.
+**Help**          | Displays this help page. 
 
 ---
 

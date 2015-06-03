@@ -12,52 +12,54 @@ The following functions are available:
 
 Button       | Function
 -------------|----------
-**Delete**   | If clicked delete selected failed recordings you delete recordings. Before deleted show message: _Do you really want to delete the selection ?_ Answer Yes or No.
-**Download** | Click this button to download the selected failed recordings to a local disk. You will be prompted to select the path for the saved file(s).
-
+**Delete**   | Delete the selected finished recording records **<u>and associated files</u>**. You will be prompted for confirmation.
+**Download** | Download the selected finished recordings to local disk. You will be prompted to select the path for the saved file(s).
+**Help**     | Display this help page.
 
 ---
 
 ####Columns
 
-The columns have the following functions:
+The columns provide the following functions:
 
 **Details**
-: Show red status and blue icon “i”. After click on icon “i” you see info
-about select failed recordings.
+: Displays a red warning 'failed' status and a blue information (“i”) icon. 
+  Click on the information icon to see further information about the selected
+  recordings.
 
 ![Failed Recording Details](docresources/failedrecordings2.png)
 
 **Play**
-: Can play selected record in web browser by VLC Plugin or other external
-player.
+: Play the selected recording in your browser via the VLC Plugin or some
+  other external player (dependent on there being enough of the failed
+  recording to play, of course).
 
 **Title**
-: Showing title of record.
+: The title of the recording.
 
 **Episode**
-: Showing number episod of record.
+: The episode number of the record.
 
 **Scheduled Start Time**
-: Showing date and time when the recording was started.
+: The date and time when the recording was started.
 
 **Scheduled Stop Time**
-: Showing date and time when the recording was stoped.
+: The date and time when the recording was stopped.
 
 **Duration**
-: Showing how long it took the recording.
+: The total duration of the recording.
 
 **File Size**
-: Showing size of file recording.
+: The size of the recording file on disk.
 
 **Channel Name**
-: Showing the name of the channel from which the recording was made.
+: The name of the channel from which the recording was made.
 
 **Creator**
-: Showing the name of the user who created the recording.
+: The name of the user who created the recording.
 
 **Schedule Status**
-: Showing the status info of record.
+: The status information of the recording.
 
 **URL**
-: Showing the URL of record.
+: The URL of the recording.

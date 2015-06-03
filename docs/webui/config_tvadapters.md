@@ -2,10 +2,6 @@
 
 The adapters and tuners are listed and edited in a tree.
 
-To edit an item, click on it. To commit edited changes back to
-Tvheadend press the ‘Save’ button. In order to change a Checkbox
-cell you only have to click once in it.
-
 !['TV Adapters' Tab Screenshot](docresources/configtvadapters.png)
 
 ---
@@ -16,8 +12,8 @@ The following functions are available:
 
 Button         | Function
 ---------------|---------
-**Save**       |
-**Help**       |
+**Save**       | Save the current TV adapter configuration.
+**Help**       | Display this help page.
 
 ---
 
@@ -42,25 +38,27 @@ Button         | Function
 ####Advanced Settings
 
 **Priority**
-: The tuner priority value (higher value = higher priority to use this
-  tuner).
+: The tuner priority value (a higher value means to use this tuner out
+  of preference).
 
 **Streaming Priority**
 : The tuner priority value for streamed channels through HTTP or HTSP
-  (higher value = higher priority to use this tuner). If not set
+  (a higher value means to use this tuner out of preference). If not set
   (zero), the standard priority value is used.
 
 **Init Scan**
 : Allow the initial scan tuning on this device (scan when Tvheadend
-  starts). See to Skip initial Scan in the network settings for the
-  further description.
+  starts). See *Skip Initial Scan* in the network settings for further
+  details.
 
 **Idle Scan**
-: Allow the idle scan tuning on this device.
+: Allow idle scan tuning on this device.
 
 **Linked Input**
-: Always make alive also the linked input. The subscriptions are named
-  as “keep”.
+: Wake up the linked input whenever this adapter is used. The subscriptions
+  are named as “keep”. *Note that this isn't normally needed, and is here
+  simply as a workaround to driver bugs in certain dual tuner cards that 
+  otherwise lock the second tuner*.
 
 ---
 
@@ -70,34 +68,36 @@ Button         | Function
 : If enabled, allows the tuner to go to sleep when idle.
 
 **Tune Before DiseqC**
-: If set, one tune request (setup) is proceed before the DiseqC
+: If set, one tune request (setup) is sent before the DiseqC
   sequence (voltage, tone settings). Some linux drivers require this
   procedure.
 
 **Tune Repeats**
-: If set, the tune requests are repeated using this number. Zero means
-  one tune requests, one two tune requests etc.
+: Number of repeats for the tune requests (default is zero - no repeats).
+  *Note: this represents the number of repeats, not the number of requests -
+  so 0 means 'send once: don't repeat', 1 means 'send twice: send once, 
+  then send one repeat', etc.*
 
 **Skip Initial Bytes**
-: If set, first bytes from the MPEG-TS stream are discarded. It may be
-  required for some drivers / hardware which does not flush completely
-  the MPEG-TS buffers after a frequency/parameters change.
+: If set, the first bytes from the MPEG-TS stream are discarded. It may be
+  required for some drivers or hardware which do not flush completely
+  the MPEG-TS buffers after a frequency/parameter change.
 
 **Input Buffer (Bytes)**
-: By default, linuxdvb input buffer is 18800 bytes long. The accepted
+: By default, linuxdvb's input buffer is 18800 bytes long. The accepted
   range is 18800-1880000 bytes.
 
 **Status Period**
-: By default, linuxdvb status read period is 1000ms (one second). The
-  accepted range is 250ms to 8000ms. Note that for some hardware /
-  drivers (like USB), the status operations takes too much time and
+: By default, linuxdvb's status read period is 1000ms (one second). The
+  accepted range is 250ms to 8000ms. Note that for some hardware or
+  drivers (like USB), the status operations take too much time and
   CPU. In this case, increase the default value. For fast hardware,
-  this value might be descreased to make the decision of the re-tune
+  this value might be decreased to make the decision of the re-tune
   algorithm based on the signal status faster.
 
 **Force old status**
 : Always use the old ioctls to read the linuxdvb status (signal
-  strength, SNR, error counters). Some drivers are not matured enough
+  strength, SNR, error counters). Some drivers are not mature enough
   to provide the correct values using the new v5 linuxdvb API.
 
 ---
@@ -105,26 +105,28 @@ Button         | Function
 ####LinuxDVB Satellite Config Rows
 
 **DiseqC repeats**
-: Number of repeats for the DiseqC commands (default is zero - no
-  DiseqC repeats).
+: Number of repeats for the DiseqC commands (default is zero - no DiseqC
+  repeats). *Note: this represents the number of repeats, not the number
+  of requests - so 0 means 'send once: don't repeat', 1 means 'send twice:
+  send once, then send one repeat', etc.*
 
 **Full DiseqC**
-: Always sent the whole DiseqC sequence including LNB setup (voltage,
-  tone). If this is not checked, only changed settings is set. It may
+: Always send the whole DiseqC sequence including LNB setup (voltage,
+  tone). If this is not checked, only changed settings are sent, which may
   cause issues with some drivers. If the tuning is not reliable, try
-  to activate this option.
+  activating this option.
 
 **Turn off LNB when idle**
 : Turn off LNB when it is not used. It may save some power.
 
 **Switch Then Rotor**
-: If the DiseqC switch is before rotor (tuner - switch - rotor),
-  enable this.
+: If the DiseqC switch is located before the rotor (i.e. tuner - switch -
+  rotor), enable this.
 
 **Init Rotor Time (seconds)**
-: Upon new start, tvheadend does not know the last rotor position.
-  This value defined the initial rotor movement. TVHeadend waits the
-  specified seconds when the first movement is requested.
+: Upon start, Tvheadend doesn't know the last rotor position. This value
+  defines the initial rotor movement. TVHeadend waits the specified time
+  when the first movement is requested.
 
 **Min Rotor Time (seconds)**
 : The minimum delay after the rotor movement command is send.
@@ -183,16 +185,16 @@ Button         | Function
   > incompatible parameters (position, polarization, lo-hi).
 
 **Next tune delay in ms (0-2000)**
-: The delay before tuning in milliseconds after tuner stop. If the
-  time after previous start and next start is greater than this
-  value - the delay is not applied.
+: The minimum delay before tuning in milliseconds after tuner stop. If the
+  time between the previous and next start is greater than this value
+  then the delay is not applied.
 
 **Send full PLAY cmd**
 : Send the full RTSP PLAY command after full RTSP SETUP command. Some
-  device firmwares require this to get MPEG-TS stream.
+  device firmware require this to get an MPEG-TS stream.
 
 **Override tuner count**
-: Force tvheadend to see a specific number of tuners.
+: Force Tvheadend to see a specific number of tuners.
 
   > Some devices, notably AVM’s FRITZ!Box Cable 6490, report wrong number of tuners
   > and this setting allows you to override that. Any value below 1 or

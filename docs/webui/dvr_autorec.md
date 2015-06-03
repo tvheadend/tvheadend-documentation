@@ -17,11 +17,12 @@ The following functions are available:
 
 Button       | Function
 -------------|----------
+**Save**     | Save any changes made to the recording rule list.
+**Undo**     | Undo any changes made to the recording rules list since the last save (changes are marked with a small red triangle).
 **Add**      | Add and configure a recording rule - define the channel, schedule, DVR configuration, priority, etc.
 **Delete**   | Delete an existing recording rule.
 **Edit**     | Manually edit an existing recording rule. This uses the same fields as **Add**, but they’re pre-populated with their current values.
-**Save**     | Saves any changes made to the recording rule list.
-**Undo**     | Undoes any changes made to the recording rules list (any changed fields will be marked with a small red triangle).
+**Help**     | Display this help page.
 
 ---
 
@@ -42,7 +43,7 @@ the base directory) specified by the DVR configuration and puts all
 recordings done by this entry into the specified subdirectory. 
 
 > Useful for e.g. recording multiple different news broadcasts into one common
-> subdirectory called “News”. The backshlash and other special characters
+> subdirectory called “News”. The backslash and other special characters
 > are escaped, so it is possible to create only one sublevel
 > subdirectories (the base path for the target directory is always taken
 > from the DVR configuration).
@@ -64,8 +65,8 @@ to record.
 : A channel tag (e.g. a group of channels) on which this rule applies.
 
 **Content Type**
-: The content type (Movie/Drama, Sports…) to be used to filter matching
-events/programmes.
+: The content type (*Movie/Drama*, *Sports*, etc.) to be used to filter
+matching events/programmes.
 
 **Minimal Duration**
 : The minimal duration of a matching event - in other words, only match
@@ -87,8 +88,9 @@ be matched (including boundary values).
 be matched (including boundary values).
 
 **Priority**
-: The priority of any recordings set because of this rule: important,
-high, normal, low, unimportant.
+: The priority of any recordings set because of this rule: in descending 
+priority, values are *important*, *high*, *normal*, *low*, and *unimportant*.
+Higher-priority events will take precedence and cancel lower-priority events.
 
 **DVR Configuration**
 : The DVR configuration (e.g. extra start/stop time, post-processing

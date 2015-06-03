@@ -1,31 +1,14 @@
 ##Configuration - Access Entries
 
-Setting up access control is an important initial step as **the system
-initially is wide open**. 
+Setting up access control is an important initial step as **<u>the system
+is initially wide open</u>**. 
 
-When Tvheadend verifies access is scan through all the enabled access
-control entries. The permission flags, streaming profiles, DVR config
-profiles, channel tags are combined for all matching access entries. An
-access entry is said to match if the username / password matches and the
-IP source address of the requesting peer is within the prefix.
-
-The access rules are listed / edited in a grid.
-
-* To edit a cell, double click on it. After a cell is changed it will
-  flags one of its corner to red to indicated that it has been
-  changed. To commit these changes back to Tvheadend press the ‘Save
-  changes’ button. In order to change a Checkbox cell you only have to
-  click once in it.
-
-* To add a new entry, press the ‘Add entry’ button. The new (empty)
-  entry will be created on the server but will not be in its enabled
-  state. You can now change all the cells to the desired values, check
-  the ‘enable’ box and then press ‘Save changes’ to activate the new
-  entry.
-
-* To delete one or more entries, select the lines (by clicking once on
-  them), and press the ‘Delete selected’ button. A popup will ask you
-  to confirm your request.
+Tvheadend verifies access by scanning through all enabled access control
+entries in sequence, from the top of the list to the bottom. The permission
+flags, streaming profiles, DVR config profiles, channel tags and so on are
+combined for all matching access entries. An access entry is said to match
+if the username / password matches and the IP source address of the
+requesting peer is within the prefix.
 
 !['Access Entries' Tab](docresources/accessconfig.png)
 
@@ -37,13 +20,14 @@ The following functions are available:
 
 Button         | Function
 ---------------|---------
-**Save**       |
-**Undo**       |
-**Add**        |
-**Delete**     |
-**Move up**    |
-**Move down**  |
-**Edit**       |
+**Save**       | Save any changes made to the access rules.
+**Undo**       | Undo any changes made to the access rules since the last save (changes are marked by a small red triangle).
+**Add**        | Add a new access rule.
+**Delete**     | Delete the selected access rule.
+**Move up**    | Move the selected rule up one level (rules are executed top to bottom).
+**Move down**  | Move the selected rule down one level (rules are executed top to bottom).
+**Edit**       | Edit the selected access rule.
+**Help**       | Display this help page.
 
 ---
 
@@ -56,15 +40,15 @@ The columns have the following functions:
 
 **Username**
 : Login name to be used. If no username is required, this entry should
-contain a single asterisk (\*).
+contain a single asterisk (`*`).
 
 **Password**
-: Login password to be used. If username is ‘\*’ (unused), the password
+: Login password to be used. If username is `*` (unused), the password
 should be the same (i.e. match any username/password combination, or no
 username/password required).
 
 **Network prefix**
-: IPv4 prefix for matching based on source IP address. If set to 0.0.0.0/0
+: IPv4 prefix for matching based on source IP address. If set to `0.0.0.0/0`
 it will match everything. The multiple networks can be delimited using
 comma or semicolon.
 
@@ -140,13 +124,13 @@ Let’s also take a look at an example:
 
 ![Access Entries Example](docresources/accessconfigexample.png)
 
-First line gives clients originating from 192.168.0.0 - 192.168.0.255
-network access to streaming functions. Typically you would use this for
-your local media players at home (All though Movian can prompt for
-username & password in its HTSP client)
+The first line gives clients originating from *192.168.0.0 - 192.168.0.255*
+network access to streaming functions. Typically, you would use this for
+your local media players at home (Although Movian can prompt for username
+and password in its HTSP client)
 
 The second line adds a user with world wide access who might want to
-modify recordings, etc, perhaps from the job, or mobile phone.
+modify recordings, etc., perhaps from their workplace or via a mobile 'phone.
 
-The third line provide admin access to the ‘admin’ user. As an extra
+The third line provide admin access to an *admin* user. As an extra
 precaution this user is only allowed to log in from the home network.

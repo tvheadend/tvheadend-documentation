@@ -23,13 +23,15 @@ and parts of south Asia
 
 The following functions are available:
 
-Button     | Function
------------|---------
-**Add**    | Add a new network. You can choose from any of the types described above.
-**Delete** | Delete an existing network. This will also remove any association with an adapter.
-**Edit**   | Edit an existing network. This allows you to change any of the parameters you’d otherwise set when adding a new network, e.g. network discovery, idle scan, etc. - similar to using the check boxes to enable/disable functions.
-**Save**   | Saves any changes.
-**Undo**   | Undoes any changes.
+Button         | Function
+---------------|---------
+**Save**       | Save any changes made to the network configuration.
+**Undo**       | Undo any changes made to the network configuration since the last save (changes are marked by a small red triangle).
+**Add**        | Add a new network. You can choose from any of the types described above.
+**Delete**     | Delete an existing network. This will also remove any association with an adapter.
+**Edit**       | Edit an existing network. This allows you to change any of the parameters you’d otherwise set when adding a new network, e.g. network discovery, idle scan, etc. - similar to using the check boxes to enable/disable functions.
+**Force Scan** | Force a new scan (i.e. scan all muxes for services) for the selected networks.
+**Help**       | Displays this help page. 
 
 ---
 

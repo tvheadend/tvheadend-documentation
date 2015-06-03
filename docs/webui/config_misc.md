@@ -19,8 +19,10 @@ The following functions are available:
 
 Button                       | Function
 -----------------------------|---------
-**Save configuration**       |
-**Clean image (icon) cache** |
+**Save configuration**       | Save any changes to the current configuration.
+**Clean image (icon) cache** | Clears the local channel icon cache, forcing images to be re-generated from sources (channel icons or picons).
+**Discover SAT>IP servers**  | Forces a scan for any SAT>IP servers on the local network.
+**Help**                     | Displays this help page
 
 ---
 

@@ -12,12 +12,13 @@ The following functions are available:
 
 Button     | Function
 -----------|----------
+**Save**   | Saves any changes made to the recording list.
+**Undo**   | Undo any changes made since the last save (changes are marked by a small red triangle).
 **Add**    | Add and configure a recording event by hand as opposed to choosing something from the EPG. This is useful if you wish to record something that isn’t yet in the EPG, or record at a particular time that perhaps spans several EPG events.
-**Delete** | If clicked delete selected upcoming/current recordings you delete recordings. Before deleted show message: Do you really want to delete the selection ? Answer Yes or No.
+**Delete** | Delete the selected recording event. You will be prompted for confirmation.
 **Abort**  | Abort an already-underway recording. Note that this does not remove the (partial) recording file from disk.
 **Edit**   | Manually edit an already-scheduled recording event. This uses the same fields as **Add**, but they’re obviously pre-populated with their current values.
-**Save**   | Saves any changes made to the recording list.
-**Undo**   | Undoes any changes made to the recording list.
+**Help**   | Display this help page.
 
 ---
 

@@ -14,14 +14,15 @@ so an IP address, in effect.
 
 The following functions are available:
 
-Button       | Function
--------------|---------
-**Save**     |
-**Undo**     |
-**Add**      |
-**Delete**   |
-**Edit**     |
-**Hide**     |
+Button            | Function
+------------------|---------
+**Save**          | Save any changes made to the mux configuration.
+**Undo**          | Undo any changes made to the mux configuration since the last save (changes are marked by a small red triangle).
+**Add**           | Add a new mux.
+**Delete**        | Delete an existing mux. 
+**Edit**          | Edit an existing mux. This allows you to change any of the parameters you’d otherwise set when adding a new mux, e.g. delivery system, frequency, polarisation, etc.
+**Hide <option>** | ??????. Options are Parent Disabled, All, None
+**Help**          | Displays this help page. 
 
 ---
 
