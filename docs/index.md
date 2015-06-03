@@ -2,7 +2,15 @@
 
 ![Tvheadend Logo](images/tvhlogo.png)
 
-Version: DRAFT-2015-06-02
+**Version: <font color=red>DRAFT</font>**
+
+**Last Updated: <font color=red>2015-06-03</font>**
+
+<div class="admonition note">
+<p class="admonition-title">A Moving Target!</p>
+<p>This document has many holes, and is very much a work-in-progress. Please
+forgive any errors, omissions or inaccuracies, and please help us to fill them in if you can.</p>
+</div>
 
 #Purpose
 
@@ -16,11 +24,5 @@ Tvheadend includes copies of many of these pages in the application, which
 is easier to find when you're wondering what to do next.
 
 If you get really stuck, there's the [forum](https://tvheadend.org/projects/tvheadend/boards)
-and IRC (*#hts* on *freenode* - [Kiwi IRC](https://kiwiirc.com/) is a good web
-client if you don't already have an IRC client installed).
-
-<div class="admonition note">
-<p class="admonition-title">A Moving Target!</p>
-<p>This document has many holes, and is very much a work-in-progress. Please
-forgive any holes, and please help us to fill them in if you can.</p>
-</div>
+and IRC (*#hts* on *freenode*) - [Kiwi IRC](https://kiwiirc.com/) is a good web
+client if you don't already have an IRC client installed.
