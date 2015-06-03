@@ -25,6 +25,7 @@ pages:
         - Install Tvheadend: install_tvheadend.md
         - Configure Tvheadend: configure_tvheadend.md
     - Web Interface Guide:
+        - General: webui_general.md
         - Electronic Program Guide Tab: webui/epg.md
         - Digital Video Recorder Tab:
             - Upcoming/Current Recordings: webui/dvr_upcoming.md
