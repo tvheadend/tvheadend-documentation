@@ -20,9 +20,10 @@ pages:
     - Introduction:
         - index.md
         - Overview: overview.md
+        - Basic Requirements: basic_requirements.md
         - Features: features.md
     - Getting Started:
-        - Before you begin - some basic concepts: Before_you_begin.md
+        - Before you begin - some basic concepts: before_you_begin.md
         - Install your tuner hardware: install_tuner_hardware.md
         - Install Tvheadend: install_tvheadend.md
         - Configure Tvheadend: configure_tvheadend.md

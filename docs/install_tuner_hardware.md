@@ -1,4 +1,4 @@
-##Install The Tuner Hardware
+##Install Your Tuners
 
 This section will give you some basic ideas on how to get your tuner working
 with your operating system. However, it's clearly way beyond the scope of

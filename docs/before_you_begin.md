@@ -20,7 +20,7 @@ sends to the tuner upon initialisation. This is the cause of more problems
 than you'd imagine... if you find yourself in trouble, this is the first
 thing to check along with kernel support for your hardware.
 
-###Application/tvheadend Fundamentals
+###Application/Tvheadend Fundamentals
 
 The Tvheadend software then sets up a series of configuration elements, and
 the way in which these interact determines how a TV signal ends up in front
