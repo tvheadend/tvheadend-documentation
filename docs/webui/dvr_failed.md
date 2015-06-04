@@ -23,9 +23,11 @@ Button       | Function
 The main grid items have the following functions:
 
 **Details**
-: Displays a red warning 'failed' status and a blue information (“i”) icon. 
-  Click on the information icon to see further information about the selected
-  recordings.
+: Shows the status of the recording event:
+
+* <img class = iconimg src="../icons/exclamation.png" alt="exclamation icon"> - the recording has failed.
+
+* <img class = iconimg src="../icons/information.png" alt="Information icon"> - displays detailed information about the selected recording.
 
 ![Failed Recording Details](docresources/failedrecordings2.png)
 

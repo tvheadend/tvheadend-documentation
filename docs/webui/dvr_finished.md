@@ -23,9 +23,11 @@ Button       | Function
 The main grid items have the following functions:
 
 **Details**
-: Displays a green tick 'completed' status and a blue information (“i”) icon. 
-  Click on the information icon to see further information about the selected
-  recordings.
+: Shows the status of the recording event:
+
+* <img class = iconimg src="../icons/tick.png" alt="Tick icon"> - the recording has completed.
+
+* <img class = iconimg src="../icons/information.png" alt="Information icon"> - displays detailed information about the selected recording.
 
 ![Finished Recording Detail](docresources/finishedrecordings2.png)
 

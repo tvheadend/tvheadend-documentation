@@ -29,15 +29,13 @@ The main grid items have the following functions:
 **Details**
 : Shows the status of the recording event:
 
-* **Clock** - the recording is scheduled (upcoming).
+* <img class = iconimg src="../icons/clock.png" alt="Clock icon"> - the recording is scheduled (upcoming).
 
-* **Record symbol (red circle)** - the recording is active and underway
+* <img class = iconimg src="../icons/rec.png" alt="Recording icon"> - the recording is active and underway
 (current).
 
-* **Info** - displays detailed information about the selected recording
+* <img class = iconimg src="../icons/information.png" alt="Information icon"> - displays detailed information about the selected recording
 (upcoming or current).
-
-##NOTE: <font color=red>INSERT LINKS TO ICON PNGS? (PATHS ARE A PROBLEM...)</font>
 
 ![Detailed Recording Information](docresources/upcomingrecordings2.png)
 
