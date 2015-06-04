@@ -77,12 +77,12 @@ The main grid items have the following functions:
 **Details**
 : Displays the current status of a recording event for this programme if 
   one applies: 
+
+  > <img class = iconimg src="../icons/clock.png" alt="Clock icon">: the programme is scheduled for recording
   
-  > **Clock icon**: the programme is scheduled for recording
+  > <img class = iconimg src="../icons/rec.png" alt="Recording icon">: the programme is currently recording
   
-  > **Red circle/recording icon**: the programme is currently recording
-  
-  > You can also click on the information icon to call up more detailed
+  > You can also click on the information icon <img class = iconimg src="../icons/information.png" alt="Information icon"> to call up more detailed
   information about an event.
 
 **Progress**
