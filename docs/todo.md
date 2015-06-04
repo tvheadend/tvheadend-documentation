@@ -10,7 +10,11 @@ of the areas I'm aware of that we need to close off before release</p>
 
 2. Minor file renaming to improve consistency (e.g. config_misc shoudl be config_general)
 
-3. Embed png icons for clock/record/etc. (check CSS - inline img versus block - might need to tag them specifically)
+3. Embed png icons for clock/record/etc. 
+
+> Note: done, but... tvh CSS will need adjusting for new class - also, I can't fix the path so that the
+real tvh icons will be picked up by extJS. Options: (1) store three or four < 1kB PNGs a second time, or
+(2) sed the files after pandoc-ing to fix the path.
 
 4. Once 99% complete, generate new webUI help pages and push them to the tvheadend repo
 
