@@ -16,5 +16,5 @@ cp -r ~/tvh/tvheadend-documentation/site/* .
 
 # Commit it and push
 git add -A
-git commit -m "Resync with source repository"
+git commit -m "Resync with source repository: `date`"
 git push
