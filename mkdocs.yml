@@ -58,11 +58,11 @@ pages:
                 - Timeshift: webui/config_timeshift.md
             - CAs: webui/config_caclient.md
             - Debugging: webui/config_tvhlog.md
-#        - Status Tab:
-#            - Stream: webui/blank.md
-#            - Subscriptions: webui/blank.md
-#            - Connections: webui/blank.md
-#            - Service Mapper: webui/blank.md
+        - Status Tab:
+            - Stream: webui/status_stream.md
+            - Subscriptions: webui/status_subscriptions.md
+            - Connections: webui/status_connections.md
+            - Service Mapper: webui/status_servicemapper.md
         - About Tab: webui/about.md
     - Appendices:
         - Appendix 1 - Frequently-asked Questions: Appendices/faqs.md
