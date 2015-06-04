@@ -25,11 +25,11 @@ displayed.
 
 Filter                     | Function
 ---------------------      | --------
-**Search title...**        | Only display events that match the given title. The filter uses case-insensitive regular expressions. If you don’t know what a regular expression is, this simply means that you can type just parts of the title and filter on that - there’s no need for full, exact matching. If the fulltext checkbox is checked, the title text is matched against title, subtitle, summary and description.
-**Filter channel...**      | Only display events from the selected channel. Channels in the drop down are ordered by channel number and can be filtered (by name) by typing in the box.
-**Filter tag...**          | Only display events from channels which are included in the selected tag. Tags are used for grouping channels together - such as ‘Radio’ or ‘HDTV’ - and are configured by the administrator. You can start typing a tag name to filter the list.
-**Filter content type...** | Only display events that match the given content type tag. Most DVB networks classify their events into content groups. This field allows you to filter based on content type (e.g. “Sports” or “Game Show”). Supported tags are determined by your broadcaster. Again, simply start typing to filter the entries if you have a long list to choose from.
-**Filter duration...**     | Only display events that fall between the given minimum and maximum durations. This allows you to filter for or against, say, a daily broadcast and a weekly omnibus edition of a programme, or only look for short news bulletins and not the 24-hour rolling broadcasts.
+**Search title...**        | Only display events that match the given title.<br><br>The filter uses case-insensitive regular expressions. If you don’t know what a regular expression is, this simply means that you can type just parts of the title and filter on that - there’s no need for full, exact matching. If the fulltext checkbox is checked, the title text is matched against title, subtitle, summary and description.
+**Filter channel...**      | Only display events from the selected channel.<br><br>Channels in the drop down are ordered by channel number and can be filtered (by name) by typing in the box.
+**Filter tag...**          | Only display events from channels which are included in the selected tag.<br><br>Tags are used for grouping channels together - such as ‘Radio’ or ‘HDTV’ - and are configured by the administrator. You can start typing a tag name to filter the list.
+**Filter content type...** | Only display events that match the given content type tag.<br><br>Most DVB networks classify their events into content groups. This field allows you to filter based on content type (e.g. “Sports” or “Game Show”). Supported tags are determined by your broadcaster. Again, simply start typing to filter the entries if you have a long list to choose from.
+**Filter duration...**     | Only display events that fall between the given minimum and maximum durations.<br><br>This allows you to filter for or against, say, a daily broadcast and a weekly omnibus edition of a programme, or only look for short news bulletins and not the 24-hour rolling broadcasts.
 
 *Title*, *Channel*, *Tag* and *Content Type* are dependent on your configuration and on what your 
 broadcaster sends. Options for the *Duration* are as follows:
@@ -70,9 +70,9 @@ Button              | Function
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Details**
 : Displays the current status of a recording event for this programme if 
@@ -120,10 +120,10 @@ The columns have the following functions:
   automatically filter the whole grid to only show programmes from that channel).*
 
 **Stars**
-: text
+: <font color=red>Text...</font>
 
 **Age**
-: text
+: <font color=red>Text...</font>
 
 **Content Type**
 : Any content/genre information as provided by the EPG provider. *You can

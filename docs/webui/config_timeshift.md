@@ -10,11 +10,10 @@ This tab is used to configure timeshift properties.
 
 The following functions are available:
 
-Button     | Function
------------|---------
-**Button** |
-**Button** |
-**Button** |
+Button                   | Function
+-------------------------|---------
+**Save Configuration**   | Save any changes made to the timeshift configuration
+**Help**                 | Display this help page.
 
 ---
 

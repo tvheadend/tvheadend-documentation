@@ -52,12 +52,7 @@ pages:
                 - EPG Grabber: webui/config_epggrab.md
             - Stream:
                 - Stream Profiles: webui/config_streamprofile.md
-                - Video Stream Filters: webui/config_esfilter.md
-#                - Audio Stream Filters: webui/blank.md
-#                - Teletext Stream Filters: webui/blank.md
-#                - Subtitle Stream Filters: webui/blank.md
-#                - CA Stream Filters: webui/blank.md
-#                - Other Stream Filters: webui/blank.md
+                - (Various) Stream Filters: webui/config_esfilter.md
             - Recording:
                 - Digital Video Recorder Profiles: webui/config_dvr.md
                 - Timeshift: webui/config_timeshift.md

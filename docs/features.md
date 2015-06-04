@@ -28,6 +28,8 @@ for both live and recorded streams
 * text
 * text
 
+##NOTE: <font color=red>TEXT REQUIRED</font>
+
 ####Digital Video Recorder
 * Built in video recorder stores recorded programs as Transport Stream (.ts) or Matroska (.mkv) files.
 * Multiple simultaneous recordings are supported.

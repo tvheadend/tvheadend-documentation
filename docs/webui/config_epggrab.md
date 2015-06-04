@@ -5,21 +5,19 @@ grabbing capabilities. Tvheadend supports a variety of different EPG
 grabbing mechanisms. These fall into 3 broad categories, within which
 there are a variety of specific grabber implementations.
 
-####SCREENSHOT HERE
+##NOTE: <font color=red>SCREENSHOT HERE</font>
 
 ####Menu Bar/Buttons
 
 The following functions are available:
 
-Button     | Function
------------|---------
-**Button** |
-**Button** |
-**Button** |
+Button                       | Function
+-----------------------------|---------
+**Save Configuration**       | Save any changes made to the grabber configuration.
+**Trigger OTA EPG Grabber**  | Force an immediate tune to the OTA EPG mux to request EPG updates.
+**Help**                     | Displays this help page. 
 
 ---
-
-####Columns
 
 ####Grabber Types
 

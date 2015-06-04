@@ -15,6 +15,14 @@ Each tab is then typically laid out with a menu bar across the top that
 provides access to Add/Save/Edit-type functions, and a grid like a spreadsheet
 below that. The grid items are frequently editable.
 
+Most configuration items - certainly the ones that are common to all types
+of item covered by that tab - are in this grid. However, some item-specific
+configuraiton items are then only available through the *Add* and *Edit*
+dialog boxes. For example, the main network configuration tab grid covers
+parameters common to DVB-S, -T, -C and IPTV networks, but specific things
+such as FEC rolloff or mux URL are then only in the dialogs for networks
+that need these values.
+
 ####Displaying and Manipulating Columns
 
 * Not all columns are necessarily visible. If you hover your mouse over a
@@ -34,7 +42,7 @@ below that. The grid items are frequently editable.
 
 * **Re-size** the columns by dragging the very edges of the column header as
   required. 
-
+  
 ####Editing Fields
 
 * To edit a cell, double click on it. After a cell is changed, a small red

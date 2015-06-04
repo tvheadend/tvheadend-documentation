@@ -3,7 +3,7 @@
 Mux Schedulers enable Tvheadend to automatically play channels. This is
 useful to get EPG, services or access rights updates.
 
-##EDITOR'S NOTE: Need screenshot for main tab here
+##NOTE: <font color=red>SCREENSHOT REQUIRED</font>
 
 ---
 
@@ -14,20 +14,20 @@ The following functions are available:
 Button            | Function
 ------------------|---------
 **Save**          | Save any changes made to the mux schedulers.
-**Undo**          | Undo any changes made to the mux schedulers since the last save (changes are marked by a small red triangle).
+**Undo**          | Undo any changes made to the mux schedulers since the last save.
 **Add**           | Add a new mux scheduler.
 **Delete**        | Delete an existing mux scheduler.
 **Edit**          | Edit an existing mux scheduler.
-**Hide <option>** | ??????. Options are Parent Disabled, All, None
+**Hide <option>** | <font color=red>??????</font>. Options are Parent Disabled, All, None
 **Help**          | Displays this help page. 
 
 !['Mux Schedulers \'Add\' Dialog' Tab](docresources/configdvbmuxsched.png)
 
 ---
 
-####Columns:
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Enabled**
 : If selected, schedule will be triggered. If unselected, schedule will be

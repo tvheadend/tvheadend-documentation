@@ -18,7 +18,7 @@ The following functions are available:
 Button     | Action
 ---------- | -------
 **Save**   | Save any changes made to the recording rule list.
-**Undo**   | Undo any changes made to the recording rules list since the last save (changes are marked with a small red triangle).
+**Undo**   | Undo any changes made to the recording rules list since the last save.
 **Add**    | Add and configure a recording rule - define the channel, schedule, DVR configuration, priority, etc.
 **Delete** | Delete an existing recording rule.
 **Edit**   | Manually edit an existing recording rule. This uses the same fields as Add, but they’re pre-populated with their current values.
@@ -26,9 +26,9 @@ Button     | Action
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Enabled**
 : Check or clear this box to enable or disable this rule.
@@ -83,6 +83,12 @@ Higher-priority events will take precedence and cancel lower-priority events.
 **DVR Configuration**
 : The DVR configuration (e.g. extra start/stop time, post-processing
 rules) to be used for any recordings set because of this rule.
+
+**Owner**
+: <font color=red>Text...</font>
+
+**Creator**
+: <font color=red>Text...</font>
 
 **Comment**
 : A free-text comment. Not used otherwise.

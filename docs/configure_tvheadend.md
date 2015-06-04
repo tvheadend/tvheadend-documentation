@@ -41,6 +41,7 @@ pre-defined values, but you may need to add muxes manually.
 <div class="admonition warning">
 <p class="admonition-title">Critical Configuration Items</p>
 <p>Critical configuration items at this stage: <........></p>
+<p><strong>NOTE: <font color=red>TEXT REQUIRED</font></strong></p>
 </div>
 
 ###3. Associate the Network with the Respective Tuner(s)
@@ -60,6 +61,7 @@ tuner.
 <div class="admonition warning">
 <p class="admonition-title">Critical Configuration Items</p>
 <p>Critical configuration items at this stage: <........></p>
+<p><strong>NOTE: <font color=red>TEXT REQUIRED</font></strong></p>
 </div>
 
 At this point, your tuners now know what networks to use: one network can
@@ -93,6 +95,7 @@ Good sources of transmitter/mux information include:
 central and northern Europe
 
 > other major sources....?
+##NOTE: <font color=red>TEXT REQUIRED</font>
 
 You can also use [dvbscan](http://www.linuxtv.org/wiki/index.php/Dvbscan) to
 force a scan and effectively ask your tuner what it can see.
@@ -100,6 +103,7 @@ force a scan and effectively ask your tuner what it can see.
 <div class="admonition warning">
 <p class="admonition-title">Critical Configuration Items</p>
 <p>Critical configuration items at this stage: <........></p>
+<p><strong>NOTE: <font color=red>TEXT REQUIRED</font></strong></p>
 </div>
 
 ### 5. Scan for Services
@@ -118,6 +122,7 @@ and language(s), and so on.
 - are referred to as 'packet identifiers' or 'PIDs').
 
 > To force a scan ...
+##NOTE: <font color=red>TEXT REQUIRED</font>
 
 ### 6. Map Services to Channels
 
@@ -139,6 +144,7 @@ can for 'Map All', above.
 > Any explanation on how a channel can map to multiple services <......>
 
 > Anything about using bouquets
+##NOTE: <font color=red>TEXT REQUIRED</font>
 
 ### 7. Watch TV
 

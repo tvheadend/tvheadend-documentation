@@ -1,11 +1,11 @@
 ##Configuration - General
 
-####EDITOR'S NOTE: THIS SOURCE SHOULD BE RENAMED CONFIG_GENERAL.MD WITH CORRESPONDING CHANGE IN TVH WEBUI JS.
+##NOTE: <font color=red>THIS SOURCE SHOULD BE RENAMED CONFIG_GENERAL.MD WITH CORRESPONDING CHANGE IN TVH WEBUI JS</font>
 
 This tabs allow configuration of several general parameters that affect
 the core Tvheadend functionality.
 
-####EDITOR'S NOTE: THE TWO IMAGES BELOW SHOULD BE REPLACED WITH A SINGLE ONE.
+##NOTE: <font color=red>THE TWO IMAGES BELOW SHOULD BE REPLACED WITH A SINGLE ONE</font>
 
 !['General' Tab Screenshot 1](docresources/configgeneraltab1.png)
 

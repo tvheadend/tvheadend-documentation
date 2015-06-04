@@ -18,9 +18,9 @@ Button       | Function
 
 ---
 
-####Columns
+####Grid Items
 
-The columns provide the following functions:
+The main grid items have the following functions:
 
 **Details**
 : Displays a red warning 'failed' status and a blue information (“i”) icon. 
@@ -36,6 +36,9 @@ The columns provide the following functions:
 
 **Title**
 : The title of the recording.
+
+**Subtitle**
+: <font color=red>Text...</font>
 
 **Episode**
 : The episode number of the record.
@@ -55,11 +58,29 @@ The columns provide the following functions:
 **Channel Name**
 : The name of the channel from which the recording was made.
 
+**Owner**
+: <font color=red>Text...</font>
+
 **Creator**
 : The name of the user who created the recording.
 
+**DVR Configuration**
+: The DVR configuration to be used for this recording.
+
+**Status**
+: Status information on the failure (e.g. *file missing*).
+
 **Schedule Status**
-: The status information of the recording.
+: The status of the recording (failed).
+
+**Errors**
+: <font color=red>Text...</font>
+
+**Data Errors**
+: <font color=red>Text...</font>
 
 **URL**
 : The URL of the recording.
+
+**Comment**
+: <font color=red>Text...</font>

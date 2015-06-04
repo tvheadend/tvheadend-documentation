@@ -21,7 +21,7 @@ The following functions are available:
 Button         | Function
 ---------------|---------
 **Save**       | Save any changes made to the access rules.
-**Undo**       | Undo any changes made to the access rules since the last save (changes are marked by a small red triangle).
+**Undo**       | Undo any changes made to the access rules since the last save.
 **Add**        | Add a new access rule.
 **Delete**     | Delete the selected access rule.
 **Move up**    | Move the selected rule up one level (rules are executed top to bottom).
@@ -30,10 +30,9 @@ Button         | Function
 **Help**       | Display this help page.
 
 ---
+####Grid Items
 
-####Columns
-
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Enabled**
 : Enable this access control rule. Uncheck the box to disable.
@@ -90,9 +89,6 @@ administration of the auto recordings.
 **All DVR (rw)**
 : Enable to access to DVR entries created by other users with the ability
 to remove the DVR entries.
-
-**Failed DVR**
-: Enable to access to DVR entries which were not succesfuly recorded.
 
 **DVR Config Profile**
 : If set, the user will only be able to use the DVR config profile equal

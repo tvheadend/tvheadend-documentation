@@ -4,6 +4,7 @@
 
 This tab is used to configure various debugging options in tvheadend.
 
+##NOTE:<font color=red>Rename this and the html to config_degugging for consistency</font>
 ---
 
 ####Menu Bar/Buttons
@@ -12,14 +13,13 @@ The following functions are available:
 
 Button     | Function
 -----------|---------
-**Button** |
-**Button** |
-**Button** |
+**Apply Configuration (run-time only)** | Saves any changes made to the debugging configuration. Changes will be lost on a restart.
+**Help** | Display this help page
 
 
 ---
 
-####Configuration options:
+####Configuration Options
 
 **Debug log path**
 : text   

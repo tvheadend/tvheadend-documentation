@@ -1,11 +1,18 @@
-##Configuration - Stream - Elementary Streams
+##Configuration - Stream - Elementary Stream Filters
+
+<div class="admonition note">
+<p class="admonition-title">Elementary Stream Filters</p>
+<p>This section applies to the filters for <strong>Video</strong>,
+<strong>Audio</strong>, <strong>Teletext</strong>, <strong>Subtitle</strong>,
+<strong>CA</strong> and <strong>Other</strong>.</p>
+</div>  
 
 This table defines rules to filter and order the elementary streams
 (PIDs) like video or audio from the input feed.
 The execution order of commands is granted. It means that first rule is
 executed for all available streams then second and so on.
 
-####SCREENSHOT HERE
+##NOTE: <font color=red>SCREENSHOT HERE</font>
 
 If any elementary stream is not marked as ignored or exclusive, it is
 used. If you like to ignore unknown elementary streams, add a rule to
@@ -20,67 +27,58 @@ For the visual verification of the filtering, there is a service info
 dialog in the Configuration / DVB Inputs / Services window . This dialog
 shows the received PIDs and filtered PIDs in one window.
 
-The rules are listed / edited in a grid.
-
-* To edit a cell, double click on it. After a cell is changed it will
-  flags one of its corner to red to indicated that it has been
-  changed. To commit these changes back to Tvheadend press the ‘Save
-  changes’ button. In order to change a Checkbox cell you only have to
-  click once in it.
-
-* To add a new entry, press the ‘Add entry’ button. The new (empty)
-  entry will be created on the server but will not be in its enabled
-  state. You can now change all the cells to the desired values, check
-  the ‘enable’ box and then press ‘Save changes’ to activate the new
-  entry.
-
-* To delete one or more entries, select the lines (by clicking once on
-  them), and press the ‘Delete selected’ button. A pop up will ask you
-  to confirm your request.
-
-* To move up or down one or more entries, select the lines (by
-  clicking once on them), and press the ‘Move up’ or ‘Move down’
-  button.
-
 ---
 
 ####Menu Bar/Buttons
 
 The following functions are available:
 
-Button     | Function
------------|---------
-**Button** |
-**Button** |
-**Button** |
+Button          | Function
+----------------|---------
+**Save**        | Save any changes made to the filters.
+**Undo**        | Undo any changes made to the filters since the last save.
+**Add**         | Add a new filter.
+**Delete**      | Delete an existing filter. 
+**Move Up**     | Move the filter up in the list. 
+**Move Down**   | Move the filter down in the list.
+**Edit**        | Edit an existing filter. This allows you to change any of the parameters you’d otherwise set when adding a new channel, e.g. language, PID, action, etc.
+**Help**        | Displays this help page. 
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
+
+**Class**:
+: <font color=red>Text...</font>
+
+**Index**
+: <font color=red>Text...</font>
 
 **Enabled**
 : If selected, the rule will be enabled.
 
 **Stream Type**
-:Select the elementary stream type to compare. Empty field means any.
+: Select the elementary stream type to compare. Empty field means any.
 
 **Language**
-: Select the language to compare. Empty field means any.
+: Select the language to compare. Empty field means any. *Not applicable to CA filters*.
 
 **Service**
 : The service to compare. Empty field means any.
 
 **CA Identification**
-: The CAID to compare. Empty field means any.
+: The CAID to compare. Empty field means any. *Applicable only to CA filters*.
 
 **CA Provider**
-: The CA provider to compare. Empty field means any.
+: The CA provider to compare. Empty field means any. *Applicable only to CA filters*.
 
 **Stream Index**
 : The logical stream index to compare. Note that this index is computed
-  using all filters. Example: If filter is set to AC3 audio type and the
+  using all filters.
+
+>  Example: If filter is set to AC3 audio type and the
   language to ‘eng’ and there are two AC3 ‘eng’ streams in the service,
   the first stream could be identified using number 1 and the second using
   number 2.

@@ -17,18 +17,18 @@ The following functions are available:
 Button            | Function
 ------------------|---------
 **Save**          | Save any changes made to the mux configuration.
-**Undo**          | Undo any changes made to the mux configuration since the last save (changes are marked by a small red triangle).
+**Undo**          | Undo any changes made to the mux configuration since the last save.
 **Add**           | Add a new mux.
 **Delete**        | Delete an existing mux. 
 **Edit**          | Edit an existing mux. This allows you to change any of the parameters you’d otherwise set when adding a new mux, e.g. delivery system, frequency, polarisation, etc.
-**Hide <option>** | ??????. Options are Parent Disabled, All, None
+**Hide <option>** | <font color=red>??????</font>. Options are Parent Disabled, All, None
 **Help**          | Displays this help page. 
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Play**
 : Downloads a playlist file (M3U or XSPF, depending on your startup
@@ -83,6 +83,13 @@ configuration file)
   in *Configuration -> DVB Inputs -> Networks* - DVB-S or ATSC, for
   example.
 
+**Network UUID**
+: The internal UUID reference for the network to which the mux belongs.
+
+**Name**
+: Short name for the mux - derived from the frequency and polarisation if
+  applicable (e.g. 10788V or 578MHz).
+
 **Original Network ID**
 : The ONID is a code which uniquely identifies a network.
 
@@ -100,6 +107,42 @@ configuration file)
 
 **Scan Result**
 : Whether there were any problems with the last scan of this mux.
+
+**Character Set**
+: The character encoding for this mux (e.g. UTF-8).
+
+**# Services**
+: The number of services found on this mux.
+
+**# Channels**
+: The number of channels mapped to services found on this mux.
+
+**AC-3 Detection**
+: Enables alternative detection methods for AC-3 audio. 
+
+* **Standard**:
+:  The default detection. If unsure, keep it set to this.
+  
+* **AC-3 = Descriptor 6**
+:  The empty PMT descriptor 0x06 defaults to the AC-3 stream. Some Chinese
+  cable providers are using this. 
+
+* **Ignore descriptor 5**
+:  <font color=red>Text...</font>
+
+####DVB-S/S2-Specific Configuration Items (Add/Edit Dialogs Only)
+
+<font color=red>Text...</font>
+
+####DVB-T/T2-Specific Configuration Items (Add/Edit Dialogs Only)
+
+<font color=red>Text...</font>
+
+####DVB-C-Specific Configuration Items (Add/Edit Dialogs Only)
+
+<font color=red>Text...</font>
+  
+####IPTV-Specific Configuration Items (Add/Edit Dialogs Only)
 
 **URL**
 : Mux URL.
@@ -126,36 +169,31 @@ configuration file)
   the next character as-is” (usually space or the backslash itself - what's 
   termed "escaping" a character).
 
-**# Services**
-: The number of services found on this mux.
-
-**Character Set**
-: The character encoding for this mux (e.g. UTF-8).
-
-**PMT Descriptor 0x06 = AC-3**
-: Whether or not the empty PMT descriptor 0x06 defaults to the AC-3
-  stream. Some Chinese cable providers are using this. If unsure, keep
-  this off.
-
 **Interface**
-: IPTV : the network interface/card on which the IPTV source can be found.
+: The network interface/card on which the IPTV source can be found.
 
 **ATSC**
 : Whether or not this is an ATSC IPTV source.
 
+**Mux Name**
+:  <font color=red>Text...</font>
+
+**Service Name**
+:  <font color=red>Text...</font>
+
 **Priority**
-: IPTV : The mux priority value (higher value = higher priority to use
+: The mux priority value (higher value = higher priority to use
   services from this mux). Value 0 means use the IPTV network priority
   value.
 
 **Streaming Priority**
-: IPTV : The mux priority value for streamed channels through HTTP or HTSP
+: The mux priority value for streamed channels through HTTP or HTSP
   (higher value = higher priority to use services from this mux). Value 0
   means use the standard streaming network priority value.
 
 **Environment (pipe)**
-: IPTV : List of environment variables for pipe (like PATH=/bin:/sbin)
+: List of environment variables for pipe (like `PATH=/bin:/sbin`)
   separated by spaces. The backslash character is handled like in URL.
 
 **Respawn (pipe)**
-: IPTV : Respawn the executed process when it dies.
+: Respawn the executed process when it dies.

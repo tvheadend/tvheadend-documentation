@@ -10,9 +10,9 @@ recordings.
 
 !['Digital Video Recorder Profiles' Tab 3](docresources/configdvrtab3.png)
 
-## EDITOR'S NOTE: Merge above images into one
+##NOTE: <font color=red>Merge into one image</font>
 
-## EDITOR'S NOTE: Have overview screenshot showing profiles, then focus on config
+##NOTE: <font color=red>Have overview screenshot showing profiles, then focus on config</font>
 
 ---
 
@@ -22,13 +22,15 @@ The following functions are available:
 
 Button     | Function
 -----------|---------
-**Button** |
-**Button** |
-**Button** |
+**Save**   | Save any changes made to the DVR configuration
+**Undo**   | Undo any changes made to the DVR configuration since the last save.
+**Add**    | Add a new DVR configuration.
+**Delete** | Delete an existing DVR configuration.
+**Help**   | Display this help page.
 
 ---
 
-####Configuration options
+####Configuration Options
 
 ####DVR Behaviour
 

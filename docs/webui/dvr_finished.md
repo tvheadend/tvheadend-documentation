@@ -18,9 +18,9 @@ Button       | Function
 
 ---
 
-####Columns
+####Grid Items
 
-The columns provide the following functions:
+The main grid items have the following functions:
 
 **Details**
 : Displays a green tick 'completed' status and a blue information (“i”) icon. 
@@ -37,6 +37,9 @@ The columns also provide the following details:
 
 **Title**
 : The title of the recording.
+
+**Subtitle**
+: <font color=red>Text...</font>
 
 **Episode**
 : The episode number of the record.
@@ -56,11 +59,26 @@ The columns also provide the following details:
 **Channel Name**
 : The name of the channel from which the recording was made.
 
+**Owner**
+: <font color=red>Text...</font>
+
 **Creator**
 : The name of the user who created the recording.
 
+**DVR Configuration**
+: The DVR configuration to be used for this recording.
+
 **Schedule Status**
-: The status information of the recording.
+: The status of the recording (completed.
+
+**Errors**
+: <font color=red>Text...</font>
+
+**Data Errors**
+: <font color=red>Text...</font>
 
 **URL**
 : The URL of the recording.
+
+**Comment**
+: <font color=red>Text...</font>

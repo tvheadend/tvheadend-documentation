@@ -1,27 +1,9 @@
 ##Configuration - CAs
 
-Tvheadend support connecting to card clients via the cwc (newcamd) or
-capmt (dvbapi) protocol for so called softcam descrambling.
+Tvheadend support connecting to card clients via the cwc (newcamd) and
+capmt (dvbapi) protocols for so-called 'softcam' descrambling.
 
 !['CAs' Tab](docresources/configcwc.png)
-
-The servers are listed / edited in a grid.
-
-* To edit a cell, double click on it. After a cell is changed it will
-  flags one of its corner to red to indicated that it has been
-  changed. To commit these changes back to Tvheadend press the ‘Save
-  changes’ button. In order to change a Checkbox cell you only have to
-  click once in it.
-    
-* To add a new entry, press the ‘Add entry’ button. The new (empty)
-  entry will be created on the server but will not be in its enabled
-  state. You can now change all the cells to the desired values, check
-  the ‘enable’ box and then press ‘Save changes’ to activate the new
-  entry.
-
-* To delete one or more entries, select the lines (by clicking once on
-  them), and press the ‘Delete selected’ button. A pop up will ask you
-  to confirm your request.
 
 ---
 
@@ -29,17 +11,22 @@ The servers are listed / edited in a grid.
 
 The following functions are available:
 
-Button     | Function
------------|---------
-**Button** |
-**Button** |
-**Button** |
+Button              | Function
+--------------------|---------
+**Save**            | Save any changes made to the CA client configuration
+**Undo**            | Undo any changes made to the CA client configuration since the last save.
+**Add**             | Add a new CA client configuration.
+**Delete**          | Delete an existing CA client configuration.
+**Move Up**         | Move the selected CA client configuration up in the list.
+**Move Down**       | Move the selected CA client configuration down in the list.
+**Show Passwords**  | Reveals any stored CA client passwords.
+**Help**            | Display this help page.
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Enabled**
 : If selected, connection will be tried to be established and retained up.

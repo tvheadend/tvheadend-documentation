@@ -20,6 +20,6 @@ Where a pre-built package exists, this will usually get you the last official
 stable version. However, more advanced users may be interested in running
 a development version - either a nightly build or a self-compiled version.
 
-##EDITOR'S NOTE: STABLE VS UNSTABLE VS TESTING VS BUILDING FROM MASTER...
+##NOTE: <font color=red>STABLE VS UNSTABLE VS TESTING VS BUILDING FROM MASTER...</font>
 
-##Need a view here on Dreamcat's different versions, plus a link to how-to-compile
+##NOTE: <font color=red>NEED A VIEW ON DREAMCAT'S VERSIONS PLUS A LINK ON HOW-TO-COMPILE</font>

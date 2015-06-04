@@ -1,40 +1,11 @@
 ##Configuration - Channel/EPG - Channel Tags
 
 This tab is used to configure channel tags. Tags are used to define a
-set of channels. Notice that nothing prohibits a channel to be a member
-of multiple tags. 
+set of channels - to group them, to aid searches, and similar. Tags are not
+required by Tvheadend itself, but are useful in media applications such
+as Kodi and are a requirement for using Tvheadend with Movian.
 
 !['Channel Tags' Tab](docresources/tagstab.png)
-
----
-
-The tag-sets are used for:
-
-* Searches in the EPG.
-
-* Display of channel groups in Kodi, Movian and similar.
-
-Note that there is no requirement to use tags for Tvheadend itself, but they
-are required for Movian. Using tags also simplifies sorting/filtering your
-channels on the Tvheadend web interface and in tag-aware applications such as Kodi
-
-The tags are listed / edited in a grid.
-
-* To edit a cell, double click on it. After a cell is changed it will
-  flags one of its corner to red to indicated that it has been
-  changed. To commit these changes back to Tvheadend press the ‘Save
-  changes’ button. In order to change a Checkbox cell you only have to
-  click once in it.
-
-* To add a new entry, press the ‘Add entry’ button. The new (empty)
-  entry will be created on the server but will not be in its enabled
-  state. You can now change all the cells to the desired values, check
-  the ‘enable’ box and then press ‘Save changes’ to activate the new
-  entry.
-
-* To delete one or more entries, select the lines (by clicking once on
-  them), and press the ‘Delete selected’ button. A pop up will ask you
-  to confirm your request.
 
 ---
 
@@ -42,17 +13,20 @@ The tags are listed / edited in a grid.
 
 The following functions are available:
 
-Button              | Function
---------------------|---------
-**Add entry**       |
-**Delete selected** |
-**Save changes**    |
+Button            | Function
+------------------|---------
+**Save**          | Save any changes made to the tag configuration.
+**Undo**          | Undo any changes made to the tag configuration since the last save.
+**Add**           | Add a new tag.
+**Delete**        | Delete an existing tag. 
+**Edit**          | Edit an existing tag. This allows you to change any of the parameters you’d otherwise set when adding a new channel, e.g. internal/private status, icon, etc.
+**Help**          | Displays this help page. 
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Enabled**
 : Make the tag available in the rest of the system. If the tag is not

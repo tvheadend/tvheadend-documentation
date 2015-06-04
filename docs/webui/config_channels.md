@@ -13,7 +13,7 @@ The following functions are available:
 Button            | Function
 ------------------|---------
 **Save**          | Save any changes made to the channel configuration.
-**Undo**          | Undo any changes made to the channel configuration since the last save (changes are marked by a small red triangle).
+**Undo**          | Undo any changes made to the channel configuration since the last save.
 **Add**           | Add a new channel.
 **Delete**        | Delete an existing channel. 
 **Edit**          | Edit an existing channel. This allows you to change any of the parameters you’d otherwise set when adding a new channel, e.g. name, number, EPG source, tags, etc.
@@ -23,13 +23,13 @@ Button            | Function
 **Number Down**   | Decrease by one the channel number for the selected channel. 
 **Swap Number**   | Swap the numbers over for the two selected channels.
 **Reset Icon**    | Reset the icon URL for the selected channel.
-**Help**          | Displays this help page. 
+**Help**          | Display this help page. 
 
 ---
 
-####Columns
+####Grid Items
 
-The columns have the following functions:
+The main grid items have the following functions:
 
 **Play**
 : Play the relevant channel using HTTP streaming.
