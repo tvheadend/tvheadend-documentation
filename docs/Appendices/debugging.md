@@ -9,7 +9,7 @@ line (e.g. `tvheadend -u hts -g video --trace <module>`) or in the web interface
 
 More than one option can be used, e.g. _--trace cwc,dvr,linuxdvb_
 
-```ini
+```no-highlight
 all
 access
 bouquet

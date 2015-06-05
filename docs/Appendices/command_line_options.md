@@ -4,14 +4,14 @@ Usage: `tvheadend [OPTIONS]`
 
 ###Generic Options
 
-```ini
+```no-highlight
 -h, --help                  Show this page
 -v, --version               Show version infomation
 ```
 
 ###Service Configuration
 
-```ini
+```no-highlight
 -c, --config                Alternate config path
 -B, --nobackup              Do not backup config tree at upgrade
 -f, --fork                  Fork and run as daemon
@@ -33,7 +33,7 @@ Usage: `tvheadend [OPTIONS]`
 
 ###Server Connectivity
 
-```ini
+```no-highlight
 -6, --ipv6                  Listen on IPv6
 -b, --bindaddr              Specify bind address
     --http_port             Specify alternative http port
@@ -65,7 +65,7 @@ Usage: `tvheadend [OPTIONS]`
 
 ###Testing Options
 
-```ini
+```no-highlight
 --tsfile_tuners         Number of tsfile tuners
 --tsfile                tsfile input (mux file)
 ```
