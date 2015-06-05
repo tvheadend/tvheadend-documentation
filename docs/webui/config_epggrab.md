@@ -76,6 +76,7 @@ Button                       | Function
 
 The cron lines looks like:
 
+```no-highlight
            # * * * * *  command to execute
            # ┬ ┬ ┬ ┬ ┬
            # │ │ │ │ │
@@ -85,6 +86,7 @@ The cron lines looks like:
            # │ │ └─────────────── day of month (1 - 31)
            # │ └──────────────────── hour (0 - 23)
            # └───────────────────────── min (0 - 59)
+```
 
 With the following cron special characters...
 
