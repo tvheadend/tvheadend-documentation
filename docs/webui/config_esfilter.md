@@ -120,6 +120,9 @@ The main grid items have the following functions:
 : Ignore this elementary stream. This stream is not used. Another
   successfully compared rule with different action may override it.
 
-* **Log**
+**Log**
 : Write a short message to log identifying the matched parameters. It is
 useful for debugging your setup or structure of incoming streams.
+
+**Comment**
+: Free-format text comment. Not used otherwise.
