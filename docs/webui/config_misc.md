@@ -99,9 +99,9 @@ highlight/reflection effect).
   placeholders are available:
     
 Placeholder | Function
------------ | --------
-    %C      | the transliterated channel name in ASCII (safe characters, no spaces etc.)
-    %c      | the channel name (URL encoded ASCII)
+:----------:| --------
+**%C**      | The transliterated channel name in ASCII (safe characters, no spaces etc.)
+**%c**      | The channel name (URL encoded ASCII)
 
 Example: `file:///tmp/icons/%C.png` or `http://example.com/%c.png`
 
