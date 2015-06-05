@@ -40,6 +40,10 @@ The following major content items/chapters are then missing - based on most FAQs
 
 * Platform differences - what you need to transcode, or what you can expect from Android vs GNU/Linux
 
+* Platform differences - Ubuntu, Fedora, Red Hat, Arch, Android...
+
+* HD Homerun setup
+
 And I'm left with these final open questions:
 
 * We need the webUI pages documented (as they are). How much should they be the how-tos, and how much should these be separate?
