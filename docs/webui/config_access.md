@@ -30,6 +30,7 @@ Button         | Function
 **Help**       | Display this help page.
 
 ---
+
 ####Grid Items
 
 The main grid items have the following functions:
