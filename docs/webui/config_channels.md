@@ -56,7 +56,7 @@ The main grid items have the following functions:
   change).
 
 **Icon URL**
-: text
+: <font color=red>text</font>
 
 **Auto EPG Channel**
 : Auto-link EPG channels from XMLTV and OpenTV EPG grabbers using the
@@ -72,7 +72,7 @@ The main grid items have the following functions:
   XMLTV, a newly-mapped channel will not appear in the EPG until the next
   run of the grabber, or service restart.
 
-<div class="admonition tip">
+<div class="admonition note">
 <p class="admonition-title">Over-the-Air Sources</p>
 <p>Over the air (OTA) sources do NOT need to be mapped in this way, the
 linking is implicitly tied since they are all part of the DVB system.</p>
@@ -93,7 +93,7 @@ linking is implicitly tied since they are all part of the DVB system.</p>
   DVR setting.
 
 **Services**
-: text
+: <font color=red>text</font>
 
 **Tags**
 : Each channel can be bound to a zero, one or many tags. The tags are used
@@ -102,4 +102,4 @@ linking is implicitly tied since they are all part of the DVB system.</p>
   channels. The tags are also presented in a Media player.
 
 **Bouquet**
-: text
+: <font color=red>text</font>
