@@ -1,10 +1,11 @@
 ##Configuration - Debugging
 
-!['Debugging' Tab](docresources/configtvhlog.png)
-
 This tab is used to configure various debugging options in tvheadend.
 
 ##NOTE:<font color=red>Rename this and the html to config_degugging for consistency</font>
+
+!['Debugging' Tab](docresources/configtvhlog.png)
+
 ---
 
 ####Menu Bar/Buttons
@@ -22,25 +23,31 @@ Button     | Function
 ####Configuration Options
 
 **Debug log path**
-: text   
+: <font color=red>Text...</font>   
 
 **Debug to syslog**
-: text   
+: <font color=red>Text...</font>   
 
 **Debug trace (low-level stuff)**
-: text
+: <font color=red>Text...</font>   
 
 **Debug subsystems**
-: text   
+: <font color=red>Text...</font>   
 
 **Trace subsystems**
-: text   
+: <font color=red>Text...</font>   
 
 Changes to any of these settings must be confirmed by pressing the ‘Save
 configuration’ button before taking effect.
 
-Note that the settings is not saved to a storage. It is available only
-until the actual tvheadend process is running. If you like to change the
-default behaviour permanently, use the command line options like `-l`,
-`–debug`, `–trace`. This configuration is stored usually in the
-/etc/sysconfig tree (depending on the distribution) or an init script.
+Note that settings are not saved to a storage. Any change is available only
+while Tvheadend is running, and will be lost on a restart. To change the
+default behaviour permanently, use command line options such as `-l`,
+`–debug`, `–trace`.
+
+Depending on your distribution, the default command-line configuration is
+usually stored in the `/etc/sysconfig` tree or an init script. You may also
+be able to change `/etc/default/tvheadend` to add additional command-line
+parameters.
+
+##Note: <font color=red>It'd be helpful to expand as to what happens on what distro...</font>   
