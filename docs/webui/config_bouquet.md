@@ -36,3 +36,42 @@ Button            | Function
 ####Grid Items
 
 The main grid items have the following functions:
+
+**Enabled**
+: <font color=red>Text...</font>
+
+**Rescan**
+: <font color=red>Text...</font>
+
+**Name**
+: <font color=red>Text...</font>
+
+**Auto-Map to Channels**
+: <font color=red>Text...</font>
+
+**Map Zero Numbers**
+: <font color=red>Text...</font>
+
+**Channel Number Offset**
+: <font color=red>Text...</font>
+
+**Map No Name**
+: <font color=red>Text...</font>
+
+**Map Radio**
+: <font color=red>Text...</font>
+
+**Create Tag**
+: <font color=red>Text...</font>
+
+**Source**
+: <font color=red>Text...</font>
+
+**# Services**
+: <font color=red>Text...</font>
+
+**# Seen Services**
+: <font color=red>Text...</font>
+
+**Comment**
+: <font color=red>Text...</font>
