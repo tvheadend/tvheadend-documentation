@@ -105,20 +105,20 @@ Button     | Function
  Supported format strings:
  
  
-  Format  | Description                               | Example value
-  ------- | ----------------------------------------- | -------------
-  %f      | Full path to recording                    |  /home/user/Videos/News.mkv
-  %b      | Basename of recording                     |  News.mkv
-  %c      | Channel name                              |  BBC world
-  %O      | Owner of this recording                   |  user
-  %C      | Who created this recording                |  user
-  %t      | Program title                             |  News
-  %s      | Program subtitle                          |  Afternoon
-  %p      | Program episode                           |  S02.E07
-  %d      | Program description                       |  News and stories…
-  %e      | Error message                             |  Aborted by user
-  %S      | Start time stamp of recording, UNIX epoch |  1224421200
-  %E      | Stop time stamp of recording, UNIX epoch  |  1224426600
+Format | Description                               | Example value
+:-----:| ----------------------------------------- | -------------
+`%f`   | Full path to recording                    |  /home/user/Videos/News.mkv
+`%b`   | Basename of recording                     |  News.mkv
+`%c`   | Channel name                              |  BBC world
+`%O`   | Owner of this recording                   |  user
+`%C`   | Who created this recording                |  user
+`%t`   | Program title                             |  News
+`%s`   | Program subtitle                          |  Afternoon
+`%p`   | Program episode                           |  S02.E07
+`%d`   | Program description                       |  News and stories…
+`%e`   | Error message                             |  Aborted by user
+`%S`   | Start time stamp of recording, UNIX epoch |  1224421200
+`%E`   | Stop time stamp of recording, UNIX epoch  |  1224426600
 
 
 <div class="admonition note">
@@ -143,11 +143,11 @@ Button     | Function
 
 > Common examples:
 
-> Mode | Permissions
-> -----|------------
-> 0644 | rw-r–r–
-> 0664 | rw-rw-r– (default)
-> 0666 | rw-rw-rw-
+> Mode     | Permissions
+> :-------:|------------
+> **0644** | rw-r–r–
+> **0664** | rw-rw-r– (default)
+> **0666** | rw-rw-rw-
 
 > Note that the applicable umask applies, so *0666* with umask *0022* will
 > produce *0644* (`rw-r–r–`). See also *Directory permissions* in
@@ -175,17 +175,17 @@ Button     | Function
   `%n` and `%t`) and Tvheadend specific. Note that you may modify some of
   this format string setting using the GUI fields below.
 
-Format  | Description                                      | Example
---------|--------------------------------------------------|--------
-$t$n.$x | Default format (title, unique number, extension) | Tennis - Wimbledon-1.mkv
-$s      | Event subtitle name                              | Sport
-$t      | Event title name                                 | Tennis - Wimbledon
-$e      | Event episode name                               | S02-E06
-$c      | Channel name                                     | SkySport
-$n      | Unique number added when the file already exists | -1
-$x      | Filename extension (from the active stream muxer | mkv
-%F      | ISO 8601 date format                             | 2011-03-19
-%R      | The time in 24-hour notation                     | 14:12
+Format    | Description                                      | Example
+:--------:|--------------------------------------------------|--------
+`$t$n.$x` | Default format (title, unique number, extension) | Tennis - Wimbledon-1.mkv
+`$s`      | Event subtitle name                              | Sport
+`$t`      | Event title name                                 | Tennis - Wimbledon
+`$e`      | Event episode name                               | S02-E06
+`$c`      | Channel name                                     | SkySport
+`$n`      | Unique number added when the file already exists | -1
+`$x`      | Filename extension (from the active stream muxer | mkv
+`%F`      | ISO 8601 date format                             | 2011-03-19
+`%R`      | The time in 24-hour notation                     | 14:12
 
 The format strings `$t`,`$s`,`%e`,`$c` also have delimiter variants such as 
 `$ t` (space after the dollar character), `$-t`, `$_t`,
@@ -204,11 +204,11 @@ only when the substituted string is not empty.
 
 > Common examples:
 
-> Mode | Permissions
-> -----|------------
-> 0755 | rwxr-xr-x
-> 0775 | rwxrwxr-x (default)
-> 0777 | rwxrwxrwx
+> Mode     | Permissions
+> :-------:|------------
+> **0755** | rwxr-xr-x
+> **0775** | rwxrwxr-x (default)
+> **0777** | rwxrwxrwx
 
 > Note that the applicable umask applies, so *0777* with umask *0022* will
 > produce *0755* (`rwxr-xr-x`). See also *File permissions* in *Recording File
