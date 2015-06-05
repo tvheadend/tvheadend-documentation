@@ -40,8 +40,11 @@ do
   echo >> $outputfile
 
 # HTML - pandoc conversion inside tvheadend-specifc <div>
+# Note the sed to change the path from what pandoc generates to what the
+# tvh webserver expects: change "../icons/xyz.png" to "static/icons/xyz.png"
+# Intentionally looking to match more string to keep it all sane
   echo "<div class=\"hts-doc-text\">" >> $outputfile
-  pandoc $inputfile >> $outputfile
+  pandoc $inputfile | sed 's/\(\<img class \= iconimg src=\"\)\.\.\(\/icons\/.*\.png\)/\1static\2/g' >> $outputfile
   echo "</div>" >> $outputfile
 
   echo "Saved as" $outputfile
