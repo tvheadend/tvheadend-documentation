@@ -13,6 +13,7 @@ img {
     background-color: transparent;
     border: none;
     margin: 0px auto;
+    width: auto;
 }
 
 /* Inline icon images - readthedocs theme */
