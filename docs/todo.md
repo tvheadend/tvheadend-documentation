@@ -30,7 +30,7 @@ The following major content items/chapters are then missing - based on most FAQs
 
 * How to watch Live TV
 
-* How to set up card sharing?
+* How to set up conditional access ("Conditional Access System Configuration")
 
 * How to set up a multi-profile installation (access)
 
