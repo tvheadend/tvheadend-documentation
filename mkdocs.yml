@@ -17,6 +17,7 @@ markdown_extensions:
     - smarty
     - toc:
         permalink: ""
+        anchorlink: True
 
 pages:
     - Introduction:
