@@ -72,6 +72,9 @@ direct service or whole MPEG-TS stream (mux)..
 : Specify a streaming profile to be used when this user logs in; use the
 (default) stream if not specified.
 
+**Connection Limit Type**
+: Allow to restrict the limit for connections to streaming or DVR only.
+
 **Limit Connections**
 : If set, this will limit the number of concurrent streaming connections
 and DVR sessions a user is permitted to have. 0=disabled
