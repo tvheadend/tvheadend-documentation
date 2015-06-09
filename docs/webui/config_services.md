@@ -51,8 +51,8 @@ The main grid items have the following functions:
   disabled for given service using this column.
 
 **Priority (1-10)**
-: Define priority (range 0-10) for this service. The higher value means
-  more preferred. Note that this value is \_added\_ to the input (tuner)
+: Define priority (range -10..10) for this service. The higher value means
+  more preferred. Note that this value is *added* to the input (tuner)
   priority. Take this in account when you set the input priorities.
 
 **Channel**
