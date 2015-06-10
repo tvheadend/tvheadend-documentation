@@ -12,7 +12,7 @@ based on start time.
 
 ---
 
-####Menu Bar/Buttons
+###Menu Bar/Buttons
 
 The following functions are available:
 
@@ -26,7 +26,7 @@ displayed.
 Filter                     | Function
 ---------------------      | --------
 **Search title...**        | Only display events that match the given title.<br><br>The filter uses case-insensitive regular expressions. If you don’t know what a regular expression is, this simply means that you can type just parts of the title and filter on that - there’s no need for full, exact matching. If the fulltext checkbox is checked, the title text is matched against title, subtitle, summary and description.
-**Filter channel...**      | Only display events from the selected channel.<br><br>Channels in the drop down are ordered by channel number and can be filtered (by name) by typing in the box.
+**Filter channel...**      | Only display events from the selected channel.<br><br>Channels in the drop down are ordered by name and can be filtered (by name) by typing in the box.
 **Filter tag...**          | Only display events from channels which are included in the selected tag.<br><br>Tags are used for grouping channels together - such as ‘Radio’ or ‘HDTV’ - and are configured by the administrator. You can start typing a tag name to filter the list.
 **Filter content type...** | Only display events that match the given content type tag.<br><br>Most DVB networks classify their events into content groups. This field allows you to filter based on content type (e.g. “Sports” or “Game Show”). Supported tags are determined by your broadcaster. Again, simply start typing to filter the entries if you have a long list to choose from.
 **Filter duration...**     | Only display events that fall between the given minimum and maximum durations.<br><br>This allows you to filter for or against, say, a daily broadcast and a weekly omnibus edition of a programme, or only look for short news bulletins and not the 24-hour rolling broadcasts.
@@ -64,13 +64,13 @@ The following buttons are also available:
 Button              | Function
 --------------------|----------
 **Reset All**       | Clears all search filters.
-**Watch TV**        | Launches Live TV via the VLC plugin (see below).
+**Watch TV**        | Launches Live TV via HTML5 video (see below).
 **Create Autorec**  | Creates an auto-recording rule based on the current filter criteria (see below).
 **Help**            | Display this help page.
 
 ---
 
-####Grid Items
+###Grid Items
 
 The main grid items have the following functions:
 
@@ -78,9 +78,9 @@ The main grid items have the following functions:
 : Displays the current status of a recording event for this programme if 
   one applies: 
 
-* <img class = iconimg src="../icons/clock.png" alt="Clock icon"> - the programme is scheduled for recording
-* <img class = iconimg src="../icons/rec.png" alt="Recording icon"> - the programme is currently recording
-* You can also click on the information icon <img class = iconimg src="../icons/information.png" alt="Information icon"> to call up more detailed
+* <img class="iconimg" src="../icons/clock.png" alt="Clock icon"> - the programme is scheduled for recording
+* <img class="iconimg" src="../icons/rec.png" alt="Recording icon"> - the programme is currently recording
+* You can also click on the broadcast details icon <img class="iconimg" src="../icons/broadcast_details.png" alt="Broadcast details icon"> to call up more detailed
   information about an event.
 
 **Progress**
@@ -118,10 +118,10 @@ The main grid items have the following functions:
   automatically filter the whole grid to only show programmes from that channel).*
 
 **Stars**
-: <font color=red>Text...</font>
+: Rating (in stars) of the programme.
 
 **Age**
-: <font color=red>Text...</font>
+: Age rating of the programme.
 
 **Content Type**
 : Any content/genre information as provided by the EPG provider. *You can
@@ -131,7 +131,7 @@ The main grid items have the following functions:
 
 ---
 
-####Event details and recording
+###Event details and recording
 
 If you click on a single event, a popup will display detailed
 information about the event. It also allows you to schedule the event
@@ -156,9 +156,9 @@ broadcast padding for a channel that always runs late, or perhaps define
 a different post-processing command to strip adverts out on a commercial
 channel.
 
-You will also see a *Search IMDB* link to look for the programme by name
-on imdb.com, and a *Play* link to watch a programme that’s already in
-progress. This second link downloads a playlist file (XSPF or M3U
+You will also see a *[Search IMDB]* button to look for the programme by name
+on imdb.com, and a *[Play program]* button to watch a programme that’s already
+in progress. This second button downloads a playlist file (XSPF or M3U
 depending on your startup options); if your system is configured for it,
 this will automatically launch an appropriate player, otherwise you will
 need to manually open the playlist to start watching (normally a
@@ -170,7 +170,7 @@ you can open as many detailed information popups as you want.
 
 ---
 
-####Autorecordings
+###Autorecordings
 
 Should you wish to record all events matching a specific query (to
 record your favourite show every week, for example) you can press the
@@ -187,8 +187,31 @@ autorecording or make adjustments to the channel, tag, or similar.
 
 ---
 
-####Watch TV
+###Watch TV
 
 If you want to watch live TV in the web UI, the *[Watch TV]* button will
-pop up a VLC plugin window (if you don’t have the plugin installed a
-direct URL should be provided to load into your preferred media player).
+pop up a HTML5 video player, where you can select the channel to watch and a
+stream profile to use. A transcoding stream profile is required to transcode 
+the stream to a format that is supported by your browser, as browsers only
+support certain formats and codecs.
+
+####Supported formats (containers)
+
+Browser | MPEG-TS | MPEG-PS | Matroska | WebM
+------- | :-----: | :-----: | :------: | :--:
+Google Chrome | ![no](icons/exclamation.png) | ![no](icons/exclamation.png) | ![yes](icons/accept.png) | ![yes](icons/accept.png)
+Mozilla Firefox | ![no](icons/exclamation.png) | ![no](icons/exclamation.png) |  | ![yes](icons/accept.png)
+
+####Supported video codecs
+
+Browser | MPEG2 Video | H.264 | VP8
+------- | :---------: | :---: | :-:
+Google Chrome | ![no](icons/exclamation.png) | ![yes](icons/accept.png) | ![yes](icons/accept.png)
+Mozilla Firefox | ![no](icons/exclamation.png) |  | ![yes](icons/accept.png)
+
+####Supported audio codecs
+
+Browser | MPEG2 Audio | Dolby Digital (AC3) | AAC | Vorbis
+------- | :---------: | :-----------------: | :-: | :----:
+Google Chrome | ![no](icons/exclamation.png) | ![no](icons/exclamation.png) | ![yes](icons/accept.png) | ![yes](icons/accept.png)
+Mozilla Firefox | ![no](icons/exclamation.png) | ![no](icons/exclamation.png) |  | ![yes](icons/accept.png)
