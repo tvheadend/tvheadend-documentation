@@ -1,12 +1,14 @@
-##Configuration - Stream - Stream Profile
+##Configuration - Stream - Stream Profiles
 
-##NOTE: <font color=red>INTRO TEXT REQUIRED</font>
+Stream Profiles are the settings for output formats. These are used for Live TV
+streaming and recordings. The profiles are assigned through the Access Entries,
+DVR Profiles or as parameter for HTTP Streaming.
 
 ##NOTE: <font color=red>SCREENSHOT REQUIRED</font>
 
 ---
 
-####Menu Bar/Buttons
+###Menu Bar/Buttons
 
 The following functions are available:
 
@@ -20,36 +22,80 @@ Button     | Function
 
 ---
 
-####Configuration Options
-
-####Stream Profile Types
+###Stream Profile Types
 
 **MPEG-TS Pass-through /build-in**
-: MPEG-TS pass through muxer (built-in)
+: Pass through of MPEG-TS packets
 
 **Matroska (mkv) /build-in**
-: Matroska/WebM muxer (built-in)
+: Matroska/WebM muxer (built-in) to output in Matroska format
 
 **HTSP Stream Profile**
-: HTSP Default Stream Settings
+: Stream Settings for HTSP
 
 **MPEG-TS /av-lib**
-: MPEG-TS stream muxer (libav)
+: MPEG-TS stream muxer (libav) to output in MPEG-TS format (only available with libav/ffmpeg)
 
 **Matroska /av-lib**
-: Matroska/WebM muxer (libav)
+: Matroska/WebM muxer (libav) to output in Matroska format (only available with libav/ffmpeg)
 
 **Transcode /av-lib**
-: Transcode video/audio/subtitles to different codecs and containers
+: Transcode video/audio/subtitles with various encoders and output in various formats (only available with libav/ffmpeg)
 
-####Transcoding Settings
+###Common Settings
+
+**Enabled**
+: Profile is enabled
+
+**Default**
+: Profile is the default profile
+
+**Default Priority**
+: TODO
+
+**Force Priority**
+: TODO
+
+**Timeout**
+: Timeout for streaming to start
+
+**Restart On Error**
+: Restart streaming on error (useful for DVR)
+
+**Continue On Access Error**
+: Don't abort streaming, when an encrypted stream can't be decrypted by a suitable CA client
+
+**Preferred Service Video Type**
+: If a certain video type should be preferred, when multiple services are available for a channel
+
+###MPEG-TS Pass-through Settings
+
+**Rewrite PMT**
+: TODO
+
+**Rewrite PAT**
+: TODO
+
+**Rewrite SDT**
+: TODO
+
+**Rewrite EIT**
+: TODO
+
+###Matroska Settings
+
+**WEBM**
+: Use WebM format (WebM is a restricted subset of the Matroska format)
+
+###Transcode Settings
 
 **Container**
 : Container to use for transcoded streams.
 
 **Resolution**
 : Vertical resolution (height) of the output video stream. Horizontal resolution
-  is adjusted automatically to preserve aspect ratio.
+  is adjusted automatically to preserve aspect ratio. When set to 0, the input
+  resolution is used.
 
 **Channels**
 : Channel layout for audio streams.
@@ -58,13 +104,16 @@ Button     | Function
 : Currently unused.
 
 **Video Codec**
-: Codec for video stream.
+: Video encoder codec.
 
 * **Do not use**
 : Don't output a video stream.
 
 * **Copy codec type**
 : Pass through video stream without transcoding.
+
+* **mpeg2video/libvpx/libx264/...**
+: Transcode video to the selected codec.
 
 **Video Bitrate**
 : Video quality/bitrate of the transcoded video stream.
@@ -91,7 +140,11 @@ Button     | Function
 * **Copy codec type**
 : Pass through audio streams without transcoding.
 
-* **Audio Bitrate**
+* **aac/mp2/libvorbis/...**
+: Transcode audio to the selected codec. (Note: if "vorbis" and "libvorbis" are 
+  available, "libvorbis" should be prefered when transcoding to Vorbis format)
+
+**Audio Bitrate**
 : Audio bitrate of the transcoded audio streams.
 
 **Subtitles Codec**
