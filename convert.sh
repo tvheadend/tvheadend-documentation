@@ -31,7 +31,7 @@ do
   echo "<!-- All changes *must* be made in the source markdown and then carried-->" >> $outputfile
   echo "<!-- through the pandoc conversion that creates these html files. -->" >> $outputfile
   echo >> $outputfile
-  echo "<!-- Make changes on https://github.com/ProfYaffle/tvheadend-documentation -->" >> $outputfile
+  echo "<!-- Make changes on https://github.com/tvheadend/tvheadend-documentation -->" >> $outputfile
   echo >> $outputfile
 
 # Version and date
