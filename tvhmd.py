@@ -280,8 +280,8 @@ class WEBUI_Renderer(Renderer):
     return src
 
   def image(self, src, title, text):
-    src = WEBUI_Renderer.replace_start(src, 'icons/', '/static/icons/')
-    src = WEBUI_Renderer.replace_start(src, '../icons/', '/static/icons/')
+    src = WEBUI_Renderer.replace_start(src, 'icons/', 'static/icons/')
+    src = WEBUI_Renderer.replace_start(src, '../icons/', 'static/icons/')
     return Renderer.image(self, src, title, text)
 
 #
