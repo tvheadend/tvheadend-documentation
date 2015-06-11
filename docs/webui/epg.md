@@ -24,7 +24,7 @@ input fields. This means that all filters must match for an event to be
 displayed.
 
 Filter                     | Function
----------------------      | --------
+---------------------------| --------
 **Search title...**        | Only display events that match the given title.<br><br>The filter uses case-insensitive regular expressions. If you don’t know what a regular expression is, this simply means that you can type just parts of the title and filter on that - there’s no need for full, exact matching. If the fulltext checkbox is checked, the title text is matched against title, subtitle, summary and description.
 **Filter channel...**      | Only display events from the selected channel.<br><br>Channels in the drop down are ordered by name and can be filtered (by name) by typing in the box.
 **Filter tag...**          | Only display events from channels which are included in the selected tag.<br><br>Tags are used for grouping channels together - such as ‘Radio’ or ‘HDTV’ - and are configured by the administrator. You can start typing a tag name to filter the list.
@@ -78,9 +78,10 @@ The main grid items have the following functions:
 : Displays the current status of a recording event for this programme if 
   one applies: 
 
-* <img class="iconimg" src="../icons/clock.png" alt="Clock icon"> - the programme is scheduled for recording
-* <img class="iconimg" src="../icons/rec.png" alt="Recording icon"> - the programme is currently recording
-* You can also click on the broadcast details icon <img class="iconimg" src="../icons/broadcast_details.png" alt="Broadcast details icon"> to call up more detailed
+* ![Clock icon](../icons/clock.png) - the programme is scheduled for recording
+* ![Recording icon](../icons/rec.png) - the programme is currently recording
+* You can also click on the broadcast details icon
+  ![Broadcast details icon](../icons/broadcast_details.png) to call up more detailed
   information about an event.
 
 **Progress**

@@ -25,9 +25,9 @@ The main grid items have the following functions:
 **Details**
 : Shows the status of the recording event:
 
-* <img class = iconimg src="../icons/exclamation.png" alt="exclamation icon"> - the recording has failed.
+* ![Exclamation icon](../icons/exclamation.png) - the recording has failed.
 
-* <img class = iconimg src="../icons/information.png" alt="Information icon"> - displays detailed information about the selected recording.
+* ![Information icon](../icons/information.png) - displays detailed information about the selected recording.
 
 ![Failed Recording Details](docresources/failedrecordings2.png)
 

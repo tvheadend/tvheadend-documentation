@@ -1,0 +1,4 @@
+linuxtv
+KingofSat
+ukfree.tv
+/dev/dvb/adapter0

@@ -1,2 +1,7 @@
+*~
+Makefile.rules
 docs_working
 site
+build
+webui
+__pycache__
