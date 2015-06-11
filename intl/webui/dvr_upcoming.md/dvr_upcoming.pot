@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-06-11 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,22 +92,31 @@ msgstr ""
 msgid ": Shows the status of the recording event:"
 msgstr ""
 
+msgid "Icon"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
 msgid "Clock icon"
 msgstr ""
 
-msgid "- the recording is scheduled (upcoming)."
+msgid "the programme is scheduled (upcoming)"
 msgstr ""
 
 msgid "Recording icon"
 msgstr ""
 
-msgid "- the recording is active and underway (current)."
+msgid "the programme is active and underway (current)"
 msgstr ""
 
 msgid "Information icon"
 msgstr ""
 
-msgid "- displays detailed information about the selected recording (upcoming or current)."
+msgid "click to display detailed information about the selected recording (upcoming or current)"
+msgstr ""
+
+msgid "The detailed information dialog is as follows:"
 msgstr ""
 
 msgid "Detailed Recording Information"

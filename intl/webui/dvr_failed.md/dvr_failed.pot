@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-06-11 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,16 +68,25 @@ msgstr ""
 msgid ": Shows the status of the recording event:"
 msgstr ""
 
+msgid "Icon"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
 msgid "Exclamation icon"
 msgstr ""
 
-msgid "- the recording has failed."
+msgid "the recording has failed"
 msgstr ""
 
 msgid "Information icon"
 msgstr ""
 
-msgid "- displays detailed information about the selected recording."
+msgid "click to display detailed information about the selected recording"
+msgstr ""
+
+msgid "The detailed information dialog is as follows:"
 msgstr ""
 
 msgid "Failed Recording Details"
