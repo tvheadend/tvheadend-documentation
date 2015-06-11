@@ -6,9 +6,11 @@
 #
 
 LANGUAGES?=en cs
-SOURCES=$(wildcard docs/*.md docs/webui/*.md)
+SOURCES=$(wildcard docs/*.md docs/webui/*.md docs/Appendices/*.md)
+YAMLS=  $(foreach l,$(LANGUAGES),mkdocs/$(l)/mkdocs.yml)
 TVHMD=./tvhmd.py
 MSGMERGE?=msgmerge
+MKDOCS?=mkdocs
 
 ifeq ($(LEVEL2),yes)
 
@@ -17,6 +19,7 @@ POTS=    $(foreach f,$(RSOURCES),intl/$(f)/$(basename $(notdir $(f))).pot)
 POS=     $(foreach f,$(RSOURCES),$(foreach l,$(LANGUAGES),intl/$(f)/$(basename $(notdir $(f))).$(l).po))
 MDS=     $(foreach f,$(RSOURCES),$(foreach l,$(LANGUAGES),build/$(l)/$(f)))
 WEBUIS=  $(foreach f,$(RSOURCES),$(foreach l,$(LANGUAGES),webui/$(l)/$(basename $(f)).html))
+SITES=   $(foreach l,$(LANGUAGES),mkdocs/$(l)/site/index.html)
 
 -include Makefile.rules
 
@@ -48,22 +51,47 @@ define do_webui
 	@mv "$(2).new" "$(2)"
 endef
 
+define do_yml
+	@printf "Building $(2)\n"
+	@$(TVHMD) --format=lang-yml "--in=$(1)" "--po=$(4)" "--out=$(2).new"
+	@mv "$(2).new" "$(2)"
+endef
+
+define do_site
+	@printf "Building $(1)/site\n"
+	@ln -sf "../../build/$(3)" "$(1)/docs"
+	@cd "$(1)" && mkdocs build
+endef
+
 all: $(POTS) $(POS) $(MDS) $(WEBUIS)
 	@echo "Finished"
+
+.PHONY: mkdocs
+mkdocs: $(MDS) intl/mkdocs/mkdocs.pot $(YAMLS) $(SITES)
+	@echo $(SITES)
+
+intl/mkdocs/mkdocs.pot: mkdocs.yml
+	@printf "Building $@\n"
+	@$(TVHMD) --format=yml-pot "--in=$<" "--out=$@.new"
+	@mv $@.new $@
 
 else
 
 all: Makefile.rules
 	@$(MAKE) LEVEL2=yes all
-	@echo $(TARGETS)
+
+.PHONY: mkdocs
+mkdocs: Makefile.rules
+	@$(MAKE) LEVEL2=yes mkdocs
 
 endif
 
 .PHONY: clean
 clean:
 	find . -name "*~" -exec rm -f {} \;
-	rm -rf build webui
+	rm -rf build webui mkdocs Makefile.rules
 
 Makefile.rules: Makefile Makefile.rules.py $(SOURCES)
-	@./Makefile.rules.py --out=Makefile.rules.new $(SOURCES)
+	@./Makefile.rules.py --out=Makefile.rules.new \
+	  "--mds=$(SOURCES)" "--ymls=$(YAMLS)"
 	@mv Makefile.rules.new Makefile.rules

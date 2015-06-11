@@ -4,4 +4,5 @@ docs_working
 site
 build
 webui
+mkdocs
 __pycache__
