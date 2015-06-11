@@ -25,9 +25,12 @@ The main grid items have the following functions:
 **Details**
 : Shows the status of the recording event:
 
-* ![Tick icon](../icons/tick.png) - the recording has completed.
+Icon                                       | Description
+-------------------------------------------|-------------
+![Tick icon](icons/tick.png)               | the recording has completed
+![Information icon](icons/information.png) | click to display detailed information about the selected recording
 
-* ![Information icon](../icons/information.png) - displays detailed information about the selected recording.
+The detailed information dialog is as follows:
 
 ![Finished Recording Detail](docresources/finishedrecordings2.png)
 

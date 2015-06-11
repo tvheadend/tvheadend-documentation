@@ -29,13 +29,14 @@ The main grid items have the following functions:
 **Details**
 : Shows the status of the recording event:
 
-* ![Clock icon](../icons/clock.png) - the recording is scheduled (upcoming).
 
-* ![Recording icon](../icons/rec.png) - the recording is active and underway
-(current).
+Icon                                       | Description
+-------------------------------------------|-------------
+![Clock icon](icons/clock.png)             | the programme is scheduled (upcoming)
+![Recording icon](icons/rec.png)           | the programme is active and underway (current)
+![Information icon](icons/information.png) | click to display detailed information about the selected recording (upcoming or current)
 
-* ![Information icon](../icons/information.png) - displays detailed information about the selected recording
-(upcoming or current).
+The detailed information dialog is as follows:
 
 ![Detailed Recording Information](docresources/upcomingrecordings2.png)
 

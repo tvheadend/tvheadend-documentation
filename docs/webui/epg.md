@@ -78,11 +78,11 @@ The main grid items have the following functions:
 : Displays the current status of a recording event for this programme if 
   one applies: 
 
-* ![Clock icon](../icons/clock.png) - the programme is scheduled for recording
-* ![Recording icon](../icons/rec.png) - the programme is currently recording
-* You can also click on the broadcast details icon
-  ![Broadcast details icon](../icons/broadcast_details.png) to call up more detailed
-  information about an event.
+Icon                                                   | Description
+-------------------------------------------------------|-------------
+![Clock icon](icons/clock.png)                         | the programme is scheduled for recording
+![Recording icon](icons/rec.png)                       | the programme is currently recording
+![Broadcast details icon](icons/broadcast_details.png) | click to call up more detailed information about an event
 
 **Progress**
 : A bar graph display of how far through a programme we currently are.
