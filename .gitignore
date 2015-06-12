@@ -3,6 +3,6 @@ Makefile.rules
 docs_working
 site
 build
-webui
+/webui
 mkdocs
 __pycache__
