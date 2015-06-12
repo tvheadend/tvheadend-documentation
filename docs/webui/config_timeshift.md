@@ -41,7 +41,7 @@ Button                   | Function
   your storage media runs out of space.
 
 <div class="admonition danger">
-<p class="admonition-title">Danger</p>
+<p class="admonition-title">Warning</p>
 <p>Unless you have adequate storage, or monitor use, enabling this option
 could cause your system to slow down or crash completely!</p>
 </div>
@@ -61,7 +61,7 @@ could cause your system to slow down or crash completely!</p>
   potentially grow unbounded until your storage media runs out of space.
 
 <div class="admonition danger">
-<p class="admonition-title">Danger</p>
+<p class="admonition-title">Warning</p>
 <p>Unless you have adequate storage, or monitor use, enabling this option
 could cause your system to slow down or crash completely!</p>
 </div>
