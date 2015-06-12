@@ -21,6 +21,7 @@ import sys
 import datetime
 import textwrap
 from mistune import Markdown, Renderer
+from mdrenderer import MdRenderer
 import xml.parsers.expat
 
 TOPDIR=os.path.dirname(os.path.realpath(sys.argv[0]))
@@ -36,14 +37,10 @@ def text_to_po_msg(text):
   return w + 'msgstr ""\n'
 
 #
-# MD_Renderer
+# TvhMdRenderer
 #
 
-class Object:
-
-  pass
-
-class MD_Renderer(Renderer):
+class TvhMdRenderer(MdRenderer):
 
   def __init__(self, **kwargs):
     self.pot_blacklist = {}
@@ -65,7 +62,7 @@ class MD_Renderer(Renderer):
       return False
     if text[0] == '<':
       return False
-    return True 
+    return True
 
   def add_pot_text(self, text):
     if not self.translate_check(text):
@@ -110,169 +107,8 @@ class MD_Renderer(Renderer):
       return pref + self.do_translate(text) + suff
     return pref + text + suff
 
-  def get_block(text):
-    type = text[0]
-    p = text.find(':')
-    if p <= 0:
-      return ('', '', '')
-    l = int(text[1:p])
-    t = text[p+1:p+1+l]
-    return (text[p+1+l:], type, t)
-
-  def newline(self):
-    return '\n'
-
   def text(self, text):
     return self.translate(text)
-
-  def strikethrough(self, text):
-    return text
-
-  def linebreak(self):
-    return '\n'
-
-  def hrule(self):
-    return '---\n'
-
-  def header(self, text, level, raw=None):
-    return '#'*(level+1) + text + '\n\n'
-
-  def paragraph(self, text):
-    return text + '\n\n'
-
-  def list(self, text, ordered=True):
-    r = ''
-    while text:
-      text, type, t = MD_Renderer.get_block(text)
-      if type == 'l':
-        r += (ordered and ('# ' + t) or ('* ' + t)) + '\n'
-    return r
-
-  def list_item(self, text):
-    return 'l' + str(len(text)) + ':' + text
-
-  def block_code(self, code, lang=None):
-    return '```no-highlight\n' + code + '\n```\n'
-
-  def block_quote(self, text):
-    r = ''
-    for line in text.splitlines():
-      r += (line and '> ' or '') + line + '\n'
-    return r
-
-  def _emphasis(self, text, pref):
-    return pref + text + pref + ' '
-
-  def emphasis(self, text):
-    return self._emphasis(text, '_')
-    
-  def double_emphasis(self, text):
-    return self._emphasis(text, '__')
-
-  def codespan(self, text):
-    return '`' + text + '`'
-
-  def autolink(self, link, is_email=False):
-    return '<' + link + '>'
-
-  def link(self, link, title, text, image=False):
-    r = (image and '!' or '') + '[' + text + '](' + link + ')'
-    if title:
-      r += '"' + title + '"'
-    return r
-
-  def image(self, src, title, text):
-    self.link(src, title, text, image=True)
-
-  def table(self, header, body):
-    hrows = []
-    while header:
-      header, type, t = MD_Renderer.get_block(header)
-      if type == 'r':
-        flags = {}
-        cols = []
-        while t:
-          t, type2, t2 = MD_Renderer.get_block(t)
-          if type2 == 'f':
-            fl, v = t2.split('=')
-            flags[fl] = v
-          elif type2 == 'c':
-            c = Object()
-            c.flags = flags
-            c.text = t2
-            cols.append(c)
-        hrows.append(cols)
-    brows = []
-    while body:
-      body, type, t = MD_Renderer.get_block(body)
-      if type == 'r':
-        flags = {}
-        cols = []
-        while t:
-          t, type2, t2 = MD_Renderer.get_block(t)
-          if type2 == 'f':
-            fl, v = t2.split('=')
-            flags[fl] = v
-          elif type2 == 'c':
-            c = Object()
-            c.flags = flags
-            c.text = t2
-            cols.append(c)
-        brows.append(cols)
-    colscount = 0
-    colmax = [0] * 100
-    for row in hrows + brows:
-      colscount = max(len(row), colscount)
-      i = 0
-      for col in row:
-        colmax[i] = max(len(col.text), colmax[i])
-        i += 1
-    r = ''
-    for row in hrows:
-      i = 0
-      for col in row:
-        if i > 0:
-          r += ' | '
-        r += col.text.ljust(colmax[i])
-        i += 1
-      r += '\n'
-    for i in range(colscount):
-      if i > 0:
-        r += '-|-'
-      r += '-'.ljust(colmax[i], '-')
-    r += '\n'
-    for row in brows:
-      i = 0
-      for col in row:
-        if i > 0:
-          r += ' | '
-        r += col.text.ljust(colmax[i])
-        i += 1
-      r += '\n'
-    return r
-
-  def table_row(self, content):
-    return 'r' + str(len(content)) + ':' + content
-
-  def table_cell(self, content, **flags):
-    content = content.replace('\n', ' ')
-    r = ''
-    for fl in flags:
-      v = flags[fl]
-      if type(v) == type(True):
-        v = v and 1 or 0
-      v = str(v) and str(v) or ''
-      r += 'f' + str(len(fl) + 1 + len(v)) + ':' + fl + '=' + v
-    return r + 'c' + str(len(content)) + ':' + content
-
-  def footnote_ref(self, key, index):
-    raise
-
-  def footnote_item(self, key, text):
-    raise
-    
-  def footnotes(self, text):
-    raise
 
 class WEBUI_Renderer(Renderer):
 
@@ -360,7 +196,7 @@ class POT:
 
   def to_pot(self, text):
 
-    renderer = MD_Renderer(pot=1)
+    renderer = TvhMdRenderer(pot=1)
     renderer.pot_blacklist = read_blacklist()
     md = Markdown(renderer)
     md(text)
@@ -441,7 +277,7 @@ class PO:
   def internationalize(self, text, po):
 
     po = self.po_parse(po)
-    renderer = MD_Renderer(lang_md=1)
+    renderer = TvhMdRenderer(lang_md=1)
     renderer.strings = self.strings
     renderer.pot_blacklist = read_blacklist()
     md = Markdown(renderer)
