@@ -117,6 +117,12 @@ class WEBUI_Renderer(Renderer):
       return replacement + src[len(start):]
     return src
 
+  def text(self, text):
+    s = text and text[0] in [' ', '\t', '\n']
+    e = text and text[-1] in [' ', '\t', '\n']
+    text = ' '.join(text.split())
+    return (s and ' ' or '') + text + (e and ' ' or '')
+
   def image(self, src, title, text):
     src = WEBUI_Renderer.replace_start(src, 'icons/', 'static/icons/')
     src = WEBUI_Renderer.replace_start(src, '../icons/', 'static/icons/')
@@ -195,7 +201,6 @@ class TvhVersion:
 
   def __init__(self, version):
     self.version = TvhVersion.parse(version)
-    print(repr(self.version))
 
   def parse(version):
     if not version:
@@ -209,7 +214,6 @@ class TvhVersion:
     return self.version < TvhVersion.parse(ver) - 0.0001
 
   def _till(self, ver):
-    print(repr(ver), repr(self.version), TvhVersion.parse(ver))
     return self.version > TvhVersion.parse(ver) + 0.0001
 
   def match(self, tags):
@@ -401,8 +405,8 @@ class HTML:
     output = md(text)
 
     hdr = '<!-- Do not edit! Automatically created file: https://github.com/tvheadend/tvheadend-documentation -->\n'
-    now = datetime.datetime.now(UTC())
-    hdr += '<!-- Build date: ' + now.strftime("%F %R %z") + ' -->\n'
+    #now = datetime.datetime.now(UTC())
+    #hdr += '<!-- Build date: ' + now.strftime("%F %R %z") + ' -->\n'
 
     return hdr + '<div class="hts-doc-text">\n' + output + '</div>\n'
 
