@@ -42,10 +42,12 @@ The main grid items have the following functions:
 : Login name to be used. If no username is required, this entry should
 contain a single asterisk (`*`).
 
+<tvhversion till="4.0">
 **Password**
 : Login password to be used. If username is `*` (unused), the password
 should be the same (i.e. match any username/password combination, or no
 username/password required).
+</tvhversion>
 
 **Network prefix**
 : IPv4 prefix for matching based on source IP address. If set to `0.0.0.0/0`

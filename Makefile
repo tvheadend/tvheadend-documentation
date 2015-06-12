@@ -5,10 +5,15 @@
 # Makefile Licence: WTFPL 2
 #
 
+# valid TVHVERSION values: 4.0 4.2
+
+TVHVERSION?=4.2
 LANGUAGES?=en cs
+
 SOURCES=$(wildcard docs/*.md docs/webui/*.md docs/Appendices/*.md)
 YAMLS=  $(foreach l,$(LANGUAGES),mkdocs/$(l)/mkdocs.yml)
 TVHMD=./tvhmd.py
+TVHMD_VER=$(TVHMD) --tvhversion=$(TVHVERSION)
 MSGMERGE?=msgmerge
 MKDOCS?=mkdocs
 
@@ -41,19 +46,19 @@ endef
 
 define do_md
 	@printf "Building $(2)\n"
-	@$(TVHMD) --format=lang-md "--in=$(1)" "--po=$(4)" "--out=$(2).new"
+	@$(TVHMD_VER) --format=lang-md "--in=$(1)" "--po=$(4)" "--out=$(2).new"
 	@mv "$(2).new" "$(2)"
 endef
 
 define do_webui
 	@printf "Building $(2)\n"
-	@$(TVHMD) --format=lang-html "--in=$(1)" "--out=$(2).new"
+	@$(TVHMD_VER) --format=lang-html "--in=$(1)" "--out=$(2).new"
 	@mv "$(2).new" "$(2)"
 endef
 
 define do_yml
 	@printf "Building $(2)\n"
-	@$(TVHMD) --format=lang-yml "--in=$(1)" "--po=$(4)" "--out=$(2).new"
+	@$(TVHMD_VER) --format=lang-yml "--in=$(1)" "--po=$(4)" "--out=$(2).new"
 	@mv "$(2).new" "$(2)"
 endef
 

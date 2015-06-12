@@ -186,6 +186,86 @@ msgstr ""
     return res
 
 #
+# Version preprocessor
+#
+
+class TvhVersion:
+
+  _tag_name = 'tvhversion'
+
+  def __init__(self, version):
+    self.version = TvhVersion.parse(version)
+    print(repr(self.version))
+
+  def parse(version):
+    if not version:
+      return None
+    if type(version) == type(''):
+      if version[0] == '"' or version[0] == "'":
+        version = version[1:-1]
+    return float(version)
+
+  def _from(self, ver):
+    return self.version < TvhVersion.parse(ver) - 0.0001
+
+  def _till(self, ver):
+    print(repr(ver), repr(self.version), TvhVersion.parse(ver))
+    return self.version > TvhVersion.parse(ver) + 0.0001
+
+  def match(self, tags):
+    if not self.version:
+      return True
+    for w in ['from', 'since']:
+      if w  in tags and self._from(tags[w]):
+        return False
+    for w in ['till', 'until', 'upto']:
+      if w  in tags and self._till(tags[w]):
+        return False
+    return True
+
+  def extract_block(text):
+    tn = TvhVersion._tag_name
+    t1s = text.find('<' + tn)
+    if t1s < 0:
+      return -1, -1, -1, -1
+    t1e = text[t1s:].find('>')
+    t1e = t1e < 0 and len(text) or t1e + t1s + 1
+    p = t1s + 1
+    while 1:
+      p1 = text[p:].find('<' + tn)
+      p2 = text[p:].find('</' + tn)
+      if p2 < p1 or p1 < 0:
+        break
+      p += p1 + 1
+    if p2 < 0:
+      return t1s, t1e, len(text), len(text)
+    t2s = p2 + p
+    t2e = text[t2s:].find('>')
+    t2e = t2e < 0 and len(text) or t2e + t2s + 1
+    return t1s, t1e, t2s, t2e
+
+  def convert(self, text):
+    while 1:
+      t1s, t1e, t2s, t2e = TvhVersion.extract_block(text)
+      if t1s < 0:
+        break
+      tag = text[t1s:t1e-1]
+      while tag and tag[0] != ' ':
+        tag = tag[1:]
+      attrs = tag.split()
+      keys = {}
+      for attr in attrs:
+        key, val = attr.split('=')
+        keys[key] = val
+      if self.match(keys):
+        text = text[:t1s] + text[t1e:t2s] + text[t2e:]
+      else:
+        text = text[:t1s] + text[t2e:]
+    if not text.lstrip().rstrip():
+      return ''
+    return text
+
+#
 #
 #
 
@@ -364,6 +444,10 @@ class YML_POT:
 f = open(argv_get('in'))
 text = f.read(1024*1024)
 f.close()
+if not argv_get('notvhversion'):
+  ver = TvhVersion(argv_get('tvhversion'))
+  text = ver.convert(text)
+  del ver
 
 format = argv_get('format') or 'pot'
 if format == 'pot':
