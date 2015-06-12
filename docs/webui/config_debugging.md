@@ -2,8 +2,6 @@
 
 This tab is used to configure various debugging options in tvheadend.
 
-##NOTE:<font color=red>Rename this and the html to config_degugging for consistency</font>
-
 !['Debugging' Tab](docresources/configtvhlog.png)
 
 ---

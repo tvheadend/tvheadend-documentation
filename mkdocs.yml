@@ -41,8 +41,9 @@ pages:
             - DVR AutoRec Entries: webui/dvr_autorec.md
             - Time Schedules: webui/dvr_timerec.md
         - Configuration Tab:
-            - General: webui/config_misc.md
+            - General: webui/config_general.md
             - Access Entries: webui/config_access.md 
+            - Passwords: webui/config_passwords.md 
             - DVB Inputs:
                 - TV Adapters: webui/config_tvadapters.md
                 - Networks: webui/config_networks.md
@@ -61,7 +62,7 @@ pages:
                 - Digital Video Recorder Profiles: webui/config_dvr.md
                 - Timeshift: webui/config_timeshift.md
             - CAs: webui/config_caclient.md
-            - Debugging: webui/config_tvhlog.md
+            - Debugging: webui/config_debugging.md
         - Status Tab:
             - Stream: webui/status_stream.md
             - Subscriptions: webui/status_subscriptions.md

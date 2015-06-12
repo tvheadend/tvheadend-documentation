@@ -1,7 +1,5 @@
 ##Configuration - General
 
-##NOTE: <font color=red>THIS SOURCE SHOULD BE RENAMED CONFIG_GENERAL.MD WITH CORRESPONDING CHANGE IN TVH WEBUI JS</font>
-
 This tabs allow configuration of several general parameters that affect
 the core Tvheadend functionality.
 
@@ -25,6 +23,12 @@ Button                       | Function
 **Help**                     | Displays this help page
 
 ---
+
+####Server
+
+**Tvheadend server name**
+: Set the name of the server so you can distinguish multiple instances apart
+  on your LAN. 
 
 ####Language Settings
 
