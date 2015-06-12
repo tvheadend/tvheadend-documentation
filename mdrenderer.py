@@ -133,11 +133,14 @@ class MdRenderer(Renderer):
         brows.append(cols)
     colscount = 0
     colmax = [0] * 100
+    align = [''] * 100
     for row in hrows + brows:
       colscount = max(len(row), colscount)
       i = 0
       for col in row:
         colmax[i] = max(len(col.text), colmax[i])
+        if 'align' in col.flags:
+          align[i] = col.flags['align'][0]
         i += 1
     r = ''
     for row in hrows:
@@ -150,8 +153,15 @@ class MdRenderer(Renderer):
       r += '\n'
     for i in range(colscount):
       if i > 0:
-        r += '-|-'
-      r += '-'.ljust(colmax[i], '-')
+        r += ' | '
+      if align[i] == 'c':
+        r += ':' + '-'.ljust(colmax[i]-2, '-') + ':'
+      elif align[i] == 'l':
+        r += ':' + '-'.ljust(colmax[i]-1, '-')
+      elif align[i] == 'r':
+        r +=  '-'.ljust(colmax[i]-1, '-') + ':'
+      else:
+        r += '-'.ljust(colmax[i], '-')
     r += '\n'
     for row in brows:
       i = 0
