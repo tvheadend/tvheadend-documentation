@@ -17,6 +17,10 @@ TVHMD_VER=$(TVHMD) --tvhversion=$(TVHVERSION)
 MSGMERGE?=msgmerge
 MKDOCS?=mkdocs
 
+ifeq ($(TVHVERSION),4.0)
+SOURCES:=$(filter-out docs/webui/config_passwords.md,$(SOURCES))
+endif
+
 ifeq ($(LEVEL2),yes)
 
 RSOURCES=$(subst docs/,,$(SOURCES))
