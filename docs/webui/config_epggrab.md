@@ -58,9 +58,9 @@ Button                       | Function
   if you don’t see yours listed please visit IRC \#hts for help.
 
 * **XMLTV**
-: This is am Internet-based suite of scripts, for more
-  information about XMLTV please visit <http://www.xmltv.org>. To make
-  use of the internal XMLTV grabber you typically require the
+: This is an Internet-based suite of scripts that grab and manage television
+  listings (see [xmltv.org](http://www.xmltv.org) for more information).
+  To make use of the internal XMLTV grabber you typically require the
   xmltv-utils package to be installed. If you install new grabbers you
   will need to restart Tvheadend to pick these up as they’re loaded at
   startup. If you see no XMLTV grabbers listed then most probably
