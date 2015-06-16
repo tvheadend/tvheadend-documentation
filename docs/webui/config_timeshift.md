@@ -42,19 +42,20 @@ Button                   | Function
 
 <div class="admonition danger">
 <p class="admonition-title">Warning</p>
-<p>Unless you have adequate storage, or monitor use, enabling this option
-could cause your system to slow down or crash completely!</p>
+<p>Unless you know that you have adequate storage, or you monitor resource
+use carefully, enabling this option could cause your system to slow down
+or crash completely!</p>
 </div>
 
 **Max. Size (MegaBytes)**
 : Specifies the maximum combined size of all timeshift buffers. If you
-  specify an unlimited period its highly recommended you specifying a
+  specify an unlimited period it's highly recommended that you specify a
   value here.
 
 **Max. RAM Size (MegaBytes)**
 : Specifies the maximum RAM (system memory) size for timeshift buffers.
-  When free RAM buffers are available, they are used instead storage to
-  save the timeshift data.
+  When free RAM buffers are available, they are used in preference to disc
+  storage.
 
 **Unlimited**
 : If checked, this allows the combined size of all timeshift buffers to
@@ -62,8 +63,9 @@ could cause your system to slow down or crash completely!</p>
 
 <div class="admonition danger">
 <p class="admonition-title">Warning</p>
-<p>Unless you have adequate storage, or monitor use, enabling this option
-could cause your system to slow down or crash completely!</p>
+<p>Unless you know that you have adequate storage, or you monitor resource
+use carefully, enabling this option could cause your system to slow down
+or crash completely!</p>
 </div>
 
 Changes to any of these settings must be confirmed by pressing the ‘Save
