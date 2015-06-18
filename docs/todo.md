@@ -8,8 +8,6 @@ of the areas I'm aware of that we need to close off before release</p>
 
 1. Replace all current screenshots with up-to-date, consistent, readable images (suitable for webUI and User Guide)
 
-2. Minor file renaming to improve consistency (e.g. config_misc shoudl be config_general)
-
 4. Once 99% complete, generate new webUI help pages and push them to the tvheadend repo
 
 5. Check all link from tvh (e.g. there are no help buttons on the 'Stream' tabs)
@@ -20,7 +18,6 @@ of the areas I'm aware of that we need to close off before release</p>
 
 8. Obviously, fill in the minor gaps as highlighted in the document: buttons, descriptions, etc.
 
-9. Regenerate everything as soon as mkdocs 0.14 hits the streets - copyright on template footers, collapsible menus (perhaps), search bug fixed
 
 The following major content items/chapters are then missing - based on most FAQs on the forum:
 
