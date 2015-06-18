@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-06-18 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,6 @@ msgid "Things To Do on This Guide..."
 msgstr ""
 
 msgid "Replace all current screenshots with up-to-date, consistent, readable images (suitable for webUI and User Guide)"
-msgstr ""
-
-msgid "Minor file renaming to improve consistency (e.g. config"
-msgstr ""
-
-msgid "_misc shoudl be config"
-msgstr ""
-
-msgid "_general)"
 msgstr ""
 
 msgid "Once 99% complete, generate new webUI help pages and push them to the tvheadend repo"
@@ -42,9 +33,6 @@ msgid "Check non-univeral (i.e. item-specific) configuration items (e.g. the IPT
 msgstr ""
 
 msgid "Obviously, fill in the minor gaps as highlighted in the document: buttons, descriptions, etc."
-msgstr ""
-
-msgid "Regenerate everything as soon as mkdocs 0.14 hits the streets - copyright on template footers, collapsible menus (perhaps), search bug fixed"
 msgstr ""
 
 msgid "The following major content items/chapters are then missing - based on most FAQs on the forum:"

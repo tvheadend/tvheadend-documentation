@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-06-18 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,13 @@ msgstr ""
 msgid "Welcome to Tvheadend"
 msgstr ""
 
-msgid "Tvheadend is a lightweight, easily-configured, general-purpose TV/video streaming server and recorder (PVR/DVR) for GNU/Linux, FreeBSD and Android. It supports input from:"
+msgid "Tvheadend is a lightweight, easily-configured, general-purpose TV/video streaming server and recorder (PVR/DVR) for GNU/Linux, FreeBSD and Android."
+msgstr ""
+
+msgid "Tvheadend interface"
+msgstr ""
+
+msgid "It supports input from:"
 msgstr ""
 
 msgid "Cable TV, delivered via a cable to your house (DVB-C)"
@@ -36,9 +42,6 @@ msgid "Internet and LAN feeds, such as IPTV, SAT>IP, HDHomeRun and a general-pur
 msgstr ""
 
 msgid "As well as being able to record the input, Tvheadend also offers it up to client applications via HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming."
-msgstr ""
-
-msgid "NOTE:"
 msgstr ""
 
 msgid "While supported in previous versions, analogue video (V4L) is no longer supported directly. If you still need this, or need to input signals from video cameras or other non-broadcast sources, use"

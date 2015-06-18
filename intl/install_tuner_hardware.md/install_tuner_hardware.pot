@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-06-18 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,16 +53,22 @@ msgstr ""
 msgid "2. Install Firmware and/or Drivers"
 msgstr ""
 
-msgid "Similar to the above, Tvheadend can do nothing if your tuners aren't working properly. A good place to check how to set up your tuners is the linuxtv wiki - this will not only tell you what's supported under Linux, but also how to get it all working:"
+msgid "Similar to the above, Tvheadend can do nothing if your tuners aren't working properly. A good place to check how to set up your tuners is the"
 msgstr ""
 
 msgid "LinuxTV wiki device library"
 msgstr ""
 
-msgid "Many tuners require firmware - normally, a binary file that's been extracted from the proprietary drivers used by Windows. Many Linux distros include a package for the most common devices (e.g. linux-firmwares under Ubuntu or firmware-linux-nonfree under Debian). If this isn't sufficient, a good source of firmware files is the OpenElec git repository:"
+msgid "this will not only tell you what's supported under Linux, but also how to get it all working."
+msgstr ""
+
+msgid "Many tuners require firmware - normally, a binary file that's been extracted from the proprietary drivers used by Windows. Many Linux distros include a package for the most common devices (e.g. linux-firmwares under Ubuntu or firmware-linux-nonfree under Debian). If this isn't sufficient, a good source of firmware files is the"
 msgstr ""
 
 msgid "OpenElec firmware library"
+msgstr ""
+
+msgid "on their git repository."
 msgstr ""
 
 msgid "Typically, download the binary file and install it into"
