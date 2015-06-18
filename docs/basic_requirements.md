@@ -47,5 +47,5 @@ synchronised from the broadcast signal if you're not in a position to use
 
 ###How Lightweight?
 
-How about on a router? Take a look at this recent (as of the time of writing)
-[example](https://tvheadend.org/boards/4/topics/16579) from one of our users...
+How about light enough to run on a travel router? Take a look at this [example](https://tvheadend.org/boards/4/topics/16579)
+from one of our users...
