@@ -25,22 +25,29 @@ Follow the appropriate installation instructions and, if relevant, the
 setup instruction (e.g. for SAT>IP, which are effectively small, standalone
 computers).
 
+<div class="admonition note">
+<p class="admonition-title">A Note on USB Tuners</p>
+<p>USB tuners are cheap, work well and are frequently well-matched to physically-smaller
+builds (e.g. HTPCs) which simply don't have the internal slots. However, please
+remember that many need external power, or need a powered hub to work properly.</p>
+<p>In addition, even USB3 doesn't have the greatest practical bandwidth per bus. That
+means you're probably asking for problems if you have four DVB-S2 dongles on the same USB
+connection to the motherboard.</p>
+</div>
+
 ###2. Install Firmware and/or Drivers
 
 Similar to the above, Tvheadend can do nothing if your tuners aren't working
-properly. A good place to check how to set up your tuners is the linuxtv
-wiki - this will not only tell you what's supported under Linux, but also
-how to get it all working:
-
-[LinuxTV wiki device library](http://www.linuxtv.org/wiki/index.php/Hardware_Device_Information)
+properly. A good place to check how to set up your tuners is the [LinuxTV wiki device library](http://www.linuxtv.org/wiki/index.php/Hardware_Device_Information)
+- this will not only tell you what's supported under Linux, but also
+how to get it all working.
 
 Many tuners require firmware - normally, a binary file that's been extracted
 from the proprietary drivers used by Windows. Many Linux distros include a
 package for the most common devices (e.g. linux-firmwares under Ubuntu or
 firmware-linux-nonfree under Debian). If this isn't sufficient, a good source
-of firmware files is the OpenElec git repository:
-
-[OpenElec firmware library](https://github.com/OpenELEC/dvb-firmware)
+of firmware files is the [OpenElec firmware library](https://github.com/OpenELEC/dvb-firmware)
+on their git repository.
 
 Typically, download the binary file and install it into `/lib/firmware`, owned
 by `root:root`, permissions `rw-r--r--` (0644)
