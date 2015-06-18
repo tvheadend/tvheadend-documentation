@@ -4,7 +4,7 @@
 
 **Version: <font color=red>DRAFT</font>**
 
-**Last Updated: <font color=red>2015-06-16</font>**
+**Last Updated: <font color=red>2015-06-18</font>**
 
 <div class="admonition note">
 <p class="admonition-title">A Moving Target!</p>
@@ -25,4 +25,5 @@ is easier to find when you're wondering what to do next.
 
 If you get really stuck, there's the [forum](https://tvheadend.org/projects/tvheadend/boards)
 and IRC (*#hts* on *freenode*) - [Kiwi IRC](https://kiwiirc.com/) is a good web
-client if you don't already have an IRC client installed.
+client if you don't already have an IRC client installed, please [Freenode](https://webchat.freenode.net/)
+has one of their own.
