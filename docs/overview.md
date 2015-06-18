@@ -4,6 +4,9 @@
 
 Tvheadend is a lightweight, easily-configured, general-purpose TV/video 
 streaming server and recorder (PVR/DVR) for GNU/Linux, FreeBSD and Android.
+
+![Tvheadend interface](images/overall_screenshot.png)
+
 It supports input from:
 
 * Cable TV, delivered via a cable to your house (DVB-C)
@@ -17,8 +20,6 @@ MPEG-TS `pipe://`
 As well as being able to record the input, Tvheadend also offers it up to
 client applications via HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP
 streaming.
-
-##NOTE: <font color=red>OVERALL SCREENSHOT REQUIRED</font>
 
 While supported in previous versions, analogue video (V4L) is no longer
 supported directly. If you still need this, or need to input signals
