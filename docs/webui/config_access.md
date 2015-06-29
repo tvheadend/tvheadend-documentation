@@ -49,6 +49,19 @@ should be the same (i.e. match any username/password combination, or no
 username/password required).
 </tvhversion>
 
+<tvhversion from="4.2">
+**Language**
+: Preferred language for EPG and DVR strings. This settings is merged with
+the languages set in the _General_ / _Base_ configuration. If the _WWW Language_
+settings is empty, this settings is used also for the WWW interface.
+</tvhversion>
+
+<tvhversion from="4.2">
+**WWW Language**
+: Preferred language for WWW interface. This selection is used only for the WWW
+internationalization. EPG and DVR strings are handled using the _Language_ settings.
+</tvhversion>
+
 **Network prefix**
 : IPv4 prefix for matching based on source IP address. If set to `0.0.0.0/0`
 it will match everything. The multiple networks can be delimited using
