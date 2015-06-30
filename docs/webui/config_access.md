@@ -51,15 +51,15 @@ username/password required).
 
 <tvhversion from="4.2">
 **Language**
-: Preferred language for EPG and DVR strings. This settings is merged with
-the languages set in the _General_ / _Base_ configuration. If the _WWW Language_
-settings is empty, this settings is used also for the WWW interface.
+: Preferred language for EPG and DVR strings. This setting is merged with
+the languages set in the _General_ / _Base_ configuration. If the _Web Interface Language_
+setting is empty, this setting is also used for the application web interface.
 </tvhversion>
 
 <tvhversion from="4.2">
-**WWW Language**
-: Preferred language for WWW interface. This selection is used only for the WWW
-internationalization. EPG and DVR strings are handled using the _Language_ settings.
+**Web Interface Language**
+: Preferred language for the web interface. This selection is used only for the 
+internationalization of Tvheadend's web interface. EPG and DVR strings are handled using the _Language_ settings.
 </tvhversion>
 
 **Network prefix**
