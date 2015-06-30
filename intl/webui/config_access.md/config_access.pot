@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-12 12:40+0000\n"
+"POT-Creation-Date: 2015-06-30 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,6 +117,36 @@ msgid ": Login password to be used. If username is"
 msgstr ""
 
 msgid "(unused), the password should be the same (i.e. match any username/password combination, or no username/password required)."
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid ": Preferred language for EPG and DVR strings. This setting is merged with the languages set in the"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "/"
+msgstr ""
+
+msgid "Base"
+msgstr ""
+
+msgid "configuration. If the"
+msgstr ""
+
+msgid "Web Interface Language"
+msgstr ""
+
+msgid "setting is empty, this setting is also used for the application web interface."
+msgstr ""
+
+msgid ": Preferred language for the web interface. This selection is used only for the internationalization of Tvheadend's web interface. EPG and DVR strings are handled using the"
+msgstr ""
+
+msgid "settings."
 msgstr ""
 
 msgid "Network prefix"
