@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-18 14:45+0000\n"
+"POT-Creation-Date: 2015-07-02 14:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 msgid ""
 "Replace all current screenshots with up-to-date, consistent, readable images "
-"(suitable for webUI and User Guide)"
+"(suitable for webUI and User Guide) - for v4.0, for v4.2"
 msgstr ""
 
 msgid ""
@@ -81,6 +81,13 @@ msgid "Platform differences - Ubuntu, Fedora, Red Hat, Arch, Android..."
 msgstr ""
 
 msgid "HD Homerun setup"
+msgstr ""
+
+msgid "/etc/default/tvheadend options"
+msgstr ""
+
+msgid ""
+"Expand a bit on command-line options and give some examples of common usage"
 msgstr ""
 
 msgid "And I'm left with these final open questions:"
