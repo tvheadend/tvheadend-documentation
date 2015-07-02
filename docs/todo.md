@@ -6,7 +6,7 @@
 of the areas I'm aware of that we need to close off before release</p>
 </div>
 
-1. Replace all current screenshots with up-to-date, consistent, readable images (suitable for webUI and User Guide)
+1. Replace all current screenshots with up-to-date, consistent, readable images (suitable for webUI and User Guide) - for v4.0, for v4.2
 
 4. Once 99% complete, generate new webUI help pages and push them to the tvheadend repo
 
@@ -31,7 +31,7 @@ The following major content items/chapters are then missing - based on most FAQs
 
 * How to set up a multi-profile installation (access)
 
-* How to compile/install on <insert your distro here>
+* How to compile/install on _<insert your distro here\>_
 
 * Setting up SAT>IP - as a client, as a server
 
@@ -40,6 +40,10 @@ The following major content items/chapters are then missing - based on most FAQs
 * Platform differences - Ubuntu, Fedora, Red Hat, Arch, Android...
 
 * HD Homerun setup
+
+* /etc/default/tvheadend options
+
+* Expand a bit on command-line options and give some examples of common usage
 
 And I'm left with these final open questions:
 
