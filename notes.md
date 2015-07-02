@@ -21,7 +21,9 @@ To rebuild the internationalised html pages, run 'make' from the root directory.
 At the moment, there's a resync.sh shell script that builds the source (EN) site and syncs it to tvheadend.github.io. 
 This isn't the right way to do it - instead, we should sync the output of make - so ./mkdocs/en/site as a default. 
 
-**TODO**
+##TO-DO
+
+###Structure
 
 We need to determine the structure of the internationalised pages, plus how we handle multiple application versions
 (e.g. 4.0 and 4.2/master). It's perfectly feasible to push these to separate project github repositories  - see 
@@ -38,12 +40,13 @@ and how it redirects to https://docs.readthedocs.org/en/latest/ with the selecto
 The mkdocs team is considering how to implement multi-version support. Their preference is to build directly from
 git tags; currently, perexg has implemented inline tags (e.g. <tvhversion till="x.x"> and <tvhversion from="y.y">),
 so we'll need to see how these play together. Ideally, mkdocs will have a language/version switcher which we can
-point to the different locations irrespective of where they're physically hosted (either as subdrs in this structure
-or as a separate repo).
+point to the different locations irrespective of where they're physically hosted (either as subdrs in this structure or as a separate repo).
 
 Ref: https://github.com/mkdocs/mkdocs/issues/617
 Ref: https://github.com/mkdocs/mkdocs/issues/211
 Ref: https://github.com/mkdocs/mkdocs/issues/193
+
+###ToC/Theme
 
 The other outstanding issue with mkdocs is the way it handles a large number of entries on the table of contents.
 
@@ -56,3 +59,9 @@ Ref: https://github.com/mkdocs/mkdocs/issues/588
 if you have too many entries at the top level, so structure would need to be considered.
 
 Ref: https://github.com/mkdocs/mkdocs/issues/210
+
+###Sync
+
+As above - we need to adjust resync.sh so it pushes the internationalied output, even if it's just the en pages at the moment.
+
+More fundamentally, we need to have some way to push all of the internationalised pages at the same time, within whatever structure is created as above.
