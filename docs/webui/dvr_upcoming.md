@@ -51,7 +51,7 @@ is thus used here as the name of the event (see also: adding an event
 manually with the **Add** button).
 
 **Subtitle**
-: The programmes episode title if available.
+: The programme episode title if available.
 Note that some broadcasters (especially in the UK on Freeview) incorrectly insert the programme synopsis into the
 subtitle section of the OTA EPG data.
 
