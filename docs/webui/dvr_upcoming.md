@@ -41,7 +41,8 @@ The detailed information dialog is as follows:
 ![Detailed Recording Information](docresources/upcomingrecordings2.png)
 
 **Rerun Of**
-: <font color=red>Text...</font>
+: If the recording is a repeat (rerun) this field will display the date the programme was previously broadcast.
+Note that this field is dependant on your epg source.
 
 **Title**
 : The title (name) of the recording. While this is copied from the EPG
@@ -50,7 +51,9 @@ is thus used here as the name of the event (see also: adding an event
 manually with the **Add** button).
 
 **Subtitle**
-: <font color=red>Text...</font>
+: The programme episode title if available.
+Note that some broadcasters (especially in the UK on Freeview) incorrectly insert the programme synopsis into the
+subtitle section of the OTA EPG data.
 
 **Episode**
 : The episode number of the recording (whether this is available depends
@@ -76,13 +79,13 @@ recording five minutes after the EPG stop time”).
 before or after.
 
 **File Size**
-: <font color=red>Text...</font>
+: The current file size of the in progress recording, this will continue to increase until the recording is complete. 
 
 **Channel**
 : The channel to be recorded.
 
 **Owner**
-: <font color=red>Text...</font>
+: The logged in user who created the recording, this will be blank if the user can't be verified.
 
 **Creator**
 : The user who created the recording or the auto-recording source and IP
@@ -95,10 +98,11 @@ address if scheduled by a matching rule.
 : The status of the recording (scheduled or recording).
 
 **Errors**
-: <font color=red>Text...</font>
+: The number of transport stream errors encountered during the recording. 
 
 **Data Errors**
-: <font color=red>Text...</font>
+: The number of continuity errors encountered during the recording.
 
 **Comment**
-: <font color=red>Text...</font>
+: This field allows you to enter a note about the recording, you can enter whatever you like here.
+This field will automatically be filled if the recording was created by an auto recording rule, you can still change it if you wish.
