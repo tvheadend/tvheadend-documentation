@@ -6,22 +6,21 @@
 of the areas I'm aware of that we need to close off before release</p>
 </div>
 
-1. Replace all current screenshots with up-to-date, consistent, readable images (suitable for webUI and User Guide) - for v4.0, for v4.2
+1. Complete the content for 4.0 (4.2 can wait) - strip out what isn't stricly necessary now (we can come back)
 
-4. Once 99% complete, generate new webUI help pages and push them to the tvheadend repo
+2. Check non-univeral (i.e. item-specific) configuration items (e.g. the IPTV mux parameters) and make sure they're documented
+
+3. Obviously, fill in the minor gaps as highlighted in the document: buttons, descriptions, etc.
+
+4. Generate new webUI help pages and push them to the tvheadend repo
 
 5. Check all link from tvh (e.g. there are no help buttons on the 'Stream' tabs)
 
-6. Might be worth taking a few specific screenshots of dialog boxes
-
-7. Check non-univeral (i.e. item-specific) configuration items (e.g. the IPTV mux parameters) and make sure they're documented
-
-8. Obviously, fill in the minor gaps as highlighted in the document: buttons, descriptions, etc.
 
 
 The following major content items/chapters are then missing - based on most FAQs on the forum:
 
-* Transcoding
+* Transcoding (updated for 4.2, so needs to be tagged properly and reversed as applicable to 4.0)
 
 * How to configure a recording
 
