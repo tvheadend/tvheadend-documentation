@@ -3,11 +3,7 @@
 This tabs allow configuration of several general parameters that affect
 the core Tvheadend functionality.
 
-##NOTE: <font color=red>THE TWO IMAGES BELOW SHOULD BE REPLACED WITH A SINGLE ONE</font>
-
-!['General' Tab Screenshot 1](docresources/configgeneraltab1.png)
-
-!['General' Tab Screenshot 2](docresources/configgeneraltab2.png)
+!['General' Tab Screenshot 1](docresources/configgeneraltab.png)
 
 ---
 

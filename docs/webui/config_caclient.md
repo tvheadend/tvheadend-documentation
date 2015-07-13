@@ -3,7 +3,7 @@
 Tvheadend support connecting to card clients via the cwc (newcamd) and
 capmt (dvbapi) protocols for so-called 'softcam' descrambling.
 
-!['CAs' Tab](docresources/configcwc.png)
+!['CAs' Tab](docresources/configcas.png)
 
 ---
 
@@ -21,6 +21,22 @@ Button              | Function
 **Move Down**       | Move the selected CA client configuration down in the list.
 **Show Passwords**  | Reveals any stored CA client passwords.
 **Help**            | Display this help page.
+
+---
+
+####Add/Edit Dialog Example
+
+New CA configurations are created with the _Add_ button, with subsequent 
+editing done within the grid. The following configuration parameters are 
+used, depending on the type of CA access:
+
+!['Add/Edit CA' Dialog - CWC](docresources/configcanewcamd.png)
+
+!['Add/Edit CA' Dialog - CAPMT](docresources/configcacapmt.png)
+
+!['Add/Edit CA' Dialog - AES Constant CWC](docresources/configcaaescwc.png)
+
+!['Add/Edit CA' Dialog - DES Constant CWC](docresources/configcadescwc.png)
 
 ---
 
@@ -57,8 +73,6 @@ The main grid items have the following functions:
 **Comment**
 : Allows the administrator to set a comment only visible in this editor.
   It does not serve any active purpose.
-
-!['CAs Tab 2'](docresources/configcapmt.png)
 
 ---
 

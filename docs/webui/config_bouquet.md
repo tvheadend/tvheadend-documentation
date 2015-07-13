@@ -2,7 +2,7 @@
 
 Bouquets are broadcaster-defined groupings and orders of channels.
 
-##NOTE: <font color=red>SCREENSHOT HERE</font>
+!['Bouqets' Tab](docresources/configbouquets.png)
 
 To use bouquets, ensure to add and scan all available muxes using the
 predefined muxes or manual configuration.
@@ -30,6 +30,16 @@ Button            | Function
 **Delete**        | Delete an existing bouquet. 
 **Edit**          | Edit an existing bouquet. This allows you to change any of the parameters you’d otherwise set when adding a new channel, e.g. enabled, map radio, etc.
 **Help**          | Displays this help page. 
+
+---
+
+####Edit Dialog Example
+
+Bouquets are automatically added, so you cannot define or add one manually. 
+You may edit an existing one, however, with most fields also available in
+the grid view:
+
+!['Edit Bouquets' Dialog](docresources/configbouquets1.png)
 
 ---
 

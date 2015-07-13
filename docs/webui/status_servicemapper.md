@@ -1,10 +1,10 @@
 ##Status - Service Mapper
 
-##Note: <font color=red>Intro text</font>
-
-##Note: <font color=red>Screenshot</font>
+This tab shows information about current service mapping activity.
 
 This is a read-only tab; nothing is configurable.
+
+!['Status - Subscriptions' Tab](docresources/statusservicemapper.png)
 
 ---
 

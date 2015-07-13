@@ -4,15 +4,7 @@ This tab is used to configure operation of the Digital Video Recorder.
 It is not used for scheduling or administration of individual
 recordings.
 
-!['Digital Video Recorder Profiles' Tab 1](docresources/configdvrtab1.png)
-
-!['Digital Video Recorder Profiles' Tab 2](docresources/configdvrtab2.png)
-
-!['Digital Video Recorder Profiles' Tab 3](docresources/configdvrtab3.png)
-
-##NOTE: <font color=red>Merge into one image</font>
-
-##NOTE: <font color=red>Have overview screenshot showing profiles, then focus on config</font>
+!['Digital Video Recorder Profiles' Tab 1](docresources/configdvrtab.png)
 
 ---
 

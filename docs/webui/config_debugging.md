@@ -2,7 +2,7 @@
 
 This tab is used to configure various debugging options in tvheadend.
 
-!['Debugging' Tab](docresources/configtvhlog.png)
+!['Debugging' Tab](docresources/configdebugging.png)
 
 ---
 
@@ -47,5 +47,3 @@ Depending on your distribution, the default command-line configuration is
 usually stored in the `/etc/sysconfig` tree or an init script. You may also
 be able to change `/etc/default/tvheadend` to add additional command-line
 parameters.
-
-##Note: <font color=red>It'd be helpful to expand as to what happens on what distro...</font>   

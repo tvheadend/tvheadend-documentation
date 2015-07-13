@@ -3,7 +3,7 @@
 This tab is the second part of Tvheadend's access control mechanism. It is
 where you set and maintain all user passwords (e.g. for streaming or DVR access).
 
-![Passwords](docresources/configpasswords.png)
+![Passwords](docresources/4.2/configpasswords.png)
 
 ---
 

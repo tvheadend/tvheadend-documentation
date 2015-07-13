@@ -19,6 +19,23 @@ and parts of south Asia
 
 ---
 
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+!['Add/Edit Network' Dialog - ATSC](docresources/configdvbnetwork_atsc.png)
+
+!['Add/Edit Network' Dialog - DVB-C](docresources/configdvbnetwork_dvbc.png)
+
+!['Add/Edit Network' Dialog - DVB-S/2](docresources/configdvbnetwork_dvbs.png)
+
+!['Add/Edit Network' Dialog - DVB-T/2](docresources/configdvbnetwork_dvbt.png)
+
+!['Add/Edit Network' Dialog - IPTV](docresources/configdvbnetwork_iptv.png)
+
+---
+
 ####Menu Bar/Buttons
 
 The following functions are available:

@@ -10,6 +10,23 @@ so an IP address, in effect.
 
 ---
 
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+![Add/Edit Mux Dialog - ATSC](docresources/configdvbmux_atsc.png)
+
+![Add/Edit Mux Dialog - DVB-C](docresources/configdvbmux_dvbc.png)
+
+![Add/Edit Mux Dialog - DVB-S/2](docresources/configdvbmux_dvbs.png)
+
+![Add/Edit Mux Dialog - DVB-T/2](docresources/configdvbmux_dvbt.png)
+
+![Add/Edit Mux Dialog - IPTV](docresources/configdvbmux_iptv.png)
+
+---
+
 ####Menu Bar/Buttons
 
 The following functions are available:

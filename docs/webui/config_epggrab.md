@@ -5,7 +5,7 @@ grabbing capabilities. Tvheadend supports a variety of different EPG
 grabbing mechanisms. These fall into 3 broad categories, within which
 there are a variety of specific grabber implementations.
 
-##NOTE: <font color=red>SCREENSHOT HERE</font>
+!['EPG Grabber' Tab](docresources/configepggrabber.png)
 
 ####Menu Bar/Buttons
 

@@ -22,6 +22,19 @@ Button     | Function
 
 ---
 
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+!['Add/Edit Stream Profiles' Dialog - mkv](docresources/configstreamprofiles1.png)
+
+!['Add/Edit Stream Profiles' Dialog - ts](docresources/configstreamprofiles2.png)
+
+!['Add/Edit Stream Profiles' Dialog - transcode](docresources/configstreamprofiles3.png)
+
+---
+
 ###Stream Profile Types
 
 **MPEG-TS Pass-through /build-in**

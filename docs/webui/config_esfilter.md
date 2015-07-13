@@ -12,7 +12,7 @@ This table defines rules to filter and order the elementary streams
 The execution order of commands is granted. It means that first rule is
 executed for all available streams then second and so on.
 
-##NOTE: <font color=red>SCREENSHOT HERE</font>
+!['Stream Filters' Tab](docresources/configstreamfilters.png)
 
 If any elementary stream is not marked as ignored or exclusive, it is
 used. If you like to ignore unknown elementary streams, add a rule to
@@ -43,6 +43,15 @@ Button          | Function
 **Move Down**   | Move the filter down in the list.
 **Edit**        | Edit an existing filter. This allows you to change any of the parameters you’d otherwise set when adding a new channel, e.g. language, PID, action, etc.
 **Help**        | Displays this help page. 
+
+---
+
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+!['Add/Edit Stream Filter' Dialog](docresources/configstreamfilters1.png)
 
 ---
 

@@ -10,7 +10,13 @@ combined for all matching access entries. An access entry is said to match
 if the username / password matches and the IP source address of the
 requesting peer is within the prefix.
 
+<tvhversion till="4.0">
 !['Access Entries' Tab](docresources/accessconfig.png)
+</tvhversion>
+
+<tvhversion from="4.2">
+!['Access Entries' Tab](docresources/4.2/accessconfig.png)
+</tvhversion>
 
 ---
 
@@ -137,15 +143,23 @@ It does not serve any active purpose.
 
 Let’s also take a look at an example:
 
+<tvhversion till="4.0">
 ![Access Entries Example](docresources/accessconfigexample.png)
+</tvhversion>
 
-The first line gives clients originating from *192.168.0.0 - 192.168.0.255*
-network access to streaming functions. Typically, you would use this for
-your local media players at home (Although Movian can prompt for username
-and password in its HTSP client)
+<tvhversion from="4.2">
+![Access Entries Example](docresources/4.2/accessconfigexample.png)
+</tvhversion>
 
-The second line adds a user with world wide access who might want to
-modify recordings, etc., perhaps from their workplace or via a mobile 'phone.
-
-The third line provide admin access to an *admin* user. As an extra
+The first line provide admin access to an *admin* user. As an extra
 precaution this user is only allowed to log in from the home network.
+
+The second line provides unauthenticated (password-less) access from
+any *192.168.2.0 - 192.168.2.255* client for streaming functions.
+Typically, you would use this for your local media players at home
+(although Movian can prompt for username and password in its HTSP client)
+
+The third line defines an *xbmc* user with world wide access for streaming
+(e.g. from Kodi) and with access privileges to modify recordings, etc.
+This would perhaps be used from a user's workplace or via a mobile 'phone.
+

@@ -22,6 +22,15 @@ Button     | Function
 
 ---
 
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+![Add/Edit Upcoming Recording](docresources/upcomingrecordings3.png)
+
+---
+
 ####Grid Items
 
 The main grid items have the following functions:
@@ -102,3 +111,4 @@ address if scheduled by a matching rule.
 
 **Comment**
 : <font color=red>Text...</font>
+

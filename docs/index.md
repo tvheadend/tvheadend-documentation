@@ -1,10 +1,10 @@
 #Tvheadend 4.0 User Guide
 
-![Tvheadend Logo](images/tvhlogo.png)
+<img class="noborder" alt="Tvheadend Logo" src="./images/tvhlogo.png" />
 
 **Version: <font color=red>DRAFT</font>**
 
-**Last Updated: <font color=red>2015-07-02</font>**
+**Last Updated: <font color=red>2015-07-13</font>**
 
 <div class="admonition note">
 <p class="admonition-title">A Moving Target!</p>

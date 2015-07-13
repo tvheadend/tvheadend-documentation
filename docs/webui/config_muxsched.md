@@ -3,7 +3,7 @@
 Mux Schedulers enable Tvheadend to automatically play channels. This is
 useful to get EPG, services or access rights updates.
 
-##NOTE: <font color=red>SCREENSHOT REQUIRED</font>
+!['Mux Schedulers \'Add\' Dialog' Tab](docresources/configdvbmuxsched.png)
 
 ---
 
@@ -11,17 +11,24 @@ useful to get EPG, services or access rights updates.
 
 The following functions are available:
 
-Button            | Function
-------------------|---------
-**Save**          | Save any changes made to the mux schedulers.
-**Undo**          | Undo any changes made to the mux schedulers since the last save.
-**Add**           | Add a new mux scheduler.
-**Delete**        | Delete an existing mux scheduler.
-**Edit**          | Edit an existing mux scheduler.
-**Hide <option>** | <font color=red>??????</font>. Options are Parent Disabled, All, None
-**Help**          | Displays this help page. 
+Button             | Function
+-------------------|---------
+**Save**           | Save any changes made to the mux schedulers.
+**Undo**           | Undo any changes made to the mux schedulers since the last save.
+**Add**            | Add a new mux scheduler.
+**Delete**         | Delete an existing mux scheduler.
+**Edit**           | Edit an existing mux scheduler.
+**Hide <option\>** | <font color=red>??????</font>. Options are Parent Disabled, All, None
+**Help**           | Displays this help page. 
 
-!['Mux Schedulers \'Add\' Dialog' Tab](docresources/configdvbmuxsched.png)
+---
+
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+!['Mux Schedulers \'Add\' Dialog' Tab](docresources/configdvbmuxsched1.png)
 
 ---
 

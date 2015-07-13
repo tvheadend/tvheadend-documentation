@@ -11,16 +11,44 @@ Channels.
 
 The following functions are available:
 
-Button            | Function
-------------------|---------
-**Save**          | Save any changes made to the services.
-**Undo**          | Undo any changes made to the services since the last save.
-**Delete**        | Delete an existing service. 
-**Edit**          | Edit an existing service.
-**Hide <option>** | <font color=red>??????</font>. Options are Parent Disabled, All, None
-**Map all**       | Map all services to channels. You will be prompted to include/exclude e.g. encrypted channels.
-**Help**          | Displays this help page. 
+Button             | Function
+-------------------|---------
+**Save**           | Save any changes made to the services.
+**Undo**           | Undo any changes made to the services since the last save.
+**Delete**         | Delete an existing service. 
+**Edit**           | Edit an existing service.
+**Hide <option\>** | <font color=red>??????</font>. Options are Parent Disabled, All, None
+**Map all**        | Map all services to channels. You will be prompted to include/exclude e.g. encrypted channels.
+**Help**           | Displays this help page. 
 
+---
+
+####Map All Dialog
+
+If you select the 'Map All' function, the following dialog box appears and
+allows you to fine-tune the mapping of services to channels:
+
+!['Map All' Dialog](docresources/configdvbservices_mapall.png)
+
+Options here are:
+
+**Check availability**
+: If checked, only services that are available now will be mapped (so, for
+  example, time-sharing channels will not be mapped if they're currently
+  off air).
+
+**Include encrypted services**
+: If checked, encrypted services will be included in the mapping. Leave
+  unchecked to exclude these from your channel list.
+  
+**Merge same name**
+: If checked, merge identically-named services from multiple sources into
+  single channels.
+  
+**Create provider tags**
+: If checked, automatically create Tvheadend channel tags to match any tags
+  provided by the broadcaster.
+  
 ---
 
 ####Grid Items

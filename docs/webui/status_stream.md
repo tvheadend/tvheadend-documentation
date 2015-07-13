@@ -1,10 +1,10 @@
 ##Status - Stream
 
-##Note: <font color=red>Intro text</font>
-
-##Note: <font color=red>Screenshot</font>
+This tab shows information about all currently-open streams.
 
 This is a read-only tab; nothing is configurable.
+
+!['Status - Stream' Tab](docresources/statusstream.png)
 
 ---
 

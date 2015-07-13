@@ -26,6 +26,15 @@ Button     | Action
 
 ---
 
+####Add/Edit Dialog Example
+
+A common set of fields is used for the _Add_ or _Edit_ functions, most
+of which can also be seen in the grid view:
+
+![Add/Edit Time Schedules Dialog](docresources/timeschedules2.png)
+
+---
+
 ####Grid Items
 
 The main grid items have the following functions:

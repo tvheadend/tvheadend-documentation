@@ -141,11 +141,12 @@ for recording by clicking on the *[Record program]* button.
 For EPG providers that supply series link information there will also be
 a *[Record series]* button that will record all entries in the series.
 
+![EPG Detail 1](docresources/epg2.png)
+
 For events without any series link information, an *[Autorec]* button
 will be provided to create a pseudo-series link using the autorec
 feature.
 
-![EPG Detail 1](docresources/epg2.png)
 ![EPG Detail 2](docresources/epg3.png)
 
 If you schedule any kind of recording from this point, you can choose a

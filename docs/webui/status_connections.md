@@ -1,10 +1,10 @@
 ##Status - Connections
 
-##Note: <font color=red>Intro text</font>
-
-##Note: <font color=red>Screenshot</font>
+This tab shows information about all active connections.
 
 This is a read-only tab; nothing is configurable.
+
+!['Status - Subscriptions' Tab](docresources/statusconnections.png)
 
 ---
 
