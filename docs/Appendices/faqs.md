@@ -22,8 +22,8 @@ Note: The above path only applies to Debian/Ubuntu systems others may differ.
 
 ###Q: Why can't I see my tuners in Tvheadend's interface?
 
-This is normally because they're not installed properly. Check syslog/dmesg and see that you have startup 
-messages that indicate whether or not the tuenrs have initialized properly. Similarly, check /dev/dvb to 
+This is normally because they're not installed properly. Check syslog/dmesg (e.g. `dmesg | grep dvb`) and see that you have startup 
+messages that indicate whether or not the tuenrs have initialized properly. Similarly, check `/dev/dvb` to 
 see if the block device files (i.e. the files used to communicate with the tuner) have been created correctly.
 
 The other major cause of this issue is when you're running Tvheadend as a user who doesn't have sufficient
