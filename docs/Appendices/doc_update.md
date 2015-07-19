@@ -1,4 +1,4 @@
-##Updating the Documentation 2nd June 2015
+##Updating the Documentation 19 July 2015
 
 The documentation is written in markdown, and then converted in two 
 directions to create both this User Guide and the on-line help files
@@ -6,8 +6,7 @@ that are bundled with the application.
 
 Broadly:
 
-1. Install dependencies ([mkdocs](http://www.mkdocs.org/), 
-[pandoc](http://pandoc.org/installing.html) and 
+1. Install dependencies ([mkdocs](http://www.mkdocs.org/) and 
 [git](https://help.github.com/articles/set-up-git/))
 
 2. Clone the [documentation repository](https://github.com/tvheadend/tvheadend-documentation)
