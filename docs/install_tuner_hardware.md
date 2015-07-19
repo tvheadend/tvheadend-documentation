@@ -11,7 +11,7 @@ forums](https://tvheadend.org/boards/5/topics/5102).
 
 ###1. Install the Tuner Hardware
 
-This is obviously a core requirement that's outside of the scope of this guide
+This is obviously a core requirement that's outside of the scope of this guide.
 
 You basically have the choice of:
 
@@ -19,7 +19,7 @@ You basically have the choice of:
 
 * Internal (e.g. PCI) tuners that go inside the computer chassis
 
-* External SAT>IP tuners that send their decoded signals over a LAN connection. 
+* External SAT>IP tuners that send their decoded signals over a LAN connection
 
 Follow the appropriate installation instructions and, if relevant, the
 setup instruction (e.g. for SAT>IP, which are effectively small, standalone
@@ -33,7 +33,10 @@ remember that many need external power, or need a powered hub to work properly.<
 <p>In addition, even USB3 doesn't have the greatest practical bandwidth per bus. That
 means you're probably asking for problems if you have four DVB-S2 dongles on the same USB
 connection to the motherboard.</p>
-</div>
+<p>This is particularly true of systems such as the Raspberry Pi which share USB
+bandwidth with the Ethernet port. Don't be surprised if this kind of platform struggles
+and/or reports errors in a multi-tuner configuration, especially on
+high-bandwidth (e.g. HD) streams.</p></div>
 
 ###2. Install Firmware and/or Drivers
 
@@ -42,11 +45,25 @@ properly. A good place to check how to set up your tuners is the [LinuxTV wiki d
 - this will not only tell you what's supported under Linux, but also
 how to get it all working.
 
-Many tuners require firmware - normally, a binary file that's been extracted
-from the proprietary drivers used by Windows. Many Linux distros include a
-package for the most common devices (e.g. linux-firmwares under Ubuntu or
-firmware-linux-nonfree under Debian). If this isn't sufficient, a good source
-of firmware files is the [OpenElec firmware library](https://github.com/OpenELEC/dvb-firmware)
+As a broad guide, though, you need two main components: a driver, and firmware. 
+
+The **driver** is the piece of software that, as far as the operating system is concerned,
+controls the tuner hardware. 
+
+Driver software typically comes either built-in to the operating system
+(a clue here is documentation that says *"supported since kernel 3.16"*, for example)
+or as an external program that needs to be compiled in (e.g. how you'd build TBS'
+or Digital Devices drivers, or perhaps where the driver is supported in a later version
+of LinuxTV V4L-DVB than has made it to your kernel - the giveaway here is 
+*"compile and install the latest media_build"*).
+
+Many tuners then also require **firmware** - normally, a binary file that's been
+extracted from the proprietary drivers used by Windows.
+
+Many Linux distros include a package for the most common devices (e.g.
+*linux-firmwares* under Ubuntu or *firmware-linux-nonfree* under Debian).
+If this isn't sufficient, a good source of firmware files is the
+[OpenElec firmware library](https://github.com/OpenELEC/dvb-firmware)
 on their git repository.
 
 Typically, download the binary file and install it into `/lib/firmware`, owned
