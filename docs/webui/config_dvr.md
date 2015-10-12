@@ -111,9 +111,10 @@ Format | Description                               | Example value
 `%e`   | Error message                             |  Aborted by user
 `%S`   | Start time stamp of recording, UNIX epoch |  1224421200
 `%E`   | Stop time stamp of recording, UNIX epoch  |  1224426600
-`%r`   | Number of errors occurred                 |  0
-`%R`   | Number of data errors occurred            |  6
-
+<tvhversion from="4.2">
+`%r`   | Number of errors during recording         |  0
+`%R`   | Number of data errors during recording    |  6
+</tvhversion>
 
 <div class="admonition note">
 <p class="admonition-title">Example usage</p>
