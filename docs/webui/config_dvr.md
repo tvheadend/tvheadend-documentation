@@ -111,6 +111,8 @@ Format | Description                               | Example value
 `%e`   | Error message                             |  Aborted by user
 `%S`   | Start time stamp of recording, UNIX epoch |  1224421200
 `%E`   | Stop time stamp of recording, UNIX epoch  |  1224426600
+`%r`   | Number of errors occurred                 |  0
+`%R`   | Number of data errors occurred            |  6
 
 
 <div class="admonition note">
