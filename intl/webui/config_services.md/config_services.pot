@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,6 +75,42 @@ msgid "Help"
 msgstr ""
 
 msgid "Displays this help page."
+msgstr ""
+
+msgid "Map All Dialog"
+msgstr ""
+
+msgid "If you select the 'Map All' function, the following dialog box appears and allows you to fine-tune the mapping of services to channels:"
+msgstr ""
+
+msgid "'Map All' Dialog"
+msgstr ""
+
+msgid "Options here are:"
+msgstr ""
+
+msgid "Check availability"
+msgstr ""
+
+msgid ": If checked, only services that are available now will be mapped (so, for example, time-sharing channels will not be mapped if they're currently off air)."
+msgstr ""
+
+msgid "Include encrypted services"
+msgstr ""
+
+msgid ": If checked, encrypted services will be included in the mapping. Leave unchecked to exclude these from your channel list."
+msgstr ""
+
+msgid "Merge same name"
+msgstr ""
+
+msgid ": If checked, merge identically-named services from multiple sources into single channels."
+msgstr ""
+
+msgid "Create provider tags"
+msgstr ""
+
+msgid ": If checked, automatically create Tvheadend channel tags to match any tags provided by the broadcaster."
 msgstr ""
 
 msgid "Grid Items"

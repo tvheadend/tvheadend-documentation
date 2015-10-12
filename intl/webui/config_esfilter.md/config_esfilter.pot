@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "This table defines rules to filter and order the elementary streams (PIDs) like video or audio from the input feed. The execution order of commands is granted. It means that first rule is executed for all available streams then second and so on."
 msgstr ""
 
-msgid "NOTE:"
+msgid "'Stream Filters' Tab"
 msgstr ""
 
 msgid "If any elementary stream is not marked as ignored or exclusive, it is used. If you like to ignore unknown elementary streams, add a rule to the end of grid with the any (not defined) comparisons and with the action ignore."
@@ -90,6 +90,21 @@ msgid "Help"
 msgstr ""
 
 msgid "Displays this help page."
+msgstr ""
+
+msgid "Add/Edit Dialog Example"
+msgstr ""
+
+msgid "A common set of fields is used for the"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "functions, most of which can also be seen in the grid view:"
+msgstr ""
+
+msgid "'Add/Edit Stream Filter' Dialog"
 msgstr ""
 
 msgid "Grid Items"

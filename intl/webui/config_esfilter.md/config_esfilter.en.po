@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgid ""
 "second and so on."
 msgstr ""
 
-msgid "NOTE:"
+msgid "'Stream Filters' Tab"
 msgstr ""
 
 msgid ""
@@ -105,6 +105,21 @@ msgid "Help"
 msgstr ""
 
 msgid "Displays this help page."
+msgstr ""
+
+msgid "Add/Edit Dialog Example"
+msgstr ""
+
+msgid "A common set of fields is used for the"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "functions, most of which can also be seen in the grid view:"
+msgstr ""
+
+msgid "'Add/Edit Stream Filter' Dialog"
 msgstr ""
 
 msgid "Grid Items"

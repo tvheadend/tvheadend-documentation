@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-12 12:40+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,9 @@ msgid "About"
 msgstr ""
 
 msgid "This tab gives you basic information about Tvheadend's copyright, the authors, licensing, etc."
+msgstr ""
+
+msgid "'About' Tab"
 msgstr ""
 
 msgid "You can also check the build options for your binary by clicking"

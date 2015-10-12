@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,39 @@ msgid "Muxes are locations at which services can be found. On traditional networ
 msgstr ""
 
 msgid "'Muxes' Tab Screenshot"
+msgstr ""
+
+msgid "Add/Edit Dialog Example"
+msgstr ""
+
+msgid "A common set of fields is used for the"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "functions, most of which can also be seen in the grid view:"
+msgstr ""
+
+msgid "Add/Edit Mux Dialog - ATSC"
+msgstr ""
+
+msgid "Add/Edit Mux Dialog - DVB-C"
+msgstr ""
+
+msgid "Add/Edit Mux Dialog - DVB-S/2"
+msgstr ""
+
+msgid "Add/Edit Mux Dialog - DVB-T/2"
+msgstr ""
+
+msgid "Add/Edit Mux Dialog - IPTV"
 msgstr ""
 
 msgid "Menu Bar/Buttons"
@@ -47,9 +80,6 @@ msgstr ""
 msgid "Undo any changes made to the mux configuration since the last save."
 msgstr ""
 
-msgid "Add"
-msgstr ""
-
 msgid "Add a new mux."
 msgstr ""
 
@@ -57,9 +87,6 @@ msgid "Delete"
 msgstr ""
 
 msgid "Delete an existing mux."
-msgstr ""
-
-msgid "Edit"
 msgstr ""
 
 msgid "Edit an existing mux. This allows you to change any of the parameters you’d otherwise set when adding a new mux, e.g. delivery system, frequency, polarisation, etc."

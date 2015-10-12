@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-02 14:48+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,7 @@ msgstr ""
 msgid "Things To Do on This Guide..."
 msgstr ""
 
-msgid "Replace all current screenshots with up-to-date, consistent, readable images (suitable for webUI and User Guide) - for v4.0, for v4.2"
-msgstr ""
-
-msgid "Once 99% complete, generate new webUI help pages and push them to the tvheadend repo"
-msgstr ""
-
-msgid "Check all link from tvh (e.g. there are no help buttons on the 'Stream' tabs)"
-msgstr ""
-
-msgid "Might be worth taking a few specific screenshots of dialog boxes"
+msgid "Complete the content for 4.0 (4.2 can wait) - strip out what isn't stricly necessary now (we can come back)"
 msgstr ""
 
 msgid "Check non-univeral (i.e. item-specific) configuration items (e.g. the IPTV mux parameters) and make sure they're documented"
@@ -35,10 +26,16 @@ msgstr ""
 msgid "Obviously, fill in the minor gaps as highlighted in the document: buttons, descriptions, etc."
 msgstr ""
 
+msgid "Generate new webUI help pages and push them to the tvheadend repo"
+msgstr ""
+
+msgid "Check all link from tvh (e.g. there are no help buttons on the 'Stream' tabs)"
+msgstr ""
+
 msgid "The following major content items/chapters are then missing - based on most FAQs on the forum:"
 msgstr ""
 
-msgid "Transcoding"
+msgid "Transcoding (updated for 4.2, so needs to be tagged properly and reversed as applicable to 4.0)"
 msgstr ""
 
 msgid "How to configure a recording"

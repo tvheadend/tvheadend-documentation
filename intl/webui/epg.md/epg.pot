@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 14:58+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,6 +344,9 @@ msgstr ""
 msgid "button that will record all entries in the series."
 msgstr ""
 
+msgid "EPG Detail 1"
+msgstr ""
+
 msgid "For events without any series link information, an"
 msgstr ""
 
@@ -351,9 +354,6 @@ msgid "[Autorec]"
 msgstr ""
 
 msgid "button will be provided to create a pseudo-series link using the autorec feature."
-msgstr ""
-
-msgid "EPG Detail 1"
 msgstr ""
 
 msgid "EPG Detail 2"

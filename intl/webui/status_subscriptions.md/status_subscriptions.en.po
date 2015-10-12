@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,13 @@ msgstr ""
 msgid "Status - Subscriptions"
 msgstr ""
 
-msgid "Note:"
+msgid "This tab shows information about all active subscriptions to Tvheadend."
 msgstr ""
 
 msgid "This is a read-only tab; nothing is configurable."
+msgstr ""
+
+msgid "'Status - Subscriptions' Tab"
 msgstr ""
 
 msgid "Menu Bar/Buttons"
@@ -39,6 +42,9 @@ msgid "Help"
 msgstr ""
 
 msgid "Display this help page."
+msgstr ""
+
+msgid "Note:"
 msgstr ""
 
 msgid "Grid Items"

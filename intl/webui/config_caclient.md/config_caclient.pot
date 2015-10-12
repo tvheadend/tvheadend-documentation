@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 13:37+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,6 +83,27 @@ msgstr ""
 msgid "Display this help page."
 msgstr ""
 
+msgid "Add/Edit Dialog Example"
+msgstr ""
+
+msgid "New CA configurations are created with the"
+msgstr ""
+
+msgid "button, with subsequent editing done within the grid. The following configuration parameters are used, depending on the type of CA access:"
+msgstr ""
+
+msgid "'Add/Edit CA' Dialog - CWC"
+msgstr ""
+
+msgid "'Add/Edit CA' Dialog - CAPMT"
+msgstr ""
+
+msgid "'Add/Edit CA' Dialog - AES Constant CWC"
+msgstr ""
+
+msgid "'Add/Edit CA' Dialog - DES Constant CWC"
+msgstr ""
+
 msgid "Grid Items"
 msgstr ""
 
@@ -141,9 +162,6 @@ msgid "Comment"
 msgstr ""
 
 msgid ": Allows the administrator to set a comment only visible in this editor. It does not serve any active purpose."
-msgstr ""
-
-msgid "'CAs Tab 2'"
 msgstr ""
 
 msgid "The columns have the following functions:"

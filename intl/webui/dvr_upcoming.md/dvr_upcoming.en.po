@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 14:58+0000\n"
+"POT-Creation-Date: 2015-07-13 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,6 +89,21 @@ msgstr ""
 msgid "Display this help page."
 msgstr ""
 
+msgid "Add/Edit Dialog Example"
+msgstr ""
+
+msgid "A common set of fields is used for the"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "functions, most of which can also be seen in the grid view:"
+msgstr ""
+
+msgid "Add/Edit Upcoming Recording"
+msgstr ""
+
 msgid "Grid Items"
 msgstr ""
 
@@ -136,6 +151,12 @@ msgstr ""
 msgid "Rerun Of"
 msgstr ""
 
+msgid ""
+": If the recording is a repeat (rerun) this field will display the date the "
+"programme was previously broadcast. Note that this field is dependent on "
+"your epg source."
+msgstr ""
+
 msgid "Title"
 msgstr ""
 
@@ -150,6 +171,12 @@ msgid "button)."
 msgstr ""
 
 msgid "Subtitle"
+msgstr ""
+
+msgid ""
+": The programme episode title if available. Note that some broadcasters "
+"(especially in the UK on Freeview) incorrectly insert the programme synopsis "
+"into the subtitle section of the OTA EPG data."
 msgstr ""
 
 msgid "Episode"
@@ -198,6 +225,11 @@ msgstr ""
 msgid "File Size"
 msgstr ""
 
+msgid ""
+": The current file size of the in-progress recording. This will continue to "
+"increase until the recording is complete."
+msgstr ""
+
 msgid "Channel"
 msgstr ""
 
@@ -205,6 +237,11 @@ msgid ": The channel to be recorded."
 msgstr ""
 
 msgid "Owner"
+msgstr ""
+
+msgid ""
+": The logged-in user who created the recording. This will be blank if the "
+"user can't be verified."
 msgstr ""
 
 msgid "Creator"
@@ -230,8 +267,22 @@ msgstr ""
 msgid "Errors"
 msgstr ""
 
+msgid ""
+": The number of transport stream errors encountered during the recording."
+msgstr ""
+
 msgid "Data Errors"
 msgstr ""
 
+msgid ": The number of continuity errors encountered during the recording."
+msgstr ""
+
 msgid "Comment"
+msgstr ""
+
+msgid ""
+": This field allows you to enter a note about the recording; you can enter "
+"whatever you like here. This field will automatically be filled if the "
+"recording was created by an auto-recording rule, although you can still "
+"change it if you wish."
 msgstr ""
