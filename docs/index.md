@@ -1,4 +1,10 @@
-#Tvheadend 4.0 (4.2) User Guide
+<tvhversion till="4.0">
+#Tvheadend 4.0 User Guide
+</tvhversion>
+
+<tvhversion from="4.2">
+#Tvheadend 4.2 User Guide
+</tvhversion>
 
 <img class="noborder" alt="Tvheadend Logo" src="./images/tvhlogo.png" />
 
