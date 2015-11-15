@@ -100,7 +100,7 @@ highlight/reflection effect).
     
 Placeholder | Function
 :----------:| --------
-**%C**      | The transliterated channel name in ASCII (safe characters, no spaces etc.)
+**%C**      | The transliterated channel name in ASCII (safe characters, no spaces, etc. - so `Das Erste HD` will be `Das_Erste_HD`)
 **%c**      | The channel name (URL encoded ASCII)
 
 Example: `file:///tmp/icons/%C.png` or `http://example.com/%c.png`
