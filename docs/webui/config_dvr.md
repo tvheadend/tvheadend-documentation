@@ -177,6 +177,9 @@ Format    | Description                                      | Example
 `$t`      | Event title name                                 | Tennis - Wimbledon
 `$e`      | Event episode name                               | S02-E06
 `$c`      | Channel name                                     | SkySport
+<tvhversion from="4.2">
+`$g`      | Content type                                     | Movie : Science fiction
+</tvhversion>
 `$n`      | Unique number added when the file already exists | -1
 `$x`      | Filename extension (from the active stream muxer | mkv
 `%F`      | ISO 8601 date format                             | 2011-03-19
