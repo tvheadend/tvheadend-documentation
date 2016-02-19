@@ -190,6 +190,12 @@ The format strings `$t`,`$s`,`%e`,`$c` also have delimiter variants such as
 `$.t`, `$,t`, `$;t`. In these cases, the delimiter is applied 
 only when the substituted string is not empty.
 
+<tvhversion from="4.2">
+For $t and $s format strings, you may also limit the number of output
+characters using $99-t format string where 99 means the limit. As you can
+see, the delimiter can be also applied.
+</tvhversion>
+
 ---
 
 ####Subdirectory Options

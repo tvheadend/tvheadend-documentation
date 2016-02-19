@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-18 14:45+0000\n"
+"POT-Creation-Date: 2015-11-27 17:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "1. Install the Tuner Hardware"
 msgstr ""
 
-msgid "This is obviously a core requirement that's outside of the scope of this guide"
+msgid "This is obviously a core requirement that's outside of the scope of this guide."
 msgstr ""
 
 msgid "You basically have the choice of:"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Internal (e.g. PCI) tuners that go inside the computer chassis"
 msgstr ""
 
-msgid "External SAT>IP tuners that send their decoded signals over a LAN connection."
+msgid "External SAT>IP tuners that send their decoded signals over a LAN connection"
 msgstr ""
 
 msgid "Follow the appropriate installation instructions and, if relevant, the setup instruction (e.g. for SAT>IP, which are effectively small, standalone computers)."
@@ -62,7 +62,58 @@ msgstr ""
 msgid "this will not only tell you what's supported under Linux, but also how to get it all working."
 msgstr ""
 
-msgid "Many tuners require firmware - normally, a binary file that's been extracted from the proprietary drivers used by Windows. Many Linux distros include a package for the most common devices (e.g. linux-firmwares under Ubuntu or firmware-linux-nonfree under Debian). If this isn't sufficient, a good source of firmware files is the"
+msgid "As a broad guide, though, you need two main components: a driver, and firmware."
+msgstr ""
+
+msgid "The"
+msgstr ""
+
+msgid "driver"
+msgstr ""
+
+msgid "is the piece of software that, as far as the operating system is concerned, controls the tuner hardware."
+msgstr ""
+
+msgid "Driver software typically comes either built-in to the operating system (a clue here is documentation that says"
+msgstr ""
+
+msgid "\"supported since kernel 3.16\""
+msgstr ""
+
+msgid ", for example) or as an external program that needs to be compiled in (e.g. how you'd build TBS' or Digital Devices drivers, or perhaps where the driver is supported in a later version of LinuxTV V4L-DVB than has made it to your kernel - the giveaway here is"
+msgstr ""
+
+msgid "\"compile and install the latest media"
+msgstr ""
+
+msgid "_build\""
+msgstr ""
+
+msgid ")."
+msgstr ""
+
+msgid "Many tuners then also require"
+msgstr ""
+
+msgid "firmware"
+msgstr ""
+
+msgid "- normally, a binary file that's been extracted from the proprietary drivers used by Windows."
+msgstr ""
+
+msgid "Many Linux distros include a package for the most common devices (e.g."
+msgstr ""
+
+msgid "linux-firmwares"
+msgstr ""
+
+msgid "under Ubuntu or"
+msgstr ""
+
+msgid "firmware-linux-nonfree"
+msgstr ""
+
+msgid "under Debian). If this isn't sufficient, a good source of firmware files is the"
 msgstr ""
 
 msgid "OpenElec firmware library"

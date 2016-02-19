@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tvheadend\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-11 19:04+0000\n"
+"POT-Creation-Date: 2015-11-27 17:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Updating the Documentation 2nd June 2015"
+msgid "Updating the Documentation 19 July 2015"
 msgstr ""
 
 msgid "The documentation is written in markdown, and then converted in two directions to create both this User Guide and the on-line help files that are bundled with the application."
@@ -27,9 +27,6 @@ msgid "Install dependencies ("
 msgstr ""
 
 msgid "mkdocs"
-msgstr ""
-
-msgid "pandoc"
 msgstr ""
 
 msgid "and"
