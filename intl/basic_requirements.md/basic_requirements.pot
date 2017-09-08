@@ -50,7 +50,7 @@ msgstr ""
 msgid "for the application and associated files, and maybe anything up to"
 msgstr ""
 
-msgid "1GB"
+msgid "1TB"
 msgstr ""
 
 msgid "for your configuration - depending on how many tuners of what type you have, how many channels you receive, your choice of programme guide, and so on. You'll clearly need much more for your recordings, though: as a guide, an hour of SD MPEG-2 video will take about 1GB, while high bitrate HD H.264 will easily consume 5GB+ per hour."
