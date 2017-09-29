@@ -22,6 +22,7 @@ is checked in the 'Parameters' list
 
 If anything is obviously wrong at this point, you probably have a
 driver/firmware error which you'll need to resolve before going any further.
+check dmesg for any errors related to firmware for you dvb card.
 
 ###2. Set up Relevant Network(s)
 
