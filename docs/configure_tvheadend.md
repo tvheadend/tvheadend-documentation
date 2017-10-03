@@ -130,7 +130,12 @@ and language(s), and so on.
 
 Once scanning for services is complete, you need to map the services to 
 channels so your client can actually request them (i.e. so you can watch
-or record). You can do this in two places:
+or record). 
+
+Make sure to use Mozilla Firefox browsers. Some problems exist if you run version 4.2.3-87 when doing this using Google Chrome. 
+It only allows to map 200 channels / time, and not do a map all.
+
+You can do this in two places:
 
 **Tvheadend web interface: _Configuration -> DVB Inputs -> Services_**
 
