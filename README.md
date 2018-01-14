@@ -1,4 +1,4 @@
-#Tvheadend
+# Tvheadend
 
 (c) 2006 - 2015 Tvheadend Foundation CIC
 
@@ -6,7 +6,7 @@ tvheadend-documentation
 
 **Work-in-progress** user documentation for Tvheadend. See http://tvheadend.org for the full project.
 
-##Contributions welcome
+## Contributions welcome
 
 ... preferably in the shape of fully-formed pull requests that can be merged cleanly.
 
