@@ -196,10 +196,9 @@ Button         | Function
 **Override tuner count**
 : Force Tvheadend to see a specific number of tuners.
 
-  > Some devices, notably AVM’s FRITZ!Box Cable 6490, report wrong number of tuners
-  > and this setting allows you to override that. Any value below 1 or
-  > above 32 is ignored. For now this setting requires a restart of
-  > tvheadend.
+  > Some devices report wrong number of tuners and this setting allows
+  > you to override that. Any value below 1 or above 32 is ignored. For
+  > now this setting requires a restart of tvheadend.
 
 **PIDs 21 in setup**
 : Enable if the SAT>IP box requires `pids=21` parameter in the SETUP
