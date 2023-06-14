@@ -11,8 +11,6 @@ theme: readthedocs
 extra_css: 
     - custom.css
 
-site_favicon: images/favicon.png
-
 markdown_extensions:
     - smarty
     - toc:
