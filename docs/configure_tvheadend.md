@@ -23,6 +23,8 @@ is checked in the 'Parameters' list
 If anything is obviously wrong at this point, you probably have a
 driver/firmware error which you'll need to resolve before going any further.
 
+Check dmesg for any errors related to firmware for you dvb card.
+
 ###2. Set up Relevant Network(s)
 
 **Tvheadend web interface: _Configuration -> DVB Inputs -> Networks_**
@@ -128,7 +130,12 @@ and language(s), and so on.
 
 Once scanning for services is complete, you need to map the services to 
 channels so your client can actually request them (i.e. so you can watch
-or record). You can do this in two places:
+or record). 
+
+Make sure to use Mozilla Firefox browsers. Some problems exist if you run version 4.2.3-87 when doing this using Google Chrome. 
+It only allows to map 200 channels / time, and not do a map all.
+
+You can do the mapping in two places:
 
 **Tvheadend web interface: _Configuration -> DVB Inputs -> Services_**
 
